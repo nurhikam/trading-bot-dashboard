@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trading Desk Paper: twelve strategies, twenty-five coins, one tape. No leverage, no narrative.">
+<title>Trading Desk - Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Geist',system-ui,sans-serif;background:#fff;color:#111;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:#111;color:#fff}
+/* flat top bar */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid #eaeaea}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:-0.01em}
+.brand-mark{width:22px;height:22px;display:block}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13px;color:#666;text-decoration:none;padding:7px 12px;border-radius:6px;transition:color 150ms ease, background 150ms ease}
+.nav-links a:hover{color:#111;background:#f4f4f3}
+.nav-cta{font-size:13px;font-weight:500;color:#fff !important;background:#111 !important}
+.nav-cta:hover{background:#333 !important;color:#fff !important}
+.shell{max-width:1080px;margin:0 auto;padding:0 24px}
+/* hero: typography only */
+.hero{padding:88px 0 40px;border-bottom:1px solid #eaeaea}
+.hero h1{font-size:56px;line-height:1.02;letter-spacing:-0.04em;font-weight:700;color:#111;max-width:760px}
+.hero-sub{margin-top:16px;font-size:16px;line-height:1.65;color:#555;max-width:600px}
+.hero-actions{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn-primary{appearance:none;border:none;cursor:pointer;background:#111;color:#fff;font-size:14px;font-weight:500;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background 150ms ease, transform 120ms ease}
+.btn-primary:hover{background:#333}
+.btn-primary:active{transform:scale(0.98)}
+.btn-ghost{appearance:none;cursor:pointer;background:#fff;color:#111;border:1px solid #e0e0de;font-size:14px;font-weight:500;padding:12px 20px;border-radius:8px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background 150ms ease}
+.btn-ghost:hover{background:#f4f4f3}
+:focus-visible{outline:2px solid #111;outline-offset:2px;border-radius:6px}
+/* live stat strip: real data as the visual */
+.strip{padding:28px 0;border-bottom:1px solid #eaeaea;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:768px){.strip{grid-template-columns:repeat(2,1fr)}}
+.stat .label{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#888}
+.stat .value{font-family:'Geist Mono',monospace;font-size:30px;letter-spacing:-0.03em;margin-top:6px;color:#111}
+.stat .sub{font-size:12px;color:#888;margin-top:4px}
+.up{color:#1a7a3c}.down{color:#b3261e}
+/* sections */
+.section{padding:48px 0;border-bottom:1px solid #eaeaea}
+.section:last-of-type{border-bottom:none}
+.section h2{font-size:24px;letter-spacing:-0.02em;font-weight:700;color:#111}
+.section-sub{margin-top:8px;font-size:14px;color:#555;max-width:580px}
+.rows{margin-top:24px}
+.row{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-top:1px solid #eee}
+@media(max-width:768px){.row{grid-template-columns:1fr;gap:6px}}
+.row h3{font-size:15px;font-weight:600;color:#111}
+.row p{font-size:14px;color:#555;line-height:1.6}
+.mono{font-family:'Geist Mono',monospace}
+/* closing cta */
+.cta{padding:64px 0}
+.cta h2{font-size:28px;letter-spacing:-0.03em;font-weight:700;color:#111}
+.cta p{margin-top:8px;font-size:14px;color:#555}
+.cta .hero-actions{margin-top:20px}
+.footer{padding:24px 0 40px;border-top:1px solid #eaeaea;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:11px;color:#999}
+.footer a{color:#666;text-decoration:none;border-bottom:1px solid #e0e0de}
+.footer a:hover{color:#111}
+.reveal{opacity:0;transform:translateY(12px);will-change:transform,opacity;transition:opacity 600ms cubic-bezier(0.16,1,0.3,1), transform 600ms cubic-bezier(0.16,1,0.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+@media(max-width:768px){
+  .shell{padding:0 16px}
+  .nav-inner{padding:0 16px;height:54px}
+  .nav-links a:not(.nav-cta){display:none}
+  .hero{padding:56px 0 32px}
+  .hero h1{font-size:38px}
+  .stat .value{font-size:24px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#111111"/><polyline points="7.5,22.5 13,15.5 17,18.5 24,9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="9" r="2.1" fill="#ffffff"/></svg>Trading Desk</div>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#strategies">Strategies</a>
+      <a class="nav-cta" href="dashboard.html">Open desk</a>
+    </div>
+  </div>
+</nav>
+<div class="shell">
+  <section class="hero reveal">
+    <h1>Twelve strategies. Twenty-five coins.<br>One tape.</h1>
+    <p class="hero-sub">A paper trading desk that runs on hourly closes with fees included. No leverage, no narrative. Every number below is simulated, logged, and public.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="dashboard.html">Open desk</a>
+      <a class="btn-ghost" href="https://github.com/nurhikam/trading-bot-dashboard" target="_blank" rel="noreferrer">data.json</a>
+    </div>
+  </section>
+
+  <section class="strip reveal" id="stats">
+    <div class="stat"><div class="label">Coins</div><div class="value mono">25</div><div class="sub">BTC ETH SOL BNB XRP DOGE PEPE SUI ADA LINK SHIB XLM LTC UNI AVAX NEAR BCH HBAR FET DOT FIL ETC APT INJ SEI</div></div>
+    <div class="stat"><div class="label">Strategies</div><div class="value mono">12</div><div class="sub">same params per coin</div></div>
+    <div class="stat"><div class="label">Cost model</div><div class="value mono">0.15%</div><div class="sub">fee + slippage per side</div></div>
+    <div class="stat"><div class="label">Cadence</div><div class="value mono">1H</div><div class="sub">signals on close only</div></div>
+  </section>
+
+  <section class="section reveal" id="how">
+    <h2>How it works</h2>
+    <p class="section-sub">A local runner fetches closed candles, simulates fills, and pushes one JSON file to GitHub every minute. The site reads that file directly, so numbers update without a redeploy.</p>
+    <div class="rows">
+      <div class="row"><h3><span class="mono" style="color:#888">Collect</span></h3><p>Closed 1H candles from Binance mainnet. The forming candle is always dropped before any indicator runs.</p></div>
+      <div class="row"><h3><span class="mono" style="color:#888">Simulate</span></h3><p>Every fill pays 0.10% fee plus 0.05% adverse slippage. Wallets are all-in long or flat, one per strategy per coin.</p></div>
+      <div class="row"><h3><span class="mono" style="color:#888">Publish</span></h3><p>Equity curves, trades, drawdowns, and win rates land in data.json. The dashboard renders it client-side.</p></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="strategies">
+    <h2>The seven</h2>
+    <div class="rows">
+      <div class="row"><h3>Supertrend</h3><p>ATR-based trailing stop. Long while price holds above the band, flat when it breaks.</p></div>
+      <div class="row"><h3>SMA cross</h3><p>Fast average over slow average enters; the reverse exits. Whipsaw-prone by design, useful in choppy tape.</p></div>
+      <div class="row"><h3>SMA trend</h3><p>Cross filtered by a 200-bar trend line. Trades less, sits out downtrends entirely.</p></div>
+      <div class="row"><h3>Trend 200</h3><p>Long above the 200 average, flat below. The simplest regime filter there is.</p></div>
+      <div class="row"><h3>Donchian</h3><p>Buy new highs over a lookback window, exit on lows. Classic breakout mechanics.</p></div>
+      <div class="row"><h3>BB squeeze</h3><p>Bollinger bandwidth compression followed by expansion. Enters when volatility wakes up.</p></div>
+      <div class="row"><h3>RSI revert</h3><p>Fades oversold extremes and exits into strength. Few trades, fee-light, knife-catching risk included.</p></div>
+    </div>
+  </section>
+
+  <section class="cta reveal">
+    <h2>The desk is live.</h2>
+    <p>Leaderboard, equity curves, and per-coin tabs. Updated every minute.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="dashboard.html">Open desk</a>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <span>Paper only. Nothing here is financial advice. <a href="/api/data">data.json</a></span>
+    <span><a href="https://github.com/nurhikam/trading-bot-dashboard">source</a></span>
+  </footer>
+</div>
+<script>
+document.querySelectorAll('.reveal').forEach(el=>{
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+  io.observe(el);
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) el.classList.add('in');
+});
+document.querySelector('.hero').classList.add('in');
+</script>
+</body>
+</html>

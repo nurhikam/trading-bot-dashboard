@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Multi-strategy paper trading bot — live dashboard">
+<title>Trading Bot Dashboard</title>
+<style>
+:root { color-scheme: dark; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background:#0b0e14; color:#e6e9ef; padding:28px; line-height:1.45;
+}
+h1 { font-size:22px; font-weight:700; letter-spacing:.3px; }
+.sub { color:#8892a6; font-size:13px; margin-top:4px; }
+.grid-top { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; flex-wrap:wrap; margin-bottom:20px; }
+.card { background:#12161f; border:1px solid #1e2432; border-radius:12px; padding:18px; margin-bottom:16px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th, td { text-align:right; padding:8px 10px; border-bottom:1px solid #1a202c; white-space:nowrap; }
+th { color:#8892a6; font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.5px; }
+td:first-child, th:first-child { text-align:left; }
+tr:hover td { background:#171d29; }
+.pos { font-weight:600; padding:2px 8px; border-radius:20px; font-size:11px; }
+.pos-long { background:rgba(77,217,123,.15); color:#4dd97b; }
+.pos-flat { background:rgba(136,146,166,.15); color:#8892a6; }
+.pos-warm { background:rgba(255,180,84,.15); color:#ffb454; }
+.pos-down { color:#ff6b6b; }
+.pos-up { color:#4dd97b; }
+.legend { display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:12px; color:#8892a6; }
+.legend span { display:inline-flex; align-items:center; gap:6px; }
+.dot { width:10px; height:10px; border-radius:3px; display:inline-block; }
+.stats { display:flex; gap:28px; flex-wrap:wrap; }
+.stat .label { font-size:11px; color:#8892a6; text-transform:uppercase; letter-spacing:.5px; }
+.stat .value { font-size:24px; font-weight:700; margin-top:2px; }
+.badge { display:inline-block; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:600; }
+.badge-run { background:rgba(77,217,123,.15); color:#4dd97b; }
+.badge-idle { background:rgba(255,180,84,.15); color:#ffb454; }
+.foot { color:#5a6478; font-size:11px; margin-top:8px; }
+#updated { color:#8892a6; font-size:12px; }
+#error { display:none; color:#ff6b6b; background:rgba(255,71,87,.1); border:1px solid rgba(255,71,87,.3); padding:12px; border-radius:8px; margin-bottom:16px; font-size:13px; }
+.loading { color:#8892a6; padding:40px; text-align:center; }
+svg text { font-family: ui-sans-serif, system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div id="error"></div>
+<div id="app"><div class="loading">Loading data…</div></div>
+<script>
+const DATA_URLS = [
+  "https://raw.githubusercontent.com/nurhikam/trading-bot-dashboard/main/data/data.json",
+  "/api/data",
+];
+const PALETTE = {
+  supertrend: "#7c5cff", bb_squeeze: "#00c2ff", sma_trend: "#ffb454",
+  sma_cross: "#ff7a59", donchian: "#ff5ca8", trend_200: "#4dd97b",
+  rsi_revert: "#ff4757", buy_hold: "#8892a6",
+};
+const DEFAULT_COLOR = "#9aa4b5";
+const colorFor = (n) => PALETTE[n] || DEFAULT_COLOR;
+const fmt = (x, d=2) => (x>=0 ? "+" : "") + x.toFixed(d) + "%";
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+async function load() {
+  let lastErr = null;
+  for (const url of DATA_URLS) {
+    try {
+      const r = await fetch(url + "?t=" + Date.now(), {cache:"no-store"});
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const d = await r.json();
+      render(d);
+      return;
+    } catch (e) { lastErr = e; }
+  }
+  document.getElementById("error").style.display = "block";
+  document.getElementById("error").textContent = "Failed to load data: " + lastErr.message;
+  document.getElementById("app").innerHTML = '<div class="loading">Retrying in 60s…</div>';
+}
+
+function equitySVG(summary, strategies, live) {
+  const W=1040, H=380, M=46;
+  let n = summary.length;
+  const liveEq = (live && live.equity) || null;
+  if (liveEq) n += 1;
+  if (!n) return "";
+  const firstClose = +summary[0].close;
+  const series = {};
+  for (const s of strategies) {
+    if (summary[0][`eq_${s}`] != null) {
+      series[s] = summary.map(r => +r[`eq_${s}`]);
+      if (liveEq && liveEq[s] != null) series[s].push(+liveEq[s]);
+    }
+  }
+  const bh = summary.map(r => +r.close / firstClose * 1000);
+  if (live) bh.push(+live.price / firstClose * 1000);
+  let lo=Infinity, hi=-Infinity;
+  for (const arr of [...Object.values(series), bh]) for (const v of arr) { lo=Math.min(lo,v); hi=Math.max(hi,v); }
+  if (!isFinite(lo)) return "";
+  if (lo===hi) { lo-=1; hi+=1; }
+  const pad=(hi-lo)*0.06; lo-=pad; hi+=pad;
+  const X = i => M + i*(W-2*M)/Math.max(n-1,1);
+  const Y = v => H-M-(v-lo)*(H-2*M)/(hi-lo);
+  let p = [`<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">`];
+  for (let i=0;i<5;i++){ const v=lo+(hi-lo)*i/4, y=Y(v);
+    p.push(`<line x1="${M}" y1="${y}" x2="${W-M}" y2="${y}" stroke="#1e2432"/>`);
+    p.push(`<text x="${M-8}" y="${y+4}" fill="#8892a6" font-size="11" text-anchor="end">${Math.round(v)}</text>`); }
+  const poly = (arr, c, w, dash) => p.push(`<polyline points="${arr.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ")}" fill="none" stroke="${c}" stroke-width="${w}"${dash?` stroke-dasharray="5,4" opacity="0.6"`:""}/>`);
+  poly(bh, PALETTE.buy_hold, 1.5, true);
+  p.push(`<text x="${X(n-1)+8}" y="${Y(bh[n-1])-6}" fill="${PALETTE.buy_hold}" font-size="11">B&H ${Math.round(bh[n-1])}</text>`);
+  for (const [s,arr] of Object.entries(series)) {
+    poly(arr, colorFor(s), 2, false);
+    const last=arr[n-1];
+    p.push(`<circle cx="${X(n-1)}" cy="${Y(last)}" r="3.5" fill="${colorFor(s)}"/>`);
+    p.push(`<text x="${X(n-1)+8}" y="${Y(last)-2}" fill="${colorFor(s)}" font-size="12" font-weight="600">${s} ${Math.round(last)}</text>`);
+  }
+  p.push("</svg>");
+  return p.join("");
+}
+
+function rankBars(strategies, metrics, bh) {
+  const items = strategies.filter(s=>metrics[s]).map(s=>[s, metrics[s].pnl]).sort((a,b)=>b[1]-a[1]);
+  const rows = [["buy_hold", bh], ...items];
+  const W=1040, M=40;
+  const H=60+44*rows.length;
+  const vals=rows.map(r=>r[1]); let maxv=Math.max(...vals), minv=Math.min(...vals,0);
+  const span=Math.max(maxv-minv,1e-9);
+  const X = v => M + (v-minv)*(W-2*M)/span;
+  const Y = r => 12 + r*44;
+  let p=[`<svg viewBox="0 0 ${W} ${H}" width="100%" xmlns="http://www.w3.org/2000/svg">`];
+  p.push(`<line x1="${X(0)}" y1="8" x2="${X(0)}" y2="${H-8}" stroke="#3a4254"/>`);
+  rows.forEach(([s,v],r)=>{
+    const c = s==="buy_hold"?PALETTE.buy_hold:colorFor(s);
+    const x0=X(0), x1=X(v), y=Y(r);
+    const neg=v<0;
+    if (neg) p.push(`<rect x="${x1}" y="${y}" width="${x0-x1}" height="26" rx="4" fill="#ff4757" opacity="0.85"/>`);
+    else p.push(`<rect x="${x0}" y="${y}" width="${x1-x0}" height="26" rx="4" fill="${c}" opacity="0.85"/>`);
+    p.push(`<text x="${M-8}" y="${y+18}" fill="#e6e9ef" font-size="12" text-anchor="end">${s==="buy_hold"?"Buy & Hold":s}</text>`);
+    p.push(`<text x="${neg?x1-8:x1+8}" y="${y+18}" fill="#e6e9ef" font-size="12" text-anchor="${neg?"end":"start"}">${fmt(v)}</text>`);
+  });
+  p.push("</svg>");
+  return p.join("");
+}
+
+function render(d) {
+  const {symbol, timeframe, strategies, balance, metrics, summary, trades, buy_hold, last_close, n_candles, first_ts, last_ts, updated_utc} = d;
+  const live = d.live || null;
+  const price = live ? live.price : last_close;
+  const displayLast = live ? live.ts : last_ts;
+  const ranked = strategies.filter(s=>metrics[s]).map(s=>[s,metrics[s].pnl]).sort((a,b)=>b[1]-a[1]);
+  const posBadge = m => m.in_pos ? "<span class='pos pos-long'>LONG</span>" : "<span class='pos pos-flat'>FLAT</span>";
+  const rows = ranked.map(([s,pnl])=>{
+    const m=metrics[s];
+    return `<tr><td><span class="dot" style="background:${colorFor(s)}"></span> ${esc(s)}</td>
+      <td class="${m.pnl>=0?'pos-up':'pos-down'}">${fmt(m.pnl)}</td>
+      <td class="${m.pnl>=buy_hold?'pos-up':'pos-down'}">${fmt(m.pnl-buy_hold)}</td>
+      <td>${m.dd.toFixed(1)}%</td><td>${m.trades}</td><td>${m.fees.toFixed(2)}</td>
+      <td>${m.win_rate.toFixed(0)}%</td><td>${posBadge(m)}</td></tr>`;
+  }).join("");
+  const legend = strategies.map(s=>`<span><span class="dot" style="background:${colorFor(s)}"></span>${esc(s)}</span>`).join("")
+    + `<span><span class="dot" style="background:${PALETTE.buy_hold}"></span>Buy &amp; Hold</span>`;
+  const best = ranked.length ? `${esc(ranked[0][0])} ${fmt(ranked[0][1])}` : "—";
+  document.getElementById("app").innerHTML = `
+<div class="grid-top">
+  <div>
+    <h1>Multi-Strategy Paper Dashboard</h1>
+    <div class="sub">${esc(symbol)} · ${esc(timeframe)} · ${n_candles} candles · ${esc(first_ts)} → ${esc(displayLast)} · auto-refresh 60s</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">${live?'Live Price':'Price'}</div><div class="value">${Number(price).toLocaleString(undefined,{maximumFractionDigits:2})}</div></div>
+    <div class="stat"><div class="label">Buy &amp; Hold</div><div class="value ${buy_hold>=0?'pos-up':'pos-down'}">${fmt(buy_hold)}</div></div>
+    <div class="stat"><div class="label">Best</div><div class="value">${best}</div></div>
+  </div>
+</div>
+<div class="card"><h1>Leaderboard</h1>
+  <table><thead><tr><th>Strategy</th><th>PnL%</th><th>vs B&amp;H</th><th>Max DD%</th><th>Trades</th><th>Fee $</th><th>Win%</th><th>Pos</th></tr></thead>
+  <tbody>${rows}</tbody></table>
+  <div class="foot">Net of 0.1% fee + 0.05% slippage per side. Win% counts closed round-trips only. ${live ? '<span class="pos-long">● live</span> price/equity update tiap menit; posisi & PnL dihitung tiap candle tutup.' : ''}</div>
+</div>
+<div class="card"><h1>Equity Curves (start ${Number(balance).toLocaleString()})</h1>${equitySVG(summary, strategies, live)}
+  <div class="legend">${legend}</div></div>
+<div class="card"><h1>Return vs Buy &amp; Hold</h1>${rankBars(strategies, metrics, buy_hold)}</div>
+<div id="updated">Updated ${esc(updated_utc)}</div>`;
+}
+
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>

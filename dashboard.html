@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trading Desk Paper - live strategy observation on five coins">
+<title>Trading Desk - Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Geist',system-ui,sans-serif;background:#fff;color:#111;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:#111;color:#fff}
+:focus-visible{outline:2px solid #111;outline-offset:2px;border-radius:6px}
+/* nav: identical language to landing */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid #eaeaea}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:-0.01em}
+.brand-mark{width:22px;height:22px;display:block}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13px;color:#666;text-decoration:none;padding:7px 12px;border-radius:6px;transition:color 150ms ease, background 150ms ease}
+.nav-links a:hover{color:#111;background:#f4f4f3}
+.nav-cta{font-size:13px;font-weight:500;color:#fff !important;background:#111 !important}
+.nav-cta:hover{background:#333 !important;color:#fff !important}
+.pill-live{display:inline-flex;align-items:center;gap:6px;font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#1a7a3c}
+.shell{max-width:1080px;margin:0 auto;padding:0 24px}
+/* coin tabs */
+.coin-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:20px 0 4px}
+.coin-tab{appearance:none;cursor:pointer;font-family:'Geist',system-ui,sans-serif;padding:7px 14px;border-radius:6px;border:1px solid #e0e0de;background:#fff;color:#555;font-size:13px;font-weight:500;transition:all 150ms ease}
+.coin-tab:hover{border-color:#111;color:#111}
+.coin-tab.active{background:#111;border-color:#111;color:#fff}
+/* stat strip */
+.strip{padding:20px 0 28px;border-bottom:1px solid #eaeaea;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:768px){.strip{grid-template-columns:1fr}}
+.stat .label{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#888}
+.stat .value{font-family:'Geist Mono',monospace;font-size:30px;letter-spacing:-0.03em;margin-top:6px;color:#111}
+.stat .sub{font-size:12px;color:#888;margin-top:4px}
+.up{color:#1a7a3c}.down{color:#b3261e}
+/* panels */
+.panel{margin-top:24px;border:1px solid #eaeaea;border-radius:10px;overflow:hidden}
+.panel-head{padding:16px 20px;border-bottom:1px solid #eaeaea;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.panel-head h2{font-size:16px;font-weight:600;letter-spacing:-0.01em;color:#111}
+.panel-head .sub{font-family:'Geist Mono',monospace;font-size:11px;color:#888}
+.tag{display:inline-flex;align-items:center;padding:2px 9px;border-radius:5px;font-size:11px;font-weight:500;border:1px solid #e0e0de;color:#555;background:#fafaf9}
+.tag-long{background:#edf3ec;border-color:#d8e5d6;color:#1a7a3c}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th{text-align:right;padding:9px 14px;font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:#888;font-weight:500;border-bottom:1px solid #eaeaea;white-space:nowrap}
+td{text-align:right;padding:11px 14px;font-size:13px;border-bottom:1px solid #f2f2f0;white-space:nowrap;color:#333}
+th:first-child,td:first-child{text-align:left;padding-left:20px}
+td:first-child{font-weight:500;color:#111}
+th:last-child,td:last-child{padding-right:20px}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:#fafaf9}
+.mono{font-family:'Geist Mono',monospace}
+.dot{width:8px;height:8px;border-radius:2px;display:inline-block;margin-right:8px;vertical-align:baseline}
+.chart-body{padding:18px 12px 8px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;padding:10px 20px 16px;font-size:12px;color:#777}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.row-detail{padding:10px 20px;border-top:1px solid #f2f2f0;font-size:12px;color:#555;font-family:'Geist Mono',monospace;min-height:40px;display:flex;align-items:center;flex-wrap:wrap;gap:6px}.row-detail b{color:#111;font-weight:600}.row-detail .sep{color:#ddd}.foot-note{padding:11px 20px;border-top:1px solid #f2f2f0;font-family:'Geist Mono',monospace;font-size:11px;color:#999}
+.heat{width:100%;border-collapse:collapse;font-size:11px}
+.heat th{font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#888;padding:7px 8px;border-bottom:1px solid #eaeaea;text-align:center}
+.heat td{padding:8px;border-bottom:1px solid #f2f2f0;text-align:center;font-family:'Geist Mono',monospace;font-size:11px;white-space:nowrap}
+.heat td:first-child{text-align:left;font-family:'Geist',sans-serif;font-weight:500;color:#111}
+.heat .cell-up{background:#edf3ec;color:#1a7a3c;border-radius:4px}
+.heat .cell-down{background:#fdebec;color:#b3261e;border-radius:4px}
+.heat .cell-flat{color:#bbb}
+.footer{margin-top:32px;padding:22px 0 40px;border-top:1px solid #eaeaea;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:11px;color:#999}
+.footer a{color:#666;text-decoration:none;border-bottom:1px solid #e0e0de}
+.footer a:hover{color:#111}
+.reveal{opacity:0;transform:translateY(12px);will-change:transform,opacity;transition:opacity 600ms cubic-bezier(0.16,1,0.3,1), transform 600ms cubic-bezier(0.16,1,0.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.loading{padding:48px;text-align:center;color:#888;font-family:'Geist Mono',monospace;font-size:13px}
+#error{display:none;margin:16px 0;padding:12px 14px;border-radius:8px;background:#fdebec;color:#b3261e;border:1px solid #f5cfD2;font-size:13px}
+@media(max-width:768px){
+  .shell{padding:0 16px}
+  .nav-inner{padding:0 16px;height:54px}
+  .nav-links a:not(.nav-cta){display:none}
+  .strip{padding:16px 0 20px}
+  .stat .value{font-size:24px}
+  .panel-head{padding:14px 16px}
+  th{padding:8px 10px} td{padding:10px}
+  th:first-child,td:first-child{padding-left:16px}
+  th:last-child,td:last-child{padding-right:16px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#111111"/><polyline points="7.5,22.5 13,15.5 17,18.5 24,9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="9" r="2.1" fill="#ffffff"/></svg>Trading Desk</div>
+    <span class="pill-live" id="livePill"><i class="ph-fill ph-circle" style="font-size:6px"></i> live</span>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/api/data" target="_blank" rel="noreferrer">data.json</a>
+      <a class="nav-cta" href="https://github.com/nurhikam/trading-bot-dashboard" target="_blank" rel="noreferrer">Source</a>
+    </div>
+  </div>
+</nav>
+
+<div class="shell">
+  <div id="error"></div>
+  <div id="coinTabs" class="coin-tabs" style="display:none"></div>
+  <div id="app"><div class="loading">Loading desk...</div></div>
+</div>
+
+<script>
+const DATA_URLS = [
+  "/api/data",
+];
+const PALETTE = {
+  supertrend:"#111111", bb_squeeze:"#1F6C9F", sma_trend:"#9F2F2D", sma_cross:"#346538",
+  donchian:"#956400", trend_200:"#787774", rsi_revert:"#B5B5B5",
+  macd:"#7048b6", keltner:"#0e7490", pctb_revert:"#be185d", roc_mom:"#d97706", obv_slope:"#475569",
+  buy_hold:"#C9C9C7",
+};
+const colorFor = n => PALETTE[n] || "#9a9a97";
+const fmt = (x,d=2) => (x>=0 ? "+" : "") + x.toFixed(d) + "%";
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const wib = iso => { if(!iso) return "-"; const d=new Date(iso); if(isNaN(d)) return "-";
+  return new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Jakarta",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"}).format(d).replace(",","")+" WIB"; };
+const utcShort = iso => iso ? String(iso).slice(0,16).replace("T"," ") : "-";
+
+let _raw=null, _activeCoin=null;
+async function fetchJson(url, ms=6000){
+  const ctl=new AbortController();
+  const timer=setTimeout(()=>ctl.abort(), ms);
+  try{
+    const r=await fetch(url+"?t="+Date.now(),{cache:"no-store",signal:ctl.signal});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    return await r.json();
+  } finally { clearTimeout(timer); }
+}
+async function load(){
+  let lastErr=null;
+  for(const url of DATA_URLS){
+    try{
+      const d=await fetchJson(url); _raw=d;
+      if(d.coins){ renderTabs(); _view==="summary"?renderSummary():renderCoin(_activeCoin||Object.keys(d.coins)[0]); }
+      else { render(d); }
+      return;
+    }catch(e){ lastErr=e; }
+  }
+  document.getElementById("error").style.display="block";
+  document.getElementById("error").textContent="Failed to load data: "+lastErr.message;
+  document.getElementById("app").innerHTML='<div class="loading">Retrying in 60s...</div>';
+}
+
+function equitySVG(summary, strategies, live){
+  const W=1040,H=320,M=46,GUT=150,TW=W+GUT,GAP=13;
+  let n = summary.length;
+  const liveEq=(live&&live.equity)||null;
+  if(liveEq) n+=1;
+  if(!n) return "";
+  const firstClose=+summary[0].close;
+  const series={};
+  for(const s of strategies){
+    if(summary[0][`eq_${s}`]!=null){
+      series[s]=summary.map(r=>+r[`eq_${s}`]);
+      if(liveEq&&liveEq[s]!=null) series[s].push(+liveEq[s]);
+    }
+  }
+  const bh=summary.map(r=>+r.close/firstClose*1000);
+  if(live) bh.push(+live.price/firstClose*1000);
+  let lo=Infinity,hi=-Infinity;
+  for(const arr of [...Object.values(series),bh]) for(const v of arr){lo=Math.min(lo,v);hi=Math.max(hi,v);}
+  if(!isFinite(lo)) return "";
+  if(lo===hi){lo-=1;hi+=1;}
+  const pad=(hi-lo)*0.06; lo-=pad; hi+=pad;
+  const X=i=>M+i*(W-2*M)/Math.max(n-1,1);
+  const Y=v=>H-M-(v-lo)*(H-2*M)/(hi-lo);
+
+  // collect end-of-line labels then de-overlap vertically
+  const items=[{label:"B&H",val:bh[n-1],color:"#999"}];
+  for(const [s,arr] of Object.entries(series)) items.push({label:s,val:arr[n-1],color:colorFor(s)});
+  items.forEach(it=>{it.py=Y(it.val);});
+  items.sort((a,b)=>a.py-b.py);
+  for(let i=1;i<items.length;i++) if(items[i].py<items[i-1].py+GAP) items[i].py=items[i-1].py+GAP;
+  const maxY=H-M+3;
+  if(items[items.length-1].py>maxY){
+    items[items.length-1].py=maxY;
+    for(let i=items.length-2;i>=0;i--) if(items[i].py>items[i+1].py-GAP) items[i].py=items[i+1].py-GAP;
+  }
+
+  let p=[`<svg viewBox="0 0 ${TW} ${H}" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">`];
+  for(let i=0;i<5;i++){const v=lo+(hi-lo)*i/4,y=Y(v);
+    p.push(`<line x1="${M}" y1="${y}" x2="${W-M}" y2="${y}" stroke="#eee"/>`);
+    p.push(`<text x="${M-10}" y="${y+3}" fill="#aaa" font-size="10" text-anchor="end" font-family="Geist Mono, monospace">${Math.round(v)}</text>`);
+  }
+  const poly=(arr,c,w,dash)=>p.push(`<polyline points="${arr.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ")}" fill="none" stroke="${c}" stroke-width="${w}"${dash?` stroke-dasharray="5,4"`:""} stroke-linecap="round" stroke-linejoin="round"/>`);
+  poly(bh,"#C9C9C7",1.4,true);
+  for(const [s,arr] of Object.entries(series)) poly(arr,colorFor(s),1.8,false);
+
+  const lx=W-M+14;
+  for(const it of items){
+    p.push(`<line x1="${X(n-1)}" y1="${Y(it.val).toFixed(1)}" x2="${lx-6}" y2="${it.py.toFixed(1)}" stroke="#e0e0de" stroke-width="1"/>`);
+    p.push(`<circle cx="${X(n-1)}" cy="${Y(it.val)}" r="3" fill="${it.color}" stroke="#fff" stroke-width="1.2"/>`);
+    p.push(`<text x="${lx}" y="${it.py.toFixed(1)+3}" fill="${it.color}" font-size="11" font-weight="600" font-family="Geist, sans-serif">${it.label} ${Math.round(it.val)}</text>`);
+  }
+  p.push("</svg>");
+  return p.join("");
+}
+
+function rankBars(strategies, metrics, bh){
+  const items=strategies.filter(s=>metrics[s]).map(s=>[s,metrics[s].pnl]).sort((a,b)=>b[1]-a[1]);
+  const rows=[["buy_hold",bh],...items];
+  const LG=92,W=1040,M=44,H=28+40*rows.length,TW=W+LG;
+  const vals=rows.map(r=>r[1]);let maxv=Math.max(...vals),minv=Math.min(...vals,0);
+  const span=Math.max(maxv-minv,1e-9);
+  const X=v=>M+(v-minv)*(W-2*M)/span;
+  const Y=r=>10+r*40;
+  let p=[`<svg viewBox="0 0 ${TW} ${H}" width="100%" xmlns="http://www.w3.org/2000/svg">`];
+  p.push(`<g transform="translate(${LG},0)">`);
+  p.push(`<line x1="${X(0)}" y1="8" x2="${X(0)}" y2="${H-8}" stroke="#ddd"/>`);
+  rows.forEach(([s,v],r)=>{
+    const c=s==="buy_hold"?"#C9C9C7":colorFor(s);
+    const x0=X(0),x1=X(v),y=Y(r),neg=v<0;
+    p.push(`<rect x="${neg?x1:x0}" y="${y}" width="${Math.abs(x1-x0)||1}" height="22" rx="4" fill="${neg?"#b3261e":c}" opacity="${neg?0.75:0.9}"/>`);
+    // value label: positives right of bar end; negatives right of zero line (never collides with names)
+    if(neg) p.push(`<text x="${x0+8}" y="${y+15}" fill="#b3261e" font-size="12" font-weight="500" font-family="Geist Mono, monospace">${fmt(v)}</text>`);
+    else p.push(`<text x="${x1+8}" y="${y+15}" fill="${s==="buy_hold"?"#888":"#111"}" font-size="12" font-weight="500" font-family="Geist Mono, monospace">${fmt(v)}</text>`);
+  });
+  p.push("</g>");
+  rows.forEach(([s],r)=>{
+    const y=Y(r);
+    p.push(`<text x="${LG-12}" y="${y+15}" fill="#111" font-size="12" font-weight="500" text-anchor="end" font-family="Geist, sans-serif">${s==="buy_hold"?"Buy & Hold":s}</text>`);
+  });
+  p.push("</svg>");
+  return p.join("");
+}
+
+function monthlyHeat(summary, strategies, firstClose){
+  const months={};
+  const rows={};
+  summary.forEach(r=>{
+    const m=String(r.ts_iso).slice(0,7);
+    months[m]=true;
+    const add=(k,val)=>{ if(!rows[k]) rows[k]={}; if(!(m in rows[k])) rows[k][m]={first:val,last:val}; else rows[k][m].last=val; };
+    for(const s of strategies) add(s,+r[`eq_${s}`]);
+    add("Buy & Hold", +r.close/firstClose*1000);
+  });
+  const ms=Object.keys(months).sort();
+  if(!ms.length) return "";
+  let h='<table class="heat"><thead><tr><th style="text-align:left">Strategy</th>';
+  for(const m of ms) h+=`<th>${m.slice(2)}</th>`;
+  h+="</tr></thead><tbody>";
+  for(const name of [...strategies,"Buy & Hold"]){
+    h+=`<tr><td>${esc(name)}</td>`;
+    for(const m of ms){
+      const cell=(rows[name]||{})[m];
+      if(!cell){ h+='<td class="cell-flat">-</td>'; continue; }
+      const pct=(cell.last/cell.first-1)*100;
+      const cls=pct>0.005?"cell-up":pct<-0.005?"cell-down":"cell-flat";
+      h+=`<td class="${cls}">${fmt(pct)}</td>`;
+    }
+    h+="</tr>";
+  }
+  return h+"</tbody></table>";
+}
+
+let _view="summary";
+function renderTabs(){
+  if(!_raw||!_raw.coins) return;
+  const el=document.getElementById('coinTabs');
+  el.style.display='flex';
+  const sumBtn=`<button type="button" class="coin-tab${_view==='summary'?' active':''}" aria-pressed="${_view==='summary'}" onclick="_view='summary';renderSummary()">Summary</button>`;
+  el.innerHTML=sumBtn+Object.keys(_raw.coins).map(k=>`<button type="button" class="coin-tab${_view===k?' active':''}" aria-pressed="${_view===k}" onclick="_view='${k}';renderCoin('${k}')">${k.replace('/USDT','')}</button>`).join('');
+}
+function renderSummary(){
+  const coins=_raw.coins, syms=Object.keys(coins);
+  const strategies=_raw.strategies;
+  // ---- stat strip agregat ----
+  let totFills=0, totFees=0, beat=0, combo=0;
+  let bestCoin=null, bestPnl=-1e9, worstBh=1e9, bestBhCoin=null;
+  for(const sym of syms){
+    const c=coins[sym];
+    for(const s of strategies){
+      const m=c.metrics[s]; if(!m) continue;
+      totFills+=m.trades; totFees+=m.fees; combo++;
+      if(m.pnl>c.buy_hold) beat++;
+      if(m.pnl>bestPnl){bestPnl=m.pnl;bestCoin=sym;}
+    }
+    if(c.buy_hold<worstBh){worstBh=c.buy_hold;worstBhCoin=sym;}
+  }
+  // ---- matriks koin x strategi ----
+  const headCells=strategies.map(s=>`<th title="${esc(s)} net PnL% on this coin">${esc(s)}</th>`).join("")+`<th title="Buy-and-Hold on this coin">B&amp;H</th><th title="Best strategy excess vs B&amp;H on this coin">Best edge</th>`;
+  const coinRows=syms.map(sym=>{
+    const c=coins[sym];
+    const cells=strategies.map(s=>{
+      const m=c.metrics[s];
+      if(!m) return `<td class="cell-flat">-</td>`;
+      const pct=m.pnl, cls=pct>0.005?"cell-up":pct<-0.005?"cell-down":"cell-flat";
+      return `<td class="${cls}" title="${esc(s)} on ${esc(sym)}: ${fmt(pct)} net · DD ${m.dd.toFixed(1)}% · ${m.trades} fills${m.halted?" · HALTED":""}">${fmt(pct)}</td>`;
+    }).join("");
+    const bhCell=(()=>{const p=c.buy_hold,cls=p>0.005?"cell-up":p<-0.005?"cell-down":"cell-flat";return `<td class="${cls}" title="Buy &amp; Hold ${esc(sym)}">${fmt(p)}</td>`;})();
+    let bestE=-1e9,bestN="-";
+    for(const s of strategies){const m=c.metrics[s];if(m&&m.pnl-c.buy_hold>bestE){bestE=m.pnl-c.buy_hold;bestN=s;}}
+    const eCls=bestE>0?"pos-up":"pos-down";
+    return `<tr><td>${esc(sym)}</td>${cells}${bhCell}<td class="mono ${eCls}" title="${esc(bestN)} beats B&amp;H by ${fmt(bestE)}">${fmt(bestE)} <span style="color:#888">${esc(bestN.split("_")[0])}</span></td></tr>`;
+  }).join("");
+  // ---- agregat per strategi ----
+  const aggRows=strategies.map(s=>{
+    let sum=0,n=0,w=0;
+    for(const sym of syms){const m=coins[sym].metrics[s];if(!m)continue;sum+=m.pnl;n++;if(m.pnl>coins[sym].buy_hold)w++;}
+    const avg=sum/n;
+    return `<tr><td><span class="dot" style="background:${colorFor(s)}"></span>${esc(s)}</td>`
+      +`<td class="mono ${avg>=0?'up':'down'}">${fmt(avg)}</td>`
+      +`<td class="mono">${w}/${n}</td>`
+      +`<td class="mono">${(w/n*100).toFixed(0)}%</td></tr>`;
+  }).join("");
+
+  // ---- kurva portofolio: rata-rata antar koin (align ke panjang minimum) ----
+  const L=Math.min(...syms.map(s=>coins[s].summary.length));
+  const synth=[];
+  for(let i=0;i<L;i++){
+    const row={ts_iso:coins[syms[0]].summary[coins[syms[0]].summary.length-L+i].ts_iso};
+    let cSum=0;
+    for(const s of strategies){
+      let v=0; for(const sym of syms) v+=+coins[sym].summary[coins[sym].summary.length-L+i][`eq_${s}`];
+      row[`eq_${s}`]=v/syms.length;
+    }
+    for(const sym of syms) cSum+=+coins[sym].summary[coins[sym].summary.length-L+i].close;
+    row.close=cSum/syms.length;
+    synth.push(row);
+  }
+
+  document.getElementById("app").innerHTML=`
+  <section class="strip reveal">
+    <div class="stat"><div class="label">Coverage</div><div class="value mono">${syms.length}<small style="font-size:14px;color:#888"> coins</small></div>
+      <div class="sub">${strategies.length} strategies · ${combo} paper wallets</div></div>
+    <div class="stat"><div class="label">Total activity</div><div class="value mono">${totFills}</div>
+      <div class="sub">fills · $${totFees.toFixed(2)} fees burned</div></div>
+    <div class="stat"><div class="label">Beating B&amp;H</div><div class="value mono">${beat}/${combo}</div>
+      <div class="sub">strategy-coin pairs, net of costs</div></div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Coin &times; Strategy matrix</h2><span class="sub">net PnL% per wallet · hover for detail</span></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Coin</th>${headCells}</tr></thead>
+      <tbody>${coinRows}</tbody></table></div>
+    <div class="foot-note">Sorted alphabetically. Best edge = max(strategy - Buy&amp;Hold) on that coin.</div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Strategy averages</h2><span class="sub">across all coins</span></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Strategy</th><th>Avg PnL%</th><th>Beats B&amp;H</th><th>Rate</th></tr></thead>
+      <tbody>${aggRows}</tbody></table></div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Portfolio equity</h2><span class="sub">equal-weight average of all wallets vs average B&amp;H</span></div>
+    <div class="chart-body">${equitySVG(synth,strategies,null)}</div>
+  </section>
+
+  <footer class="footer reveal"><span>Updated <b>${wib(_raw.updated_utc)}</b> <span style="color:#bbb">(${utcShort(_raw.updated_utc)} UTC)</span></span>
+    <span>Paper only, not financial advice · <a href="/">home</a></span></footer>`;
+
+  document.querySelectorAll('.reveal').forEach(el=>{
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+    io.observe(el);
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) el.classList.add('in');
+  });
+}
+
+function renderCoin(sym){
+  _activeCoin=sym;
+  const c=_raw.coins[sym];
+  const d={..._raw, symbol:c.symbol, first_ts:c.first_ts, last_ts:c.last_ts, n_candles:c.n_candles, buy_hold:c.buy_hold, last_close:c.last_close, summary:c.summary, trades:c.trades, metrics:c.metrics,
+           live: (_raw.live&&_raw.live[sym]) ? _raw.live[sym] : null};
+  render(d);
+  renderTabs();
+}
+
+function render(d){
+  const {symbol,timeframe,strategies,balance,metrics,summary,buy_hold,last_close,n_candles,first_ts,last_ts,updated_utc}=d;
+  const live=d.live||null;
+  document.getElementById("livePill").style.display = live ? "inline-flex" : "none";
+  const price=live?live.price:last_close;
+  const displayLast=live?live.ts:last_ts;
+  const ranked=strategies.filter(s=>metrics[s]).map(s=>[s,metrics[s].pnl]).sort((a,b)=>b[1]-a[1]);
+  const best=ranked.length?`${ranked[0][0]} ${fmt(ranked[0][1])}`:"-";
+  const prevClose=summary.length>=2?+summary[summary.length-1].close:(live?price:0);
+  const priceDelta=prevClose?((price-prevClose)/prevClose*100):0;
+
+  const rows=ranked.map(([s])=>{
+    const m=metrics[s];
+    const pos=m.halted?`<span class="tag" style="background:#fdebec;color:#b3261e;border-color:#f5cfd2">Halt</span>`:m.in_pos?`<span class="tag tag-long">Long</span>`:`<span class="tag">Flat</span>`;
+    return `<tr>
+      <td><span class="dot" style="background:${colorFor(s)}"></span>${esc(s)}</td>
+      <td class="mono ${m.pnl>=0?'up':'down'}">${fmt(m.pnl)}</td>
+      <td class="mono ${m.pnl>=buy_hold?'up':'down'}">${fmt(m.pnl-buy_hold)}</td>
+      <td class="mono">${m.dd.toFixed(1)}%</td>
+      <td class="mono">${m.trades}</td>
+      <td class="mono">${m.fees.toFixed(2)}</td>
+      <td class="mono">${m.win_rate.toFixed(0)}%</td>
+      <td>${pos}</td></tr>`;
+  }).join("");
+
+  const legend=strategies.map(s=>`<span><span class="dot" style="background:${colorFor(s)}"></span>${esc(s)}</span>`).join("")
+    +`<span><span class="dot" style="background:#C9C9C7"></span>Buy &amp; Hold</span>`;
+
+  document.getElementById("app").innerHTML=`
+  <section class="strip reveal">
+    <div class="stat"><div class="label">${esc(symbol)} price</div>
+      <div class="value mono">${Number(price).toLocaleString(undefined,{maximumFractionDigits:2})}</div>
+      <div class="sub"><span class="${priceDelta>=0?'up':'down'}">${fmt(priceDelta)}</span> vs last close · ${wib(last_ts)}${live?` · tick <b>${wib(live.ts)}</b>`:""}</div></div>
+    <div class="stat"><div class="label">Buy and hold</div>
+      <div class="value mono ${buy_hold>=0?'up':'down'}">${fmt(buy_hold)}</div>
+      <div class="sub">same window benchmark</div></div>
+    <div class="stat"><div class="label">Best strategy</div>
+      <div class="value mono" style="font-size:24px;padding-top:4px">${best}</div>
+      <div class="sub">net of fee + slippage</div></div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Leaderboard</h2><span class="sub">${strategies.length} strategies · ${n_candles} closes · start ${Number(balance).toLocaleString()}</span></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th title="Paper wallet per strategy: starts at 1000, all-in long or flat">Strategy</th><th title="Net return vs starting 1000, after 0.10% fee + 0.05% slippage per side">PnL%</th><th title="Strategy return minus Buy-and-Hold over the exact same window">vs B&amp;H</th><th title="Worst peak-to-trough drop of the equity curve so far">Max DD%</th><th title="Total fills: every buy and sell counts once">Trades</th><th title="Cumulative fees burned, 0.10% of notional per fill">Fee $</th><th title="Share of closed round-trips that exited above their entry">Win%</th><th title="Long = holding the coin now. Flat = all cash, waiting for a signal">Pos</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>
+    <div class="row-detail" id="rowDetail">Hover or tap a row for the full story.</div>
+    <div class="foot-note">Net of 0.10% fee + 0.05% slip per side.${live?' Price and equity tick every minute; positions settle on candle close.':''}</div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Equity curves</h2><span class="sub">${esc(symbol)} · start ${Number(balance).toLocaleString()}${live?' · live dot appended':''}</span></div>
+    <div class="chart-body">${equitySVG(summary,strategies,live)}</div>
+    <div class="legend">${legend}</div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Return vs buy and hold</h2><span class="sub">positive beats the tape over the same window</span></div>
+    <div class="chart-body">${rankBars(strategies,metrics,buy_hold)}</div>
+  </section>
+
+  <section class="panel reveal">
+    <div class="panel-head"><h2>Monthly returns</h2><span class="sub">${esc(symbol)} - equity change per calendar month</span></div>
+    <div class="table-wrap" style="padding:6px 12px 12px">${monthlyHeat(summary,strategies,+summary[0].close)}</div>
+  </section>
+
+  <footer class="footer reveal">
+    <span>Updated <b>${wib(updated_utc)}</b> <span style="color:#bbb">(${utcShort(updated_utc)} UTC)</span></span>
+    <span>Paper only, not financial advice · <a href="/">home</a></span>
+  </footer>`;
+
+  const rd=document.getElementById("rowDetail");
+  if(rd){
+    const show=(s)=>{
+      const m=metrics[s]; if(!m){return;}
+      const myTrades=(trades||[]).filter(x=>x.strategy===s);
+      const buys=myTrades.filter(x=>x.side==="BUY").length;
+      const sells=myTrades.filter(x=>x.side==="SELL").length;
+      const lastT=myTrades.length?myTrades[myTrades.length-1]:null;
+      const lastBit=lastT?`<span class="sep">·</span> last fill <b>${esc(lastT.side)}</b> @ ${Number(lastT.price).toLocaleString(undefined,{maximumFractionDigits:6})} ${wib(lastT.ts_iso||"")}`:"";
+      rd.innerHTML=`<b>${esc(s)}</b> <span class="sep">·</span> ${m.halted?"<b>kill-switch tripped</b> - flat until tomorrow":m.in_pos?"holding the coin":"all cash"}`
+        +`<span class="sep">·</span> ${m.trades} fills (${buys}B/${sells}S)`
+        +`<span class="sep">·</span> fees <b>$${m.fees.toFixed(2)}</b>`
+        +`<span class="sep">·</span> win ${m.win_rate.toFixed(0)}%`
+        +`<span class="sep">·</span> worst drop ${m.dd.toFixed(1)}%`
+        +lastBit;
+    };
+    document.querySelectorAll("tbody tr").forEach(tr=>{
+      const s=tr.querySelector("td:first-child")?.textContent.trim();
+      if(!s) return;
+      tr.addEventListener("mouseenter",()=>show(s));
+      tr.addEventListener("click",()=>show(s));
+    });
+  }
+
+  document.querySelectorAll('.reveal').forEach(el=>{
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+    io.observe(el);
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) el.classList.add('in');
+  });
+}
+
+load();
+setInterval(load,60000);
+document.addEventListener('keydown',e=>{if(e.key.toLowerCase()==='r'&&!e.metaKey&&!e.ctrlKey) load();});
+</script>
+</body>
+</html>

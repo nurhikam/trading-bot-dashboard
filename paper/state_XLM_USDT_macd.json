@@ -1,0 +1,12 @@
+{
+  "cash": 978.7748913930543,
+  "qty": 0.0,
+  "entry": 0.0,
+  "n_trades": 2,
+  "fees_paid": 1.9797546460390933,
+  "last_ts": 1787677200000,
+  "started": 1787594400000,
+  "day": "2026-08-25",
+  "day_start_equity": 1000.0,
+  "halted": false
+}
