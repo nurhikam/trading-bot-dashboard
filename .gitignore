@@ -1,1 +1,10 @@
-.vercel
+__pycache__/
+*.pyc
+.env
+*.pem
+*.key
+paper/
+# only the rendered feed is published here; the engine and its state live in
+# the private gate-0 repo and push data/data.json across.
+data/*
+!data/data.json
