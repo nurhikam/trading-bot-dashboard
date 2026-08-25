@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Multi-strategy paper trading bot — live dashboard">
-<title>Trading Bot Dashboard</title>
+<title>Gate 0 - Desk</title>
 <style>
 :root { color-scheme: dark; }
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -51,10 +51,14 @@ const DATA_URLS = [
   "https://raw.githubusercontent.com/nurhikam/trading-bot-dashboard/main/data/data.json",
   "/api/data",
 ];
+// Categorical slots 1-7 of the validated dark theme, fixed order, one per
+// strategy. Validated against the #12161f card surface: lightness band, chroma
+// floor, CVD separation, normal-vision floor and contrast all pass.
+// Colour follows the entity - never reorder, never recolour by rank or sign.
 const PALETTE = {
-  supertrend: "#7c5cff", bb_squeeze: "#00c2ff", sma_trend: "#ffb454",
-  sma_cross: "#ff7a59", donchian: "#ff5ca8", trend_200: "#4dd97b",
-  rsi_revert: "#ff4757", buy_hold: "#8892a6",
+  supertrend: "#3987e5", bb_squeeze: "#d95926", sma_trend: "#199e70",
+  sma_cross: "#c98500", donchian: "#d55181", trend_200: "#008300",
+  rsi_revert: "#9085e9", buy_hold: "#8892a6",
 };
 const DEFAULT_COLOR = "#9aa4b5";
 const colorFor = (n) => PALETTE[n] || DEFAULT_COLOR;
@@ -131,8 +135,10 @@ function rankBars(strategies, metrics, bh) {
   rows.forEach(([s,v],r)=>{
     const c = s==="buy_hold"?PALETTE.buy_hold:colorFor(s);
     const x0=X(0), x1=X(v), y=Y(r);
+    // the zero baseline and the signed label carry the sign, so the bar keeps
+    // its entity colour on both sides of zero.
     const neg=v<0;
-    if (neg) p.push(`<rect x="${x1}" y="${y}" width="${x0-x1}" height="26" rx="4" fill="#ff4757" opacity="0.85"/>`);
+    if (neg) p.push(`<rect x="${x1}" y="${y}" width="${x0-x1}" height="26" rx="4" fill="${c}" opacity="0.85"/>`);
     else p.push(`<rect x="${x0}" y="${y}" width="${x1-x0}" height="26" rx="4" fill="${c}" opacity="0.85"/>`);
     p.push(`<text x="${M-8}" y="${y+18}" fill="#e6e9ef" font-size="12" text-anchor="end">${s==="buy_hold"?"Buy & Hold":s}</text>`);
     p.push(`<text x="${neg?x1-8:x1+8}" y="${y+18}" fill="#e6e9ef" font-size="12" text-anchor="${neg?"end":"start"}">${fmt(v)}</text>`);
