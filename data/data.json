@@ -66,7 +66,7 @@
     "rsi_short",
     "donchian_short"
   ],
-  "updated_utc": "2026-09-11T05:07:01+00:00",
+  "updated_utc": "2026-09-11T05:07:58+00:00",
   "first_ts": "2026-09-01T13:00:00+00:00",
   "last_ts": "2026-09-11T04:00:00+00:00",
   "n_candles": 2,
@@ -12321,9 +12321,9 @@
     }
   },
   "live": {
-    "ts": "2026-09-11T05:07:00+00:00",
+    "ts": "2026-09-11T05:07:58+00:00",
     "BTC/USDT": {
-      "price": 77088.0,
+      "price": 77097.19,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12332,13 +12332,13 @@
         "donchian": 984.77,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1012.1,
+        "sma_short": 1011.98,
         "rsi_short": 1010.28,
-        "donchian_short": 999.84
+        "donchian_short": 999.72
       }
     },
     "ETH/USDT": {
-      "price": 2459.21,
+      "price": 2459.52,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12347,13 +12347,13 @@
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 993.45,
+        "sma_short": 993.32,
         "rsi_short": 992.01,
-        "donchian_short": 993.45
+        "donchian_short": 993.32
       }
     },
     "SOL/USDT": {
-      "price": 99.7,
+      "price": 99.71,
       "equity": {
         "supertrend": 974.71,
         "bb_squeeze": 1000.0,
@@ -12362,24 +12362,24 @@
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1021.65,
+        "sma_short": 1021.56,
         "rsi_short": 1000.0,
-        "donchian_short": 1021.65
+        "donchian_short": 1021.56
       }
     },
     "ZEC/USDT": {
-      "price": 1086.6,
+      "price": 1086.25,
       "equity": {
-        "supertrend": 1271.69,
+        "supertrend": 1271.28,
         "bb_squeeze": 1000.0,
         "sma_trend": 1270.44,
         "sma_cross": 1270.44,
         "donchian": 1270.44,
         "trend_200": 1270.44,
         "rsi_revert": 1000.0,
-        "sma_short": 1000.02,
+        "sma_short": 1000.34,
         "rsi_short": 723.47,
-        "donchian_short": 1000.02
+        "donchian_short": 1000.34
       }
     },
     "XRP/USDT": {
@@ -12392,9 +12392,9 @@
         "donchian": 977.15,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1019.77,
+        "sma_short": 1019.48,
         "rsi_short": 1000.0,
-        "donchian_short": 999.87
+        "donchian_short": 999.57
       }
     },
     "BMT/USDT": {
@@ -12422,13 +12422,13 @@
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1162.14,
+        "sma_short": 1162.56,
         "rsi_short": 1000.0,
-        "donchian_short": 1162.14
+        "donchian_short": 1162.56
       }
     },
     "BNB/USDT": {
-      "price": 716.29,
+      "price": 716.41,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12436,37 +12436,37 @@
         "sma_cross": 1000.0,
         "donchian": 1039.75,
         "trend_200": 1000.0,
-        "rsi_revert": 998.0,
-        "sma_short": 957.18,
+        "rsi_revert": 998.17,
+        "sma_short": 957.0,
         "rsi_short": 955.09,
-        "donchian_short": 1000.0
+        "donchian_short": 999.83
       }
     },
     "ENA/USDT": {
       "price": 0.15,
       "equity": {
-        "supertrend": 916.23,
+        "supertrend": 915.6,
         "bb_squeeze": 912.99,
         "sma_trend": 912.99,
         "sma_cross": 912.99,
         "donchian": 912.99,
         "trend_200": 912.99,
         "rsi_revert": 1000.0,
-        "sma_short": 997.46,
+        "sma_short": 998.14,
         "rsi_short": 1082.35,
-        "donchian_short": 997.46
+        "donchian_short": 998.14
       }
     },
     "DEXE/USDT": {
       "price": 1.86,
       "equity": {
-        "supertrend": 994.22,
-        "bb_squeeze": 994.22,
+        "supertrend": 993.69,
+        "bb_squeeze": 993.69,
         "sma_trend": 1000.0,
-        "sma_cross": 994.22,
-        "donchian": 994.22,
+        "sma_cross": 993.69,
+        "donchian": 993.69,
         "trend_200": 1000.0,
-        "rsi_revert": 994.22,
+        "rsi_revert": 993.69,
         "sma_short": 1071.03,
         "rsi_short": 1071.03,
         "donchian_short": 1071.03
@@ -12482,13 +12482,13 @@
         "donchian": 1013.15,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 999.62,
+        "sma_short": 999.38,
         "rsi_short": 1000.0,
-        "donchian_short": 999.62
+        "donchian_short": 999.38
       }
     },
     "XAUT/USDT": {
-      "price": 4332.96,
+      "price": 4334.6,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12496,24 +12496,24 @@
         "sma_cross": 1000.0,
         "donchian": 1000.0,
         "trend_200": 1000.0,
-        "rsi_revert": 991.83,
-        "sma_short": 1006.17,
+        "rsi_revert": 992.21,
+        "sma_short": 1005.8,
         "rsi_short": 1000.0,
-        "donchian_short": 1006.17
+        "donchian_short": 1005.8
       }
     },
     "TRX/USDT": {
       "price": 0.34,
       "equity": {
-        "supertrend": 998.8,
+        "supertrend": 998.5,
         "bb_squeeze": 1000.0,
-        "sma_trend": 998.8,
-        "sma_cross": 998.8,
-        "donchian": 998.8,
-        "trend_200": 998.8,
+        "sma_trend": 998.5,
+        "sma_cross": 998.5,
+        "donchian": 998.5,
+        "trend_200": 998.5,
         "rsi_revert": 1036.43,
         "sma_short": 958.41,
-        "rsi_short": 999.21,
+        "rsi_short": 999.5,
         "donchian_short": 958.41
       }
     },
@@ -12527,9 +12527,9 @@
         "donchian": 833.33,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1003.51,
+        "sma_short": 999.5,
         "rsi_short": 1000.0,
-        "donchian_short": 1003.51
+        "donchian_short": 999.5
       }
     },
     "SUI/USDT": {
@@ -12556,10 +12556,10 @@
         "sma_cross": 1000.0,
         "donchian": 657.93,
         "trend_200": 1000.0,
-        "rsi_revert": 991.57,
-        "sma_short": 1344.0,
+        "rsi_revert": 993.55,
+        "sma_short": 1342.69,
         "rsi_short": 1000.0,
-        "donchian_short": 1006.43
+        "donchian_short": 1004.45
       }
     },
     "PEPE/USDT": {
@@ -12595,20 +12595,20 @@
     "HEMI/USDT": {
       "price": 0.01,
       "equity": {
-        "supertrend": 442.06,
+        "supertrend": 441.44,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
-        "sma_cross": 986.09,
-        "donchian": 442.06,
+        "sma_cross": 984.71,
+        "donchian": 441.44,
         "trend_200": 446.95,
-        "rsi_revert": 986.09,
+        "rsi_revert": 984.71,
         "sma_short": 1550.25,
         "rsi_short": 1550.25,
         "donchian_short": 1000.0
       }
     },
     "LINK/USDT": {
-      "price": 11.53,
+      "price": 11.54,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12617,13 +12617,13 @@
         "donchian": 1008.98,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1000.28,
+        "sma_short": 999.59,
         "rsi_short": 985.97,
-        "donchian_short": 1000.28
+        "donchian_short": 999.59
       }
     },
     "PAXG/USDT": {
-      "price": 4340.22,
+      "price": 4341.94,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12631,25 +12631,25 @@
         "sma_cross": 1000.0,
         "donchian": 1000.0,
         "trend_200": 1000.0,
-        "rsi_revert": 991.07,
-        "sma_short": 1006.94,
+        "rsi_revert": 991.47,
+        "sma_short": 1006.54,
         "rsi_short": 1000.0,
-        "donchian_short": 1006.94
+        "donchian_short": 1006.54
       }
     },
     "NEAR/USDT": {
-      "price": 2.46,
+      "price": 2.47,
       "equity": {
-        "supertrend": 998.09,
+        "supertrend": 1002.97,
         "bb_squeeze": 1215.7,
-        "sma_trend": 1217.03,
-        "sma_cross": 1217.03,
+        "sma_trend": 1222.98,
+        "sma_cross": 1222.98,
         "donchian": 1215.7,
-        "trend_200": 1217.03,
+        "trend_200": 1222.98,
         "rsi_revert": 1000.0,
         "sma_short": 1000.0,
-        "rsi_short": 780.75,
-        "donchian_short": 999.91
+        "rsi_short": 774.8,
+        "donchian_short": 995.03
       }
     },
     "ENSO/USDT": {
@@ -12685,16 +12685,16 @@
     "ADA/USDT": {
       "price": 0.21,
       "equity": {
-        "supertrend": 999.45,
+        "supertrend": 998.98,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
         "sma_cross": 1052.64,
         "donchian": 1052.64,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 998.55,
-        "rsi_short": 998.55,
-        "donchian_short": 998.55
+        "sma_short": 999.02,
+        "rsi_short": 999.02,
+        "donchian_short": 999.02
       }
     },
     "TAO/USDT": {
@@ -12715,56 +12715,56 @@
     "WLD/USDT": {
       "price": 0.4,
       "equity": {
-        "supertrend": 997.75,
+        "supertrend": 998.25,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
         "sma_cross": 1085.09,
         "donchian": 1085.09,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 1000.25,
+        "sma_short": 999.75,
         "rsi_short": 1000.0,
-        "donchian_short": 1000.25
+        "donchian_short": 999.75
       }
     },
     "AAVE/USDT": {
-      "price": 122.94,
+      "price": 122.97,
       "equity": {
-        "supertrend": 968.41,
+        "supertrend": 968.65,
         "bb_squeeze": 965.39,
         "sma_trend": 965.39,
         "sma_cross": 965.39,
         "donchian": 965.39,
         "trend_200": 965.39,
         "rsi_revert": 1000.0,
-        "sma_short": 997.87,
+        "sma_short": 997.63,
         "rsi_short": 1029.75,
-        "donchian_short": 997.87
+        "donchian_short": 997.63
       }
     },
     "UNI/USDT": {
-      "price": 6.2,
+      "price": 6.19,
       "equity": {
-        "supertrend": 1087.22,
-        "bb_squeeze": 1087.22,
+        "supertrend": 1085.46,
+        "bb_squeeze": 1085.46,
         "sma_trend": 1078.76,
-        "sma_cross": 1087.22,
-        "donchian": 1087.22,
+        "sma_cross": 1085.46,
+        "donchian": 1085.46,
         "trend_200": 1078.76,
-        "rsi_revert": 1004.82,
+        "rsi_revert": 1003.2,
         "sma_short": 1000.0,
         "rsi_short": 915.92,
         "donchian_short": 1000.0
       }
     },
     "LTC/USDT": {
-      "price": 52.83,
+      "price": 52.86,
       "equity": {
-        "supertrend": 998.69,
-        "bb_squeeze": 1066.75,
+        "supertrend": 999.26,
+        "bb_squeeze": 1067.36,
         "sma_trend": 1000.0,
-        "sma_cross": 1066.75,
-        "donchian": 1066.75,
+        "sma_cross": 1067.36,
+        "donchian": 1067.36,
         "trend_200": 1064.95,
         "rsi_revert": 1000.0,
         "sma_short": 1000.0,
@@ -12782,22 +12782,22 @@
         "donchian": 1118.68,
         "trend_200": 1118.68,
         "rsi_revert": 1000.0,
-        "sma_short": 1011.65,
+        "sma_short": 1012.72,
         "rsi_short": 875.84,
-        "donchian_short": 1011.65
+        "donchian_short": 1012.72
       }
     },
     "FET/USDT": {
       "price": 0.17,
       "equity": {
-        "supertrend": 1080.68,
-        "bb_squeeze": 996.11,
+        "supertrend": 1081.33,
+        "bb_squeeze": 996.71,
         "sma_trend": 1000.0,
         "sma_cross": 1081.65,
-        "donchian": 1080.68,
+        "donchian": 1081.33,
         "trend_200": 1081.65,
         "rsi_revert": 1000.0,
-        "sma_short": 1001.89,
+        "sma_short": 1001.29,
         "rsi_short": 913.02,
         "donchian_short": 1000.0
       }
@@ -12812,9 +12812,9 @@
         "donchian": 1012.01,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 999.9,
+        "sma_short": 999.5,
         "rsi_short": 1000.0,
-        "donchian_short": 999.9
+        "donchian_short": 999.5
       }
     },
     "ASTER/USDT": {
@@ -12833,7 +12833,7 @@
       }
     },
     "CRCLB/USDT": {
-      "price": 90.41,
+      "price": 90.44,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12842,9 +12842,9 @@
         "donchian": 1000.0,
         "trend_200": 1006.13,
         "rsi_revert": 1000.0,
-        "sma_short": 998.84,
+        "sma_short": 998.5,
         "rsi_short": 988.83,
-        "donchian_short": 989.68
+        "donchian_short": 989.34
       }
     },
     "NIL/USDT": {
@@ -12865,16 +12865,16 @@
     "ZRO/USDT": {
       "price": 1.04,
       "equity": {
-        "supertrend": 1002.36,
+        "supertrend": 1001.39,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
         "sma_cross": 1000.0,
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 965.72,
-        "rsi_short": 995.64,
-        "donchian_short": 965.72
+        "sma_short": 966.71,
+        "rsi_short": 996.61,
+        "donchian_short": 966.71
       }
     },
     "BANK/USDT": {
@@ -12886,10 +12886,10 @@
         "sma_cross": 1000.0,
         "donchian": 1000.0,
         "trend_200": 1000.0,
-        "rsi_revert": 998.5,
-        "sma_short": 1199.4,
+        "rsi_revert": 994.98,
+        "sma_short": 1202.22,
         "rsi_short": 1198.2,
-        "donchian_short": 1199.4
+        "donchian_short": 1202.22
       }
     },
     "AVAX/USDT": {
@@ -12902,9 +12902,9 @@
         "donchian": 1026.54,
         "trend_200": 1026.54,
         "rsi_revert": 1000.0,
-        "sma_short": 998.83,
+        "sma_short": 998.57,
         "rsi_short": 1000.0,
-        "donchian_short": 998.83
+        "donchian_short": 998.57
       }
     },
     "PENGU/USDT": {
@@ -12917,13 +12917,13 @@
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 998.83,
+        "sma_short": 998.57,
         "rsi_short": 1000.0,
-        "donchian_short": 1147.71
+        "donchian_short": 1147.48
       }
     },
     "SNDKB/USDT": {
-      "price": 1685.06,
+      "price": 1684.47,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12932,28 +12932,28 @@
         "donchian": 1089.92,
         "trend_200": 1089.92,
         "rsi_revert": 1089.92,
-        "sma_short": 997.98,
+        "sma_short": 998.33,
         "rsi_short": 904.71,
-        "donchian_short": 997.98
+        "donchian_short": 998.33
       }
     },
     "ONDO/USDT": {
       "price": 0.35,
       "equity": {
-        "supertrend": 1000.21,
+        "supertrend": 1000.78,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
         "sma_cross": 1007.93,
         "donchian": 1007.93,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 997.79,
+        "sma_short": 997.22,
         "rsi_short": 987.03,
-        "donchian_short": 997.79
+        "donchian_short": 997.22
       }
     },
     "DASH/USDT": {
-      "price": 56.15,
+      "price": 56.14,
       "equity": {
         "supertrend": 1000.0,
         "bb_squeeze": 1000.0,
@@ -12962,9 +12962,9 @@
         "donchian": 1222.2,
         "trend_200": 1222.2,
         "rsi_revert": 1000.0,
-        "sma_short": 997.0,
+        "sma_short": 997.18,
         "rsi_short": 771.9,
-        "donchian_short": 997.0
+        "donchian_short": 997.18
       }
     },
     "XLM/USDT": {
@@ -12977,24 +12977,24 @@
         "donchian": 987.47,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 999.5,
+        "sma_short": 998.93,
         "rsi_short": 1000.0,
-        "donchian_short": 999.5
+        "donchian_short": 998.93
       }
     },
     "XPL/USDT": {
       "price": 0.09,
       "equity": {
-        "supertrend": 997.0,
+        "supertrend": 998.04,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
         "sma_cross": 1000.0,
         "donchian": 1000.0,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
-        "sma_short": 974.9,
+        "sma_short": 973.83,
         "rsi_short": 1000.0,
-        "donchian_short": 974.9
+        "donchian_short": 973.83
       }
     },
     "BCH/USDT": {
@@ -13028,18 +13028,18 @@
       }
     },
     "GIGGLE/USDT": {
-      "price": 34.55,
+      "price": 34.52,
       "equity": {
         "supertrend": 911.33,
         "bb_squeeze": 1000.0,
         "sma_trend": 1000.0,
-        "sma_cross": 997.92,
+        "sma_cross": 997.06,
         "donchian": 1000.0,
         "trend_200": 1000.0,
-        "rsi_revert": 997.92,
+        "rsi_revert": 997.06,
         "sma_short": 1084.02,
         "rsi_short": 1084.02,
-        "donchian_short": 1085.92
+        "donchian_short": 1086.71
       }
     },
     "OPG/USDT": {
@@ -13060,15 +13060,15 @@
     "COTI/USDT": {
       "price": 0.02,
       "equity": {
-        "supertrend": 1400.33,
+        "supertrend": 1394.26,
         "bb_squeeze": 1000.0,
-        "sma_trend": 995.81,
-        "sma_cross": 995.81,
-        "donchian": 995.81,
-        "trend_200": 1400.33,
+        "sma_trend": 991.49,
+        "sma_cross": 991.49,
+        "donchian": 991.49,
+        "trend_200": 1394.26,
         "rsi_revert": 1000.0,
         "sma_short": 591.37,
-        "rsi_short": 597.27,
+        "rsi_short": 603.34,
         "donchian_short": 591.37
       }
     }
