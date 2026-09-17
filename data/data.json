@@ -66,12 +66,12 @@
     "rsi_short",
     "donchian_short"
   ],
-  "updated_utc": "2026-09-17T06:23:04+00:00",
+  "updated_utc": "2026-09-17T11:57:24+00:00",
   "first_ts": "2026-09-01T13:00:00+00:00",
-  "last_ts": "2026-09-17T05:00:00+00:00",
-  "n_candles": 46,
-  "buy_hold": -2.226,
-  "last_close": 76333.88,
+  "last_ts": "2026-09-17T10:00:00+00:00",
+  "n_candles": 47,
+  "buy_hold": -2.139,
+  "last_close": 76402.01,
   "summary": [
     {
       "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -1222,6 +1222,31 @@
       "in_sma_short": 0,
       "in_rsi_short": 0,
       "in_donchian_short": 0
+    },
+    {
+      "ts_iso": "2026-09-17T10:00:00+00:00",
+      "ts_ms": 1789639200000,
+      "close": 76402.01,
+      "eq_supertrend": 955.2852,
+      "eq_bb_squeeze": 977.5636,
+      "eq_sma_trend": 975.5879,
+      "eq_sma_cross": 974.8765,
+      "eq_donchian": 968.2469,
+      "eq_trend_200": 969.792,
+      "eq_rsi_revert": 1000.0,
+      "eq_sma_short": 998.0098,
+      "eq_rsi_short": 1056.8202,
+      "eq_donchian_short": 994.0487,
+      "in_supertrend": 1,
+      "in_bb_squeeze": 0,
+      "in_sma_trend": 0,
+      "in_sma_cross": 1,
+      "in_donchian": 1,
+      "in_trend_200": 0,
+      "in_rsi_revert": 0,
+      "in_sma_short": 0,
+      "in_rsi_short": 0,
+      "in_donchian_short": 0
     }
   ],
   "trades": [
@@ -1745,12 +1770,12 @@
   ],
   "metrics": {
     "supertrend": {
-      "pnl": -4.557,
+      "pnl": -4.471,
       "dd": 6.39,
       "trades": 5,
       "fees": 4.903,
       "win_rate": 0.0,
-      "last": 954.433,
+      "last": 955.285,
       "in_pos": true
     },
     "bb_squeeze": {
@@ -1772,21 +1797,21 @@
       "in_pos": false
     },
     "sma_cross": {
-      "pnl": -2.599,
+      "pnl": -2.512,
       "dd": 3.19,
       "trades": 5,
       "fees": 4.903,
       "win_rate": 50.0,
-      "last": 974.007,
+      "last": 974.876,
       "in_pos": true
     },
     "donchian": {
-      "pnl": -3.262,
+      "pnl": -3.175,
       "dd": 3.641,
       "trades": 7,
       "fees": 6.844,
       "win_rate": 33.3,
-      "last": 967.384,
+      "last": 968.247,
       "in_pos": true
     },
     "trend_200": {
@@ -1839,10 +1864,10 @@
     "BTC/USDT": {
       "symbol": "BTC/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -2.226,
-      "last_close": 76333.88,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -2.139,
+      "last_close": 76402.01,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -2993,6 +3018,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 76402.01,
+          "eq_supertrend": 955.2852,
+          "eq_bb_squeeze": 977.5636,
+          "eq_sma_trend": 975.5879,
+          "eq_sma_cross": 974.8765,
+          "eq_donchian": 968.2469,
+          "eq_trend_200": 969.792,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 998.0098,
+          "eq_rsi_short": 1056.8202,
+          "eq_donchian_short": 994.0487,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -3516,12 +3566,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -4.557,
+          "pnl": -4.471,
           "dd": 6.39,
           "trades": 5,
           "fees": 4.903,
           "win_rate": 0.0,
-          "last": 954.433,
+          "last": 955.285,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -3543,21 +3593,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -2.599,
+          "pnl": -2.512,
           "dd": 3.19,
           "trades": 5,
           "fees": 4.903,
           "win_rate": 50.0,
-          "last": 974.007,
+          "last": 974.876,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -3.262,
+          "pnl": -3.175,
           "dd": 3.641,
           "trades": 7,
           "fees": 6.844,
           "win_rate": 33.3,
-          "last": 967.384,
+          "last": 968.247,
           "in_pos": true
         },
         "trend_200": {
@@ -3610,10 +3660,10 @@
     "ETH/USDT": {
       "symbol": "ETH/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -0.295,
-      "last_close": 2437.2,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -0.358,
+      "last_close": 2435.66,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -4764,6 +4814,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 2435.66,
+          "eq_supertrend": 985.9703,
+          "eq_bb_squeeze": 980.4171,
+          "eq_sma_trend": 991.1193,
+          "eq_sma_cross": 1009.9391,
+          "eq_donchian": 986.8832,
+          "eq_trend_200": 958.9747,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1015.568,
+          "eq_rsi_short": 1052.668,
+          "eq_donchian_short": 991.2101,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -5340,12 +5415,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -1.896,
-          "dd": 5.392,
+          "pnl": -1.958,
+          "dd": 5.452,
           "trades": 5,
           "fees": 4.955,
           "win_rate": 50.0,
-          "last": 981.037,
+          "last": 980.417,
           "in_pos": true
         },
         "sma_trend": {
@@ -5358,21 +5433,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 1.058,
+          "pnl": 0.994,
           "dd": 5.166,
           "trades": 7,
           "fees": 7.089,
           "win_rate": 33.3,
-          "last": 1010.578,
+          "last": 1009.939,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -1.249,
-          "dd": 6.376,
+          "pnl": -1.312,
+          "dd": 6.435,
           "trades": 5,
           "fees": 4.979,
           "win_rate": 50.0,
-          "last": 987.507,
+          "last": 986.883,
           "in_pos": true
         },
         "trend_200": {
@@ -5425,10 +5500,10 @@
     "SOL/USDT": {
       "symbol": "SOL/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -2.354,
-      "last_close": 99.56,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -2.069,
+      "last_close": 99.85,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -6579,6 +6654,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 99.85,
+          "eq_supertrend": 954.2999,
+          "eq_bb_squeeze": 980.2612,
+          "eq_sma_trend": 957.0232,
+          "eq_sma_cross": 997.1359,
+          "eq_donchian": 971.1751,
+          "eq_trend_200": 919.5839,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1019.0848,
+          "eq_rsi_short": 1071.3194,
+          "eq_donchian_short": 993.7745,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -7186,6 +7286,17 @@
           "qty": 0.0,
           "notional": 1019.0848,
           "fee": 0.509542
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "SOL/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 99.84,
+          "qty": 10.7421807,
+          "notional": 1072.4993,
+          "fee": 0.53625
         }
       ],
       "metrics": {
@@ -7199,12 +7310,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -2.259,
+          "pnl": -1.974,
           "dd": 5.623,
           "trades": 5,
           "fees": 4.925,
           "win_rate": 0.0,
-          "last": 977.414,
+          "last": 980.261,
           "in_pos": true
         },
         "sma_trend": {
@@ -7217,21 +7328,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -0.576,
+          "pnl": -0.286,
           "dd": 3.146,
           "trades": 5,
           "fees": 4.92,
           "win_rate": 0.0,
-          "last": 994.24,
+          "last": 997.136,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -3.165,
+          "pnl": -2.882,
           "dd": 6.498,
           "trades": 7,
           "fees": 6.838,
           "win_rate": 0.0,
-          "last": 968.355,
+          "last": 971.175,
           "in_pos": true
         },
         "trend_200": {
@@ -7262,13 +7373,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 7.25,
+          "pnl": 7.132,
           "dd": 0.589,
-          "trades": 4,
-          "fees": 2.567,
+          "trades": 5,
+          "fees": 3.104,
           "win_rate": 0.0,
-          "last": 1072.499,
-          "in_pos": false
+          "last": 1071.319,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": -0.623,
@@ -7284,10 +7395,10 @@
     "ZEC/USDT": {
       "symbol": "ZEC/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 59.246,
-      "last_close": 1358.64,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 57.856,
+      "last_close": 1346.78,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -8438,6 +8549,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1346.78,
+          "eq_supertrend": 1515.426,
+          "eq_bb_squeeze": 1138.1232,
+          "eq_sma_trend": 1351.5423,
+          "eq_sma_cross": 1418.8681,
+          "eq_donchian": 1380.1863,
+          "eq_trend_200": 1285.0983,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 895.616,
+          "eq_rsi_short": 682.5341,
+          "eq_donchian_short": 872.4498,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -9027,57 +9163,57 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 52.877,
+          "pnl": 51.543,
           "dd": 10.723,
           "trades": 3,
           "fees": 3.551,
           "win_rate": 100.0,
-          "last": 1528.771,
+          "last": 1515.426,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": 14.815,
-          "dd": 0.319,
+          "pnl": 13.812,
+          "dd": 0.873,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1148.146,
+          "last": 1138.123,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": 36.344,
+          "pnl": 35.154,
           "dd": 7.113,
           "trades": 7,
           "fees": 8.405,
           "win_rate": 33.3,
-          "last": 1363.444,
+          "last": 1351.542,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 43.136,
+          "pnl": 41.887,
           "dd": 5.254,
           "trades": 7,
           "fees": 8.523,
           "win_rate": 66.7,
-          "last": 1431.363,
+          "last": 1418.868,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 39.234,
+          "pnl": 38.019,
           "dd": 7.612,
           "trades": 7,
           "fees": 8.421,
           "win_rate": 33.3,
-          "last": 1392.341,
+          "last": 1380.186,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 29.642,
+          "pnl": 28.51,
           "dd": 11.406,
           "trades": 11,
           "fees": 13.056,
           "win_rate": 40.0,
-          "last": 1296.415,
+          "last": 1285.098,
           "in_pos": true
         },
         "rsi_revert": {
@@ -9099,12 +9235,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -32.52,
+          "pnl": -31.747,
           "dd": 32.486,
           "trades": 5,
           "fees": 3.227,
           "win_rate": 0.0,
-          "last": 674.805,
+          "last": 682.534,
           "in_pos": true
         },
         "donchian_short": {
@@ -9121,9 +9257,9 @@
     "XRP/USDT": {
       "symbol": "XRP/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -5.801,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -5.808,
       "last_close": 1.3,
       "summary": [
         {
@@ -10275,6 +10411,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.2958,
+          "eq_supertrend": 956.8321,
+          "eq_bb_squeeze": 1003.238,
+          "eq_sma_trend": 1008.1404,
+          "eq_sma_cross": 983.1637,
+          "eq_donchian": 970.7364,
+          "eq_trend_200": 901.0944,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1038.7164,
+          "eq_rsi_short": 1107.4137,
+          "eq_donchian_short": 1027.1062,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -10792,21 +10953,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -1.676,
-          "dd": 5.191,
+          "pnl": -1.684,
+          "dd": 5.198,
           "trades": 5,
           "fees": 4.914,
           "win_rate": 50.0,
-          "last": 983.24,
+          "last": 983.164,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -2.919,
+          "pnl": -2.926,
           "dd": 5.404,
           "trades": 7,
           "fees": 6.798,
           "win_rate": 33.3,
-          "last": 970.811,
+          "last": 970.736,
           "in_pos": true
         },
         "trend_200": {
@@ -10859,9 +11020,9 @@
     "BMT/USDT": {
       "symbol": "BMT/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -12.755,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -9.893,
       "last_close": 0.02,
       "summary": [
         {
@@ -12013,6 +12174,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.01858,
+          "eq_supertrend": 834.0873,
+          "eq_bb_squeeze": 947.705,
+          "eq_sma_trend": 987.7366,
+          "eq_sma_cross": 861.8542,
+          "eq_donchian": 886.1264,
+          "eq_trend_200": 977.9338,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 958.0281,
+          "eq_rsi_short": 937.8168,
+          "eq_donchian_short": 986.02,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -12488,61 +12674,83 @@
           "qty": 0.0,
           "notional": 986.02,
           "fee": 0.49301
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "BMT/USDT",
+          "strategy": "supertrend",
+          "side": "BUY",
+          "price": 0.0185,
+          "qty": 44891.67645674,
+          "notional": 830.496,
+          "fee": 0.830496
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "BMT/USDT",
+          "strategy": "bb_squeeze",
+          "side": "BUY",
+          "price": 0.0185,
+          "qty": 51006.7282286,
+          "notional": 943.6245,
+          "fee": 0.943624
         }
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -16.826,
+          "pnl": -16.591,
           "dd": 16.701,
-          "trades": 4,
-          "fees": 3.521,
+          "trades": 5,
+          "fees": 4.352,
           "win_rate": 0.0,
-          "last": 831.743,
-          "in_pos": false
+          "last": 834.087,
+          "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": -5.496,
+          "pnl": -5.229,
           "dd": 7.366,
-          "trades": 8,
-          "fees": 7.786,
+          "trades": 9,
+          "fees": 8.729,
           "win_rate": 25.0,
-          "last": 945.041,
-          "in_pos": false
+          "last": 947.705,
+          "in_pos": true
         },
         "sma_trend": {
-          "pnl": -4.363,
+          "pnl": -1.226,
           "dd": 10.407,
           "trades": 5,
           "fees": 4.874,
           "win_rate": 0.0,
-          "last": 956.371,
+          "last": 987.737,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -16.551,
+          "pnl": -13.815,
           "dd": 16.487,
           "trades": 5,
           "fees": 4.382,
           "win_rate": 0.0,
-          "last": 834.486,
+          "last": 861.854,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -14.201,
+          "pnl": -11.387,
           "dd": 16.004,
           "trades": 5,
           "fees": 4.461,
           "win_rate": 0.0,
-          "last": 857.988,
+          "last": 886.126,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -5.312,
+          "pnl": -2.207,
           "dd": 11.297,
           "trades": 7,
           "fees": 6.754,
           "win_rate": 0.0,
-          "last": 946.88,
+          "last": 977.934,
           "in_pos": true
         },
         "rsi_revert": {
@@ -12564,12 +12772,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -2.849,
+          "pnl": -6.218,
           "dd": 10.86,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 971.514,
+          "last": 937.817,
           "in_pos": true
         },
         "donchian_short": {
@@ -12586,10 +12794,10 @@
     "TRUMP/USDT": {
       "symbol": "TRUMP/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -17.498,
-      "last_close": 1.95,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -17.878,
+      "last_close": 1.94,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -13740,6 +13948,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.943,
+          "eq_supertrend": 977.7067,
+          "eq_bb_squeeze": 1000.2707,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 944.5294,
+          "eq_donchian": 981.2743,
+          "eq_trend_200": 969.1102,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1129.8394,
+          "eq_rsi_short": 1073.0303,
+          "eq_donchian_short": 1169.8791,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -14138,6 +14371,28 @@
           "qty": 501.58428955,
           "notional": 976.5846,
           "fee": 0.976585
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "TRUMP/USDT",
+          "strategy": "trend_200",
+          "side": "SELL",
+          "price": 1.935,
+          "qty": 0.0,
+          "notional": 969.1102,
+          "fee": 0.96911
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "TRUMP/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 1.935,
+          "qty": 557.39951566,
+          "notional": 1078.5681,
+          "fee": 0.539284
         }
       ],
       "metrics": {
@@ -14151,12 +14406,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": 0.49,
+          "pnl": 0.027,
           "dd": 3.353,
           "trades": 3,
           "fees": 2.96,
           "win_rate": 0.0,
-          "last": 1004.904,
+          "last": 1000.271,
           "in_pos": true
         },
         "sma_trend": {
@@ -14169,31 +14424,31 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -5.11,
+          "pnl": -5.547,
           "dd": 6.997,
           "trades": 7,
           "fees": 6.728,
           "win_rate": 0.0,
-          "last": 948.904,
+          "last": 944.529,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -1.418,
+          "pnl": -1.873,
           "dd": 5.356,
           "trades": 5,
           "fees": 4.891,
           "win_rate": 0.0,
-          "last": 985.82,
+          "last": 981.274,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -2.091,
-          "dd": 4.764,
-          "trades": 3,
-          "fees": 2.953,
+          "pnl": -3.089,
+          "dd": 5.634,
+          "trades": 4,
+          "fees": 3.922,
           "win_rate": 0.0,
-          "last": 979.092,
-          "in_pos": true
+          "last": 969.11,
+          "in_pos": false
         },
         "rsi_revert": {
           "pnl": 0.0,
@@ -14214,13 +14469,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 7.857,
+          "pnl": 7.303,
           "dd": 2.087,
-          "trades": 2,
-          "fees": 1.039,
+          "trades": 3,
+          "fees": 1.579,
           "win_rate": 0.0,
-          "last": 1078.568,
-          "in_pos": false
+          "last": 1073.03,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": 16.988,
@@ -14236,10 +14491,10 @@
     "BNB/USDT": {
       "symbol": "BNB/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 5.499,
-      "last_close": 724.98,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 5.3,
+      "last_close": 723.61,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -15390,6 +15645,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 723.61,
+          "eq_supertrend": 986.6453,
+          "eq_bb_squeeze": 1010.6927,
+          "eq_sma_trend": 997.1365,
+          "eq_sma_cross": 996.8239,
+          "eq_donchian": 1034.8081,
+          "eq_trend_200": 967.1472,
+          "eq_rsi_revert": 1008.198,
+          "eq_sma_short": 945.6731,
+          "eq_rsi_short": 978.0303,
+          "eq_donchian_short": 987.5164,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -15878,57 +16158,57 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": 1.261,
+          "pnl": 1.069,
           "dd": 1.177,
           "trades": 3,
           "fees": 3.011,
           "win_rate": 100.0,
-          "last": 1012.606,
+          "last": 1010.693,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": -0.098,
-          "dd": 0.098,
+          "pnl": -0.286,
+          "dd": 0.286,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 999.024,
+          "last": 997.136,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -0.129,
+          "pnl": -0.318,
           "dd": 2.492,
           "trades": 5,
           "fees": 4.987,
           "win_rate": 50.0,
-          "last": 998.711,
+          "last": 996.824,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 3.677,
+          "pnl": 3.481,
           "dd": 2.646,
           "trades": 7,
           "fees": 7.215,
           "win_rate": 66.7,
-          "last": 1036.767,
+          "last": 1034.808,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -3.102,
-          "dd": 3.387,
+          "pnl": -3.285,
+          "dd": 3.485,
           "trades": 7,
           "fees": 6.871,
           "win_rate": 0.0,
-          "last": 968.978,
+          "last": 967.147,
           "in_pos": true
         },
         "rsi_revert": {
-          "pnl": 1.011,
+          "pnl": 0.82,
           "dd": 3.717,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1010.107,
+          "last": 1008.198,
           "in_pos": true
         },
         "sma_short": {
@@ -15941,12 +16221,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -2.381,
+          "pnl": -2.197,
           "dd": 4.904,
           "trades": 5,
           "fees": 3.885,
           "win_rate": 0.0,
-          "last": 976.19,
+          "last": 978.03,
           "in_pos": true
         },
         "donchian_short": {
@@ -15963,9 +16243,9 @@
     "ENA/USDT": {
       "symbol": "ENA/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -6.18,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -5.556,
       "last_close": 0.15,
       "summary": [
         {
@@ -17117,6 +17397,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.1513,
+          "eq_supertrend": 943.0285,
+          "eq_bb_squeeze": 836.9137,
+          "eq_sma_trend": 892.6105,
+          "eq_sma_cross": 861.6478,
+          "eq_donchian": 865.3683,
+          "eq_trend_200": 888.9782,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 914.3987,
+          "eq_rsi_short": 1094.5324,
+          "eq_donchian_short": 918.3817,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -17805,12 +18110,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -6.32,
+          "pnl": -5.697,
           "dd": 14.607,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 936.796,
+          "last": 943.029,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -17823,39 +18128,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -11.329,
+          "pnl": -10.739,
           "dd": 11.196,
           "trades": 5,
           "fees": 4.626,
           "win_rate": 0.0,
-          "last": 886.711,
+          "last": 892.611,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -14.405,
+          "pnl": -13.835,
           "dd": 18.782,
           "trades": 11,
           "fees": 9.511,
           "win_rate": 40.0,
-          "last": 855.953,
+          "last": 861.648,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -14.035,
+          "pnl": -13.463,
           "dd": 18.94,
           "trades": 9,
           "fees": 7.755,
           "win_rate": 0.0,
-          "last": 859.649,
+          "last": 865.368,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -11.69,
+          "pnl": -11.102,
           "dd": 16.206,
           "trades": 9,
           "fees": 8.032,
           "win_rate": 0.0,
-          "last": 883.103,
+          "last": 888.978,
           "in_pos": true
         },
         "rsi_revert": {
@@ -17877,12 +18182,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 10.16,
+          "pnl": 9.453,
           "dd": 8.855,
           "trades": 3,
           "fees": 3.164,
           "win_rate": 0.0,
-          "last": 1101.598,
+          "last": 1094.532,
           "in_pos": true
         },
         "donchian_short": {
@@ -17899,9 +18204,9 @@
     "DEXE/USDT": {
       "symbol": "DEXE/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -10.968,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -11.067,
       "last_close": 1.79,
       "summary": [
         {
@@ -19053,6 +19358,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.792,
+          "eq_supertrend": 957.8765,
+          "eq_bb_squeeze": 972.2776,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 946.2114,
+          "eq_donchian": 962.5556,
+          "eq_trend_200": 956.8439,
+          "eq_rsi_revert": 957.8765,
+          "eq_sma_short": 1058.2887,
+          "eq_rsi_short": 1138.2011,
+          "eq_donchian_short": 1078.5365,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -19565,21 +19895,21 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -4.105,
+          "pnl": -4.212,
           "dd": 9.096,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 958.946,
+          "last": 957.876,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": -2.664,
+          "pnl": -2.772,
           "dd": 3.478,
           "trades": 7,
           "fees": 6.899,
           "win_rate": 33.3,
-          "last": 973.363,
+          "last": 972.278,
           "in_pos": true
         },
         "sma_trend": {
@@ -19592,21 +19922,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -5.273,
-          "dd": 5.273,
+          "pnl": -5.379,
+          "dd": 5.379,
           "trades": 7,
           "fees": 6.835,
           "win_rate": 0.0,
-          "last": 947.267,
+          "last": 946.211,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -3.637,
+          "pnl": -3.744,
           "dd": 4.955,
           "trades": 7,
           "fees": 6.872,
           "win_rate": 0.0,
-          "last": 963.63,
+          "last": 962.556,
           "in_pos": true
         },
         "trend_200": {
@@ -19619,12 +19949,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -4.105,
+          "pnl": -4.212,
           "dd": 9.096,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 958.946,
+          "last": 957.876,
           "in_pos": true
         },
         "sma_short": {
@@ -19637,12 +19967,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 13.708,
+          "pnl": 13.82,
           "dd": 3.258,
           "trades": 3,
           "fees": 3.141,
           "win_rate": 0.0,
-          "last": 1137.082,
+          "last": 1138.201,
           "in_pos": true
         },
         "donchian_short": {
@@ -19659,9 +19989,9 @@
     "DOGE/USDT": {
       "symbol": "DOGE/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -2.308,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -2.333,
       "last_close": 0.08,
       "summary": [
         {
@@ -20813,6 +21143,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.08081,
+          "eq_supertrend": 978.625,
+          "eq_bb_squeeze": 987.7557,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 951.9161,
+          "eq_donchian": 976.5822,
+          "eq_trend_200": 983.1432,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 978.4942,
+          "eq_rsi_short": 1032.0433,
+          "eq_donchian_short": 1002.6011,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -21264,21 +21619,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -4.785,
+          "pnl": -4.808,
           "dd": 6.218,
           "trades": 9,
           "fees": 8.826,
           "win_rate": 25.0,
-          "last": 952.152,
+          "last": 951.916,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -2.318,
+          "pnl": -2.342,
           "dd": 5.937,
           "trades": 7,
           "fees": 6.953,
           "win_rate": 33.3,
-          "last": 976.824,
+          "last": 976.582,
           "in_pos": true
         },
         "trend_200": {
@@ -21331,10 +21686,10 @@
     "XAUT/USDT": {
       "symbol": "XAUT/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.331,
-      "last_close": 4304.02,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -0.89,
+      "last_close": 4323.26,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -22485,6 +22840,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 1,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 4323.26,
+          "eq_supertrend": 967.4579,
+          "eq_bb_squeeze": 969.1918,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 971.9375,
+          "eq_donchian": 969.2029,
+          "eq_trend_200": 969.3766,
+          "eq_rsi_revert": 989.6124,
+          "eq_sma_short": 982.4275,
+          "eq_rsi_short": 1004.5116,
+          "eq_donchian_short": 978.634,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 0,
+          "in_donchian": 0,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 1,
+          "in_rsi_short": 1,
+          "in_donchian_short": 1
         }
       ],
       "trades": [
@@ -22905,6 +23285,17 @@
           "qty": 0.23358133,
           "notional": 996.6285,
           "fee": 0.498314
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "XAUT/USDT",
+          "strategy": "trend_200",
+          "side": "BUY",
+          "price": 4339.7,
+          "qty": 0.22422352,
+          "notional": 973.0628,
+          "fee": 0.973063
         }
       ],
       "metrics": {
@@ -22954,48 +23345,48 @@
           "in_pos": false
         },
         "trend_200": {
-          "pnl": -2.548,
-          "dd": 2.548,
-          "trades": 4,
-          "fees": 3.957,
+          "pnl": -3.062,
+          "dd": 3.062,
+          "trades": 5,
+          "fees": 4.93,
           "win_rate": 0.0,
-          "last": 974.524,
-          "in_pos": false
+          "last": 969.377,
+          "in_pos": true
         },
         "rsi_revert": {
-          "pnl": -1.479,
+          "pnl": -1.039,
           "dd": 2.691,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 985.208,
+          "last": 989.612,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": -1.308,
-          "dd": 2.425,
+          "pnl": -1.757,
+          "dd": 2.869,
           "trades": 7,
           "fees": 5.479,
           "win_rate": 0.0,
-          "last": 986.922,
+          "last": 982.428,
           "in_pos": true
         },
         "rsi_short": {
-          "pnl": 0.894,
-          "dd": 0.76,
+          "pnl": 0.451,
+          "dd": 1.196,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 1008.937,
+          "last": 1004.512,
           "in_pos": true
         },
         "donchian_short": {
-          "pnl": -1.689,
-          "dd": 2.467,
+          "pnl": -2.137,
+          "dd": 2.911,
           "trades": 5,
           "fees": 3.481,
           "win_rate": 0.0,
-          "last": 983.114,
+          "last": 978.634,
           "in_pos": true
         }
       }
@@ -23003,9 +23394,9 @@
     "TRX/USDT": {
       "symbol": "TRX/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 2.882,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 2.698,
       "last_close": 0.34,
       "summary": [
         {
@@ -24157,6 +24548,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.335,
+          "eq_supertrend": 974.8066,
+          "eq_bb_squeeze": 980.0168,
+          "eq_sma_trend": 968.1802,
+          "eq_sma_cross": 965.8599,
+          "eq_donchian": 970.4584,
+          "eq_trend_200": 976.7719,
+          "eq_rsi_revert": 1042.0317,
+          "eq_sma_short": 942.0366,
+          "eq_rsi_short": 1024.928,
+          "eq_donchian_short": 945.5893,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -24927,21 +25343,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -3.241,
-          "dd": 3.299,
+          "pnl": -3.414,
+          "dd": 3.414,
           "trades": 9,
           "fees": 8.852,
           "win_rate": 0.0,
-          "last": 967.59,
+          "last": 965.86,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -2.78,
-          "dd": 2.838,
+          "pnl": -2.954,
+          "dd": 2.954,
           "trades": 7,
           "fees": 6.898,
           "win_rate": 0.0,
-          "last": 972.197,
+          "last": 970.458,
           "in_pos": true
         },
         "trend_200": {
@@ -24954,12 +25370,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": 4.39,
-          "dd": 0.27,
+          "pnl": 4.203,
+          "dd": 0.298,
           "trades": 3,
           "fees": 3.07,
           "win_rate": 100.0,
-          "last": 1043.898,
+          "last": 1042.032,
           "in_pos": true
         },
         "sma_short": {
@@ -24994,9 +25410,9 @@
     "PUMP/USDT": {
       "symbol": "PUMP/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -14.426,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -12.794,
       "last_close": 0.0,
       "summary": [
         {
@@ -26148,6 +26564,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.003899,
+          "eq_supertrend": 866.2932,
+          "eq_bb_squeeze": 1013.8742,
+          "eq_sma_trend": 1004.4258,
+          "eq_sma_cross": 816.3593,
+          "eq_donchian": 855.0595,
+          "eq_trend_200": 1009.0172,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 938.1519,
+          "eq_rsi_short": 1109.0349,
+          "eq_donchian_short": 983.6473,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -26616,12 +27057,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -14.993,
+          "pnl": -13.371,
           "dd": 24.166,
           "trades": 3,
           "fees": 2.664,
           "win_rate": 0.0,
-          "last": 850.074,
+          "last": 866.293,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -26634,39 +27075,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -1.438,
+          "pnl": 0.443,
           "dd": 1.438,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 985.62,
+          "last": 1004.426,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -19.893,
+          "pnl": -18.364,
           "dd": 24.784,
           "trades": 7,
           "fees": 5.723,
           "win_rate": 0.0,
-          "last": 801.075,
+          "last": 816.359,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -16.095,
+          "pnl": -14.494,
           "dd": 21.218,
           "trades": 7,
           "fees": 5.887,
           "win_rate": 0.0,
-          "last": 839.051,
+          "last": 855.059,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -0.987,
+          "pnl": 0.902,
           "dd": 4.672,
           "trades": 7,
           "fees": 6.812,
           "win_rate": 0.0,
-          "last": 990.126,
+          "last": 1009.017,
           "in_pos": true
         },
         "rsi_revert": {
@@ -26688,12 +27129,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 13.007,
+          "pnl": 10.903,
           "dd": 5.128,
           "trades": 3,
           "fees": 2.116,
           "win_rate": 0.0,
-          "last": 1130.068,
+          "last": 1109.035,
           "in_pos": true
         },
         "donchian_short": {
@@ -26710,9 +27151,9 @@
     "SUI/USDT": {
       "symbol": "SUI/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.519,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -1.588,
       "last_close": 0.72,
       "summary": [
         {
@@ -27864,6 +28305,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.7191,
+          "eq_supertrend": 945.4158,
+          "eq_bb_squeeze": 949.2448,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 1013.943,
+          "eq_donchian": 950.7749,
+          "eq_trend_200": 974.2074,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1033.7354,
+          "eq_rsi_short": 1042.2764,
+          "eq_donchian_short": 970.6657,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -28264,12 +28730,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -5.01,
+          "pnl": -5.076,
           "dd": 7.491,
           "trades": 5,
           "fees": 4.831,
           "win_rate": 0.0,
-          "last": 949.905,
+          "last": 949.245,
           "in_pos": true
         },
         "sma_trend": {
@@ -28282,30 +28748,30 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 1.465,
+          "pnl": 1.394,
           "dd": 4.758,
           "trades": 5,
           "fees": 4.999,
           "win_rate": 50.0,
-          "last": 1014.648,
+          "last": 1013.943,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -4.856,
+          "pnl": -4.923,
           "dd": 8.256,
           "trades": 7,
           "fees": 6.842,
           "win_rate": 33.3,
-          "last": 951.436,
+          "last": 950.775,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -2.512,
+          "pnl": -2.579,
           "dd": 3.832,
           "trades": 3,
           "fees": 2.932,
           "win_rate": 0.0,
-          "last": 974.885,
+          "last": 974.207,
           "in_pos": true
         },
         "rsi_revert": {
@@ -28327,12 +28793,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 4.152,
+          "pnl": 4.228,
           "dd": 2.675,
           "trades": 3,
           "fees": 1.569,
           "win_rate": 0.0,
-          "last": 1041.515,
+          "last": 1042.276,
           "in_pos": true
         },
         "donchian_short": {
@@ -28349,9 +28815,9 @@
     "TUT/USDT": {
       "symbol": "TUT/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -32.538,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -33.061,
       "last_close": 0.02,
       "summary": [
         {
@@ -29503,6 +29969,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.02047,
+          "eq_supertrend": 1068.4428,
+          "eq_bb_squeeze": 1000.0,
+          "eq_sma_trend": 988.3612,
+          "eq_sma_cross": 967.3427,
+          "eq_donchian": 635.6277,
+          "eq_trend_200": 1007.6065,
+          "eq_rsi_revert": 1010.343,
+          "eq_sma_short": 1290.41,
+          "eq_rsi_short": 995.0765,
+          "eq_donchian_short": 952.2769,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -29817,12 +30308,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 7.679,
+          "pnl": 6.844,
           "dd": 6.214,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1076.794,
+          "last": 1068.443,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -29835,39 +30326,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -0.391,
-          "dd": 0.681,
+          "pnl": -1.164,
+          "dd": 1.164,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 996.087,
+          "last": 988.361,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -2.51,
+          "pnl": -3.266,
           "dd": 7.263,
           "trades": 5,
           "fees": 4.873,
           "win_rate": 0.0,
-          "last": 974.904,
+          "last": 967.343,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -35.94,
+          "pnl": -36.437,
           "dd": 38.985,
           "trades": 5,
           "fees": 3.581,
           "win_rate": 0.0,
-          "last": 640.596,
+          "last": 635.628,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 1.548,
+          "pnl": 0.761,
           "dd": 6.068,
           "trades": 3,
           "fees": 2.922,
           "win_rate": 0.0,
-          "last": 1015.482,
+          "last": 1007.606,
           "in_pos": true
         },
         "rsi_revert": {
@@ -29889,12 +30380,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -1.277,
+          "pnl": -0.492,
           "dd": 4.778,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 987.23,
+          "last": 995.077,
           "in_pos": true
         },
         "donchian_short": {
@@ -29911,9 +30402,9 @@
     "PEPE/USDT": {
       "symbol": "PEPE/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.989,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -1.705,
       "last_close": 0.0,
       "summary": [
         {
@@ -31065,6 +31556,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 3.46e-06,
+          "eq_supertrend": 1040.6062,
+          "eq_bb_squeeze": 952.6364,
+          "eq_sma_trend": 975.7678,
+          "eq_sma_cross": 969.0411,
+          "eq_donchian": 1010.1017,
+          "eq_trend_200": 946.7404,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 987.2187,
+          "eq_rsi_short": 999.5003,
+          "eq_donchian_short": 1026.8047,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -31566,57 +32082,57 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 3.76,
+          "pnl": 4.061,
           "dd": 5.65,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1037.599,
+          "last": 1040.606,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": -5.012,
+          "pnl": -4.736,
           "dd": 7.473,
           "trades": 5,
           "fees": 4.845,
           "win_rate": 0.0,
-          "last": 949.883,
+          "last": 952.636,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": -2.705,
+          "pnl": -2.423,
           "dd": 2.971,
           "trades": 3,
           "fees": 2.94,
           "win_rate": 0.0,
-          "last": 972.948,
+          "last": 975.768,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -3.376,
+          "pnl": -3.096,
           "dd": 5.344,
           "trades": 7,
           "fees": 6.722,
           "win_rate": 0.0,
-          "last": 966.24,
+          "last": 969.041,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 0.718,
+          "pnl": 1.01,
           "dd": 5.202,
           "trades": 5,
           "fees": 4.984,
           "win_rate": 0.0,
-          "last": 1007.182,
+          "last": 1010.102,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -5.6,
+          "pnl": -5.326,
           "dd": 6.359,
           "trades": 9,
           "fees": 8.677,
           "win_rate": 0.0,
-          "last": 944.004,
+          "last": 946.74,
           "in_pos": true
         },
         "rsi_revert": {
@@ -31638,12 +32154,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 0.239,
+          "pnl": -0.05,
           "dd": 7.143,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 1002.389,
+          "last": 999.5,
           "in_pos": true
         },
         "donchian_short": {
@@ -31660,9 +32176,9 @@
     "ONG/USDT": {
       "symbol": "ONG/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -34.613,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -34.778,
       "last_close": 0.08,
       "summary": [
         {
@@ -32814,6 +33330,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.07541,
+          "eq_supertrend": 707.0481,
+          "eq_bb_squeeze": 949.6222,
+          "eq_sma_trend": 718.9083,
+          "eq_sma_cross": 683.4413,
+          "eq_donchian": 685.2389,
+          "eq_trend_200": 718.9083,
+          "eq_rsi_revert": 903.1659,
+          "eq_sma_short": 1049.6261,
+          "eq_rsi_short": 1277.2103,
+          "eq_donchian_short": 1052.1636,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 0,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 1
         }
       ],
       "trades": [
@@ -33150,12 +33691,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -29.117,
-          "dd": 29.133,
+          "pnl": -29.295,
+          "dd": 29.189,
           "trades": 3,
           "fees": 2.435,
           "win_rate": 0.0,
-          "last": 708.83,
+          "last": 707.048,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -33177,12 +33718,12 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -31.484,
-          "dd": 31.499,
+          "pnl": -31.656,
+          "dd": 31.553,
           "trades": 5,
           "fees": 3.789,
           "win_rate": 0.0,
-          "last": 685.163,
+          "last": 683.441,
           "in_pos": true
         },
         "donchian": {
@@ -33204,12 +33745,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -9.456,
+          "pnl": -9.683,
           "dd": 11.835,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 905.442,
+          "last": 903.166,
           "in_pos": true
         },
         "sma_short": {
@@ -33231,12 +33772,12 @@
           "in_pos": false
         },
         "donchian_short": {
-          "pnl": 4.956,
+          "pnl": 5.216,
           "dd": 3.919,
           "trades": 3,
           "fees": 2.043,
           "win_rate": 0.0,
-          "last": 1049.558,
+          "last": 1052.164,
           "in_pos": true
         }
       }
@@ -33244,9 +33785,9 @@
     "HEMI/USDT": {
       "symbol": "HEMI/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -60.186,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -60.495,
       "last_close": 0.01,
       "summary": [
         {
@@ -34398,6 +34939,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 1,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.00638,
+          "eq_supertrend": 394.4542,
+          "eq_bb_squeeze": 955.6184,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 835.7924,
+          "eq_donchian": 407.0989,
+          "eq_trend_200": 421.0452,
+          "eq_rsi_revert": 879.8943,
+          "eq_sma_short": 1475.4033,
+          "eq_rsi_short": 1807.8171,
+          "eq_donchian_short": 1033.2048,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 0,
+          "in_donchian": 0,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 1,
+          "in_rsi_short": 1,
+          "in_donchian_short": 1
         }
       ],
       "trades": [
@@ -34899,12 +35465,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -60.245,
+          "pnl": -60.555,
           "dd": 62.043,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 397.546,
+          "last": 394.454,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -34953,39 +35519,39 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -11.321,
+          "pnl": -12.011,
           "dd": 15.458,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 886.79,
+          "last": 879.894,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": 46.361,
+          "pnl": 47.54,
           "dd": 9.101,
           "trades": 9,
           "fees": 9.376,
           "win_rate": 0.0,
-          "last": 1463.607,
+          "last": 1475.403,
           "in_pos": true
         },
         "rsi_short": {
-          "pnl": 79.518,
+          "pnl": 80.782,
           "dd": 1.933,
           "trades": 5,
           "fees": 5.81,
           "win_rate": 0.0,
-          "last": 1795.181,
+          "last": 1807.817,
           "in_pos": true
         },
         "donchian_short": {
-          "pnl": 2.505,
+          "pnl": 3.32,
           "dd": 6.118,
           "trades": 5,
           "fees": 3.538,
           "win_rate": 0.0,
-          "last": 1025.048,
+          "last": 1033.205,
           "in_pos": true
         }
       }
@@ -34993,10 +35559,10 @@
     "LINK/USDT": {
       "symbol": "LINK/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -2.508,
-      "last_close": 11.12,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -2.412,
+      "last_close": 11.13,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -36147,6 +36713,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 11.127,
+          "eq_supertrend": 969.1051,
+          "eq_bb_squeeze": 961.0618,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 997.1152,
+          "eq_donchian": 958.5235,
+          "eq_trend_200": 974.4781,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1025.5333,
+          "eq_rsi_short": 1070.0349,
+          "eq_donchian_short": 986.1388,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -36578,6 +37169,17 @@
           "qty": 0.0,
           "notional": 1025.5333,
           "fee": 0.512767
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "LINK/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 11.149,
+          "qty": 95.88254068,
+          "notional": 1068.9944,
+          "fee": 0.534497
         }
       ],
       "metrics": {
@@ -36591,12 +37193,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -3.989,
+          "pnl": -3.894,
           "dd": 5.949,
           "trades": 5,
           "fees": 4.818,
           "win_rate": 0.0,
-          "last": 960.112,
+          "last": 961.062,
           "in_pos": true
         },
         "sma_trend": {
@@ -36609,21 +37211,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -0.387,
+          "pnl": -0.288,
           "dd": 3.078,
           "trades": 7,
           "fees": 6.968,
           "win_rate": 66.7,
-          "last": 996.13,
+          "last": 997.115,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -4.242,
+          "pnl": -4.148,
           "dd": 8.805,
           "trades": 7,
           "fees": 6.879,
           "win_rate": 33.3,
-          "last": 957.576,
+          "last": 958.524,
           "in_pos": true
         },
         "trend_200": {
@@ -36654,13 +37256,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 6.899,
+          "pnl": 7.003,
           "dd": 4.222,
-          "trades": 4,
-          "fees": 3.505,
+          "trades": 5,
+          "fees": 4.04,
           "win_rate": 0.0,
-          "last": 1068.994,
-          "in_pos": false
+          "last": 1070.035,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": -1.386,
@@ -36676,10 +37278,10 @@
     "PAXG/USDT": {
       "symbol": "PAXG/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.538,
-      "last_close": 4305.51,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -1.051,
+      "last_close": 4326.78,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -37830,6 +38432,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 1,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 4326.78,
+          "eq_supertrend": 964.9911,
+          "eq_bb_squeeze": 969.7716,
+          "eq_sma_trend": 995.6294,
+          "eq_sma_cross": 971.3919,
+          "eq_donchian": 969.3752,
+          "eq_trend_200": 969.5028,
+          "eq_rsi_revert": 988.0037,
+          "eq_sma_short": 983.4793,
+          "eq_rsi_short": 1005.1285,
+          "eq_donchian_short": 980.4147,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 0,
+          "in_donchian": 0,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 1,
+          "in_rsi_short": 1,
+          "in_donchian_short": 1
         }
       ],
       "trades": [
@@ -38250,6 +38877,17 @@
           "qty": 0.2336971,
           "notional": 997.8165,
           "fee": 0.498908
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "PAXG/USDT",
+          "strategy": "trend_200",
+          "side": "BUY",
+          "price": 4342.89,
+          "qty": 0.22407028,
+          "notional": 973.1126,
+          "fee": 0.973113
         }
       ],
       "metrics": {
@@ -38299,48 +38937,48 @@
           "in_pos": false
         },
         "trend_200": {
-          "pnl": -2.543,
-          "dd": 2.543,
-          "trades": 4,
-          "fees": 3.958,
+          "pnl": -3.05,
+          "dd": 3.05,
+          "trades": 5,
+          "fees": 4.931,
           "win_rate": 0.0,
-          "last": 974.574,
-          "in_pos": false
+          "last": 969.503,
+          "in_pos": true
         },
         "rsi_revert": {
-          "pnl": -1.685,
+          "pnl": -1.2,
           "dd": 2.721,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 983.147,
+          "last": 988.004,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": -1.155,
-          "dd": 2.43,
+          "pnl": -1.652,
+          "dd": 2.921,
           "trades": 7,
           "fees": 5.485,
           "win_rate": 0.0,
-          "last": 988.45,
+          "last": 983.479,
           "in_pos": true
         },
         "rsi_short": {
-          "pnl": 1.001,
-          "dd": 0.736,
+          "pnl": 0.513,
+          "dd": 1.216,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 1010.014,
+          "last": 1005.129,
           "in_pos": true
         },
         "donchian_short": {
-          "pnl": -1.463,
-          "dd": 2.478,
+          "pnl": -1.959,
+          "dd": 2.969,
           "trades": 5,
           "fees": 3.485,
           "win_rate": 0.0,
-          "last": 985.375,
+          "last": 980.415,
           "in_pos": true
         }
       }
@@ -38348,10 +38986,10 @@
     "NEAR/USDT": {
       "symbol": "NEAR/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 31.861,
-      "last_close": 2.66,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 39.256,
+      "last_close": 2.81,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -39502,6 +40140,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 2.806,
+          "eq_supertrend": 1140.3309,
+          "eq_bb_squeeze": 1379.8288,
+          "eq_sma_trend": 1153.1537,
+          "eq_sma_cross": 1231.0387,
+          "eq_donchian": 1231.0387,
+          "eq_trend_200": 1226.5942,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 883.8277,
+          "eq_rsi_short": 607.1408,
+          "eq_donchian_short": 883.8277,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -40069,57 +40732,57 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 7.978,
+          "pnl": 14.033,
           "dd": 13.82,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1079.779,
+          "last": 1140.331,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": 30.656,
+          "pnl": 37.983,
           "dd": 5.714,
           "trades": 5,
           "fees": 5.838,
           "win_rate": 50.0,
-          "last": 1306.559,
+          "last": 1379.829,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": 9.192,
+          "pnl": 15.315,
           "dd": 19.825,
           "trades": 9,
           "fees": 9.791,
           "win_rate": 25.0,
-          "last": 1091.921,
+          "last": 1153.154,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 16.567,
+          "pnl": 23.104,
           "dd": 14.41,
           "trades": 7,
           "fees": 7.768,
           "win_rate": 33.3,
-          "last": 1165.67,
+          "last": 1231.039,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 16.567,
+          "pnl": 23.104,
           "dd": 14.41,
           "trades": 7,
           "fees": 7.768,
           "win_rate": 33.3,
-          "last": 1165.67,
+          "last": 1231.039,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 16.146,
+          "pnl": 22.659,
           "dd": 18.966,
           "trades": 9,
           "fees": 10.068,
           "win_rate": 25.0,
-          "last": 1161.461,
+          "last": 1226.594,
           "in_pos": true
         },
         "rsi_revert": {
@@ -40141,12 +40804,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -31.895,
-          "dd": 32.754,
+          "pnl": -39.286,
+          "dd": 39.256,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 681.049,
+          "last": 607.141,
           "in_pos": true
         },
         "donchian_short": {
@@ -40163,9 +40826,9 @@
     "ENSO/USDT": {
       "symbol": "ENSO/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 5.923,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 5.807,
       "last_close": 0.91,
       "summary": [
         {
@@ -41317,6 +41980,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.911,
+          "eq_supertrend": 1056.4857,
+          "eq_bb_squeeze": 928.2622,
+          "eq_sma_trend": 992.9692,
+          "eq_sma_cross": 984.2734,
+          "eq_donchian": 943.3101,
+          "eq_trend_200": 912.4257,
+          "eq_rsi_revert": 1045.6378,
+          "eq_sma_short": 929.4543,
+          "eq_rsi_short": 941.4573,
+          "eq_donchian_short": 884.963,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -41968,26 +42656,48 @@
           "qty": 0.0,
           "notional": 929.4543,
           "fee": 0.464727
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "ENSO/USDT",
+          "strategy": "bb_squeeze",
+          "side": "BUY",
+          "price": 0.91,
+          "qty": 1018.94865812,
+          "notional": 927.2433,
+          "fee": 0.927243
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "ENSO/USDT",
+          "strategy": "trend_200",
+          "side": "SELL",
+          "price": 0.91,
+          "qty": 0.0,
+          "notional": 912.4257,
+          "fee": 0.912426
         }
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 5.765,
+          "pnl": 5.649,
           "dd": 7.677,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1057.645,
+          "last": 1056.486,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": -7.136,
-          "dd": 10.329,
-          "trades": 8,
-          "fees": 7.752,
+          "pnl": -7.174,
+          "dd": 10.365,
+          "trades": 9,
+          "fees": 8.68,
           "win_rate": 25.0,
-          "last": 928.635,
-          "in_pos": false
+          "last": 928.262,
+          "in_pos": true
         },
         "sma_trend": {
           "pnl": -0.703,
@@ -41999,31 +42709,31 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -1.465,
-          "dd": 7.747,
+          "pnl": -1.573,
+          "dd": 7.781,
           "trades": 9,
           "fees": 8.995,
           "win_rate": 50.0,
-          "last": 985.354,
+          "last": 984.273,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -5.565,
+          "pnl": -5.669,
           "dd": 9.612,
           "trades": 5,
           "fees": 4.852,
           "win_rate": 0.0,
-          "last": 944.346,
+          "last": 943.31,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -8.42,
-          "dd": 14.597,
-          "trades": 11,
-          "fees": 10.683,
-          "win_rate": 20.0,
-          "last": 915.804,
-          "in_pos": true
+          "pnl": -8.757,
+          "dd": 14.912,
+          "trades": 12,
+          "fees": 11.596,
+          "win_rate": 16.7,
+          "last": 912.426,
+          "in_pos": false
         },
         "rsi_revert": {
           "pnl": 4.564,
@@ -42044,12 +42754,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -5.97,
+          "pnl": -5.854,
           "dd": 13.473,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 940.296,
+          "last": 941.457,
           "in_pos": true
         },
         "donchian_short": {
@@ -42066,9 +42776,9 @@
     "U/USDT": {
       "symbol": "U/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 0.1,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 0.09,
       "last_close": 1.0,
       "summary": [
         {
@@ -43220,6 +43930,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.0004,
+          "eq_supertrend": 999.1999,
+          "eq_bb_squeeze": 991.6321,
+          "eq_sma_trend": 993.32,
+          "eq_sma_cross": 993.32,
+          "eq_donchian": 999.1999,
+          "eq_trend_200": 993.1213,
+          "eq_rsi_revert": 982.6465,
+          "eq_sma_short": 993.8132,
+          "eq_rsi_short": 998.8004,
+          "eq_donchian_short": 997.8002,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -43710,12 +44445,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -0.07,
+          "pnl": -0.08,
           "dd": 0.16,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 999.3,
+          "last": 999.2,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -43728,39 +44463,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -0.658,
+          "pnl": -0.668,
           "dd": 0.737,
           "trades": 5,
           "fees": 4.978,
           "win_rate": 100.0,
-          "last": 993.419,
+          "last": 993.32,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -0.658,
+          "pnl": -0.668,
           "dd": 0.737,
           "trades": 5,
           "fees": 4.978,
           "win_rate": 100.0,
-          "last": 993.419,
+          "last": 993.32,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -0.07,
+          "pnl": -0.08,
           "dd": 0.16,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 999.3,
+          "last": 999.2,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -0.678,
+          "pnl": -0.688,
           "dd": 0.757,
           "trades": 5,
           "fees": 4.977,
           "win_rate": 50.0,
-          "last": 993.221,
+          "last": 993.121,
           "in_pos": true
         },
         "rsi_revert": {
@@ -43782,12 +44517,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -0.13,
+          "pnl": -0.12,
           "dd": 0.13,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 998.7,
+          "last": 998.8,
           "in_pos": true
         },
         "donchian_short": {
@@ -43804,9 +44539,9 @@
     "ADA/USDT": {
       "symbol": "ADA/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.357,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -0.302,
       "last_close": 0.2,
       "summary": [
         {
@@ -44958,6 +45693,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.1983,
+          "eq_supertrend": 940.6378,
+          "eq_bb_squeeze": 976.2522,
+          "eq_sma_trend": 981.1113,
+          "eq_sma_cross": 1006.2315,
+          "eq_donchian": 992.7244,
+          "eq_trend_200": 952.0418,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1013.0124,
+          "eq_rsi_short": 1039.9498,
+          "eq_donchian_short": 999.5873,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -45563,21 +46323,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -0.442,
+          "pnl": 0.623,
           "dd": 5.421,
           "trades": 11,
           "fees": 11.32,
           "win_rate": 40.0,
-          "last": 995.576,
+          "last": 1006.231,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -1.779,
+          "pnl": -0.728,
           "dd": 6.881,
           "trades": 9,
           "fees": 9.125,
           "win_rate": 25.0,
-          "last": 982.212,
+          "last": 992.724,
           "in_pos": true
         },
         "trend_200": {
@@ -45630,10 +46390,10 @@
     "TAO/USDT": {
       "symbol": "TAO/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.105,
-      "last_close": 223.8,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 0.486,
+      "last_close": 227.4,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -46784,6 +47544,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 227.4,
+          "eq_supertrend": 973.7012,
+          "eq_bb_squeeze": 985.7142,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 1008.1536,
+          "eq_donchian": 970.5464,
+          "eq_trend_200": 978.5947,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1004.4166,
+          "eq_rsi_short": 994.583,
+          "eq_donchian_short": 960.5905,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -47259,6 +48044,17 @@
           "qty": 0.0,
           "notional": 1004.4166,
           "fee": 0.502208
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "TAO/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 226.4,
+          "qty": 4.41696113,
+          "notional": 1000.0,
+          "fee": 0.5
         }
       ],
       "metrics": {
@@ -47272,12 +48068,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -2.989,
+          "pnl": -1.429,
           "dd": 5.417,
           "trades": 5,
           "fees": 4.837,
           "win_rate": 0.0,
-          "last": 970.109,
+          "last": 985.714,
           "in_pos": true
         },
         "sma_trend": {
@@ -47290,21 +48086,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -0.781,
+          "pnl": 0.815,
           "dd": 3.611,
           "trades": 9,
           "fees": 9.011,
           "win_rate": 50.0,
-          "last": 992.193,
+          "last": 1008.154,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -4.482,
+          "pnl": -2.945,
           "dd": 6.872,
           "trades": 7,
           "fees": 6.698,
           "win_rate": 33.3,
-          "last": 955.182,
+          "last": 970.546,
           "in_pos": true
         },
         "trend_200": {
@@ -47335,13 +48131,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 0.0,
-          "dd": 0.0,
-          "trades": 0,
-          "fees": 0.0,
+          "pnl": -0.542,
+          "dd": 0.542,
+          "trades": 1,
+          "fees": 0.5,
           "win_rate": 0.0,
-          "last": 1000.0,
-          "in_pos": false
+          "last": 994.583,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": -3.941,
@@ -47357,9 +48153,9 @@
     "WLD/USDT": {
       "symbol": "WLD/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 0.569,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 1.03,
       "last_close": 0.37,
       "summary": [
         {
@@ -48511,6 +49307,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.3728,
+          "eq_supertrend": 941.642,
+          "eq_bb_squeeze": 945.5322,
+          "eq_sma_trend": 965.071,
+          "eq_sma_cross": 1003.9694,
+          "eq_donchian": 984.8467,
+          "eq_trend_200": 1000.0,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 995.6434,
+          "eq_rsi_short": 1070.1852,
+          "eq_donchian_short": 978.494,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -49021,12 +49842,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -5.878,
+          "pnl": -5.447,
           "dd": 8.13,
           "trades": 5,
           "fees": 4.834,
           "win_rate": 0.0,
-          "last": 941.221,
+          "last": 945.532,
           "in_pos": true
         },
         "sma_trend": {
@@ -49039,21 +49860,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -0.061,
+          "pnl": 0.397,
           "dd": 9.56,
           "trades": 9,
           "fees": 9.254,
           "win_rate": 25.0,
-          "last": 999.391,
+          "last": 1003.969,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -1.964,
+          "pnl": -1.515,
           "dd": 13.405,
           "trades": 9,
           "fees": 9.218,
           "win_rate": 25.0,
-          "last": 980.356,
+          "last": 984.847,
           "in_pos": true
         },
         "trend_200": {
@@ -49106,10 +49927,10 @@
     "AAVE/USDT": {
       "symbol": "AAVE/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -3.692,
-      "last_close": 122.08,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -3.408,
+      "last_close": 122.44,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -50260,6 +51081,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 122.44,
+          "eq_supertrend": 980.6437,
+          "eq_bb_squeeze": 923.6207,
+          "eq_sma_trend": 933.3597,
+          "eq_sma_cross": 955.6733,
+          "eq_donchian": 954.2072,
+          "eq_trend_200": 861.8854,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 993.6653,
+          "eq_rsi_short": 1077.0043,
+          "eq_donchian_short": 991.2048,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -50944,6 +51790,17 @@
           "qty": 0.0,
           "notional": 991.2048,
           "fee": 0.495602
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "AAVE/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 122.82,
+          "qty": 8.75064176,
+          "notional": 1074.7538,
+          "fee": 0.537377
         }
       ],
       "metrics": {
@@ -50975,21 +51832,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -4.714,
+          "pnl": -4.433,
           "dd": 4.571,
           "trades": 9,
           "fees": 8.715,
           "win_rate": 25.0,
-          "last": 952.863,
+          "last": 955.673,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -4.86,
+          "pnl": -4.579,
           "dd": 4.717,
           "trades": 7,
           "fees": 6.749,
           "win_rate": 0.0,
-          "last": 951.402,
+          "last": 954.207,
           "in_pos": true
         },
         "trend_200": {
@@ -51020,13 +51877,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 7.475,
+          "pnl": 7.7,
           "dd": 4.239,
-          "trades": 4,
-          "fees": 3.596,
+          "trades": 5,
+          "fees": 4.133,
           "win_rate": 0.0,
-          "last": 1074.754,
-          "in_pos": false
+          "last": 1077.004,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": -0.88,
@@ -51042,10 +51899,10 @@
     "UNI/USDT": {
       "symbol": "UNI/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 18.349,
-      "last_close": 6.74,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 20.281,
+      "last_close": 6.85,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -52196,6 +53053,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 6.85,
+          "eq_supertrend": 1101.168,
+          "eq_bb_squeeze": 1017.7802,
+          "eq_sma_trend": 1041.7076,
+          "eq_sma_cross": 1047.8661,
+          "eq_donchian": 1152.0678,
+          "eq_trend_200": 1073.3497,
+          "eq_rsi_revert": 1109.9854,
+          "eq_sma_short": 869.2382,
+          "eq_rsi_short": 839.0019,
+          "eq_donchian_short": 960.4137,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -52794,57 +53676,57 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": 0.144,
+          "pnl": 1.778,
           "dd": 11.778,
           "trades": 9,
           "fees": 9.007,
           "win_rate": 50.0,
-          "last": 1001.436,
+          "last": 1017.78,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": 2.498,
+          "pnl": 4.171,
           "dd": 6.412,
           "trades": 5,
           "fees": 5.201,
           "win_rate": 50.0,
-          "last": 1024.979,
+          "last": 1041.708,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 3.104,
+          "pnl": 4.787,
           "dd": 8.961,
           "trades": 7,
           "fees": 7.215,
           "win_rate": 66.7,
-          "last": 1031.039,
+          "last": 1047.866,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 13.357,
+          "pnl": 15.207,
           "dd": 5.745,
           "trades": 5,
           "fees": 5.337,
           "win_rate": 50.0,
-          "last": 1133.568,
+          "last": 1152.068,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 5.611,
+          "pnl": 7.335,
           "dd": 8.757,
           "trades": 11,
           "fees": 11.375,
           "win_rate": 40.0,
-          "last": 1056.113,
+          "last": 1073.35,
           "in_pos": true
         },
         "rsi_revert": {
-          "pnl": 9.216,
+          "pnl": 10.999,
           "dd": 6.911,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1092.161,
+          "last": 1109.985,
           "in_pos": true
         },
         "sma_short": {
@@ -52857,12 +53739,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -14.507,
-          "dd": 14.464,
+          "pnl": -16.1,
+          "dd": 16.058,
           "trades": 3,
           "fees": 2.831,
           "win_rate": 0.0,
-          "last": 854.931,
+          "last": 839.002,
           "in_pos": true
         },
         "donchian_short": {
@@ -52879,10 +53761,10 @@
     "LTC/USDT": {
       "symbol": "LTC/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 5.056,
-      "last_close": 51.95,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 6.694,
+      "last_close": 52.76,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -54033,6 +54915,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 52.76,
+          "eq_supertrend": 1015.5015,
+          "eq_bb_squeeze": 1028.6489,
+          "eq_sma_trend": 958.6164,
+          "eq_sma_cross": 1074.0149,
+          "eq_donchian": 1106.3024,
+          "eq_trend_200": 1038.8162,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1008.7917,
+          "eq_rsi_short": 1037.05,
+          "eq_donchian_short": 1038.6192,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -54508,6 +55415,28 @@
           "qty": 0.0,
           "notional": 1008.7917,
           "fee": 0.504396
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "LTC/USDT",
+          "strategy": "trend_200",
+          "side": "BUY",
+          "price": 52.88,
+          "qty": 19.689465,
+          "notional": 1041.1789,
+          "fee": 1.041179
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "LTC/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 52.88,
+          "qty": 19.58652262,
+          "notional": 1035.7353,
+          "fee": 0.517868
         }
       ],
       "metrics": {
@@ -54521,12 +55450,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": 1.286,
+          "pnl": 2.865,
           "dd": 5.56,
           "trades": 7,
           "fees": 7.196,
           "win_rate": 33.3,
-          "last": 1012.856,
+          "last": 1028.649,
           "in_pos": true
         },
         "sma_trend": {
@@ -54539,31 +55468,31 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 5.753,
+          "pnl": 7.401,
           "dd": 3.742,
           "trades": 5,
           "fees": 5.278,
           "win_rate": 50.0,
-          "last": 1057.526,
+          "last": 1074.015,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 8.932,
+          "pnl": 10.63,
           "dd": 2.839,
           "trades": 5,
           "fees": 5.3,
           "win_rate": 50.0,
-          "last": 1089.318,
+          "last": 1106.302,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 4.274,
-          "dd": 4.237,
-          "trades": 6,
-          "fees": 6.289,
+          "pnl": 3.882,
+          "dd": 4.597,
+          "trades": 7,
+          "fees": 7.33,
           "win_rate": 33.3,
-          "last": 1042.742,
-          "in_pos": false
+          "last": 1038.816,
+          "in_pos": true
         },
         "rsi_revert": {
           "pnl": 0.0,
@@ -54584,13 +55513,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 3.574,
+          "pnl": 3.705,
           "dd": 3.833,
-          "trades": 2,
-          "fees": 1.517,
+          "trades": 3,
+          "fees": 2.035,
           "win_rate": 0.0,
-          "last": 1035.735,
-          "in_pos": false
+          "last": 1037.05,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": 3.862,
@@ -54606,9 +55535,9 @@
     "CHIP/USDT": {
       "symbol": "CHIP/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -12.563,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -8.136,
       "last_close": 0.04,
       "summary": [
         {
@@ -55760,6 +56689,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 0,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.03839,
+          "eq_supertrend": 1021.7004,
+          "eq_bb_squeeze": 1000.0,
+          "eq_sma_trend": 1118.6766,
+          "eq_sma_cross": 1139.6259,
+          "eq_donchian": 1062.7256,
+          "eq_trend_200": 1118.6766,
+          "eq_rsi_revert": 875.3698,
+          "eq_sma_short": 1197.2513,
+          "eq_rsi_short": 969.865,
+          "eq_donchian_short": 1111.0218,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -56070,16 +57024,71 @@
           "qty": 26613.71198344,
           "notional": 987.3687,
           "fee": 0.987369
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "CHIP/USDT",
+          "strategy": "sma_cross",
+          "side": "BUY",
+          "price": 0.03827,
+          "qty": 29685.48823836,
+          "notional": 1136.0636,
+          "fee": 1.136064
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "CHIP/USDT",
+          "strategy": "donchian",
+          "side": "BUY",
+          "price": 0.03827,
+          "qty": 27682.3548735,
+          "notional": 1059.4037,
+          "fee": 1.059404
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "CHIP/USDT",
+          "strategy": "sma_short",
+          "side": "COVER",
+          "price": 0.03827,
+          "qty": 0.0,
+          "notional": 1197.2513,
+          "fee": 0.598626
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "CHIP/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 0.03827,
+          "qty": 25447.94020723,
+          "notional": 973.8927,
+          "fee": 0.486946
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "CHIP/USDT",
+          "strategy": "donchian_short",
+          "side": "COVER",
+          "price": 0.03827,
+          "qty": 0.0,
+          "notional": 1111.0218,
+          "fee": 0.555511
         }
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -2.753,
+          "pnl": 2.17,
           "dd": 16.401,
           "trades": 5,
           "fees": 5.21,
           "win_rate": 50.0,
-          "last": 972.465,
+          "last": 1021.7,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -56101,22 +57110,22 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 13.777,
+          "pnl": 13.963,
           "dd": 5.014,
-          "trades": 4,
-          "fees": 4.372,
+          "trades": 5,
+          "fees": 5.508,
           "win_rate": 100.0,
-          "last": 1137.769,
-          "in_pos": false
+          "last": 1139.626,
+          "in_pos": true
         },
         "donchian": {
-          "pnl": 6.099,
+          "pnl": 6.273,
           "dd": 5.156,
-          "trades": 4,
-          "fees": 4.295,
+          "trades": 5,
+          "fees": 5.355,
           "win_rate": 50.0,
-          "last": 1060.994,
-          "in_pos": false
+          "last": 1062.726,
+          "in_pos": true
         },
         "trend_200": {
           "pnl": 11.868,
@@ -56128,49 +57137,49 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -16.681,
+          "pnl": -12.463,
           "dd": 19.874,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 833.186,
+          "last": 875.37,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": 23.443,
+          "pnl": 19.725,
           "dd": 6.985,
-          "trades": 3,
-          "fees": 2.502,
-          "win_rate": 0.0,
-          "last": 1234.429,
-          "in_pos": true
-        },
-        "rsi_short": {
-          "pnl": -2.611,
-          "dd": 12.416,
           "trades": 4,
-          "fees": 3.238,
+          "fees": 3.101,
           "win_rate": 0.0,
-          "last": 973.893,
+          "last": 1197.251,
           "in_pos": false
         },
-        "donchian_short": {
-          "pnl": 14.552,
-          "dd": 11.137,
-          "trades": 3,
-          "fees": 2.394,
+        "rsi_short": {
+          "pnl": -3.014,
+          "dd": 12.416,
+          "trades": 5,
+          "fees": 3.725,
           "win_rate": 0.0,
-          "last": 1145.522,
+          "last": 969.865,
           "in_pos": true
+        },
+        "donchian_short": {
+          "pnl": 11.102,
+          "dd": 11.137,
+          "trades": 4,
+          "fees": 2.95,
+          "win_rate": 0.0,
+          "last": 1111.022,
+          "in_pos": false
         }
       }
     },
     "FET/USDT": {
       "symbol": "FET/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 0.713,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 1.75,
       "last_close": 0.16,
       "summary": [
         {
@@ -57322,6 +58331,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.157,
+          "eq_supertrend": 1070.6642,
+          "eq_bb_squeeze": 935.8635,
+          "eq_sma_trend": 932.4867,
+          "eq_sma_cross": 1105.188,
+          "eq_donchian": 1042.9816,
+          "eq_trend_200": 991.8021,
+          "eq_rsi_revert": 1036.803,
+          "eq_sma_short": 1080.2156,
+          "eq_rsi_short": 988.9384,
+          "eq_donchian_short": 1025.6256,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -57898,12 +58932,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -7.367,
+          "pnl": -6.414,
           "dd": 8.202,
           "trades": 7,
           "fees": 6.688,
           "win_rate": 0.0,
-          "last": 926.326,
+          "last": 935.864,
           "in_pos": true
         },
         "sma_trend": {
@@ -57916,21 +58950,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 9.393,
+          "pnl": 10.519,
           "dd": 7.289,
           "trades": 7,
           "fees": 7.544,
           "win_rate": 66.7,
-          "last": 1093.925,
+          "last": 1105.188,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 3.235,
+          "pnl": 4.298,
           "dd": 8.298,
           "trades": 5,
           "fees": 5.209,
           "win_rate": 50.0,
-          "last": 1032.352,
+          "last": 1042.982,
           "in_pos": true
         },
         "trend_200": {
@@ -57943,12 +58977,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": 2.624,
+          "pnl": 3.68,
           "dd": 1.537,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1026.237,
+          "last": 1036.803,
           "in_pos": true
         },
         "sma_short": {
@@ -57961,12 +58995,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -0.102,
+          "pnl": -1.106,
           "dd": 8.857,
           "trades": 5,
           "fees": 3.812,
           "win_rate": 0.0,
-          "last": 998.976,
+          "last": 988.938,
           "in_pos": true
         },
         "donchian_short": {
@@ -57983,9 +59017,9 @@
     "HBAR/USDT": {
       "symbol": "HBAR/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -1.129,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 0.027,
       "last_close": 0.07,
       "summary": [
         {
@@ -59137,6 +60171,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 0,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.07444,
+          "eq_supertrend": 925.0803,
+          "eq_bb_squeeze": 944.223,
+          "eq_sma_trend": 960.2915,
+          "eq_sma_cross": 1027.7121,
+          "eq_donchian": 988.5907,
+          "eq_trend_200": 968.9512,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1032.3942,
+          "eq_rsi_short": 1074.4188,
+          "eq_donchian_short": 991.6466,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -59645,6 +60704,50 @@
           "qty": 0.0,
           "notional": 1074.4188,
           "fee": 0.537209
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "HBAR/USDT",
+          "strategy": "sma_cross",
+          "side": "BUY",
+          "price": 0.07428,
+          "qty": 13805.91161229,
+          "notional": 1025.5031,
+          "fee": 1.025503
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "HBAR/USDT",
+          "strategy": "donchian",
+          "side": "BUY",
+          "price": 0.07428,
+          "qty": 13280.36972002,
+          "notional": 986.4659,
+          "fee": 0.986466
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "HBAR/USDT",
+          "strategy": "sma_short",
+          "side": "COVER",
+          "price": 0.07428,
+          "qty": 0.0,
+          "notional": 1032.3942,
+          "fee": 0.516197
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "HBAR/USDT",
+          "strategy": "donchian_short",
+          "side": "COVER",
+          "price": 0.07428,
+          "qty": 0.0,
+          "notional": 991.6466,
+          "fee": 0.495823
         }
       ],
       "metrics": {
@@ -59676,22 +60779,22 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 2.704,
+          "pnl": 2.771,
           "dd": 4.423,
-          "trades": 8,
-          "fees": 8.144,
+          "trades": 9,
+          "fees": 9.169,
           "win_rate": 50.0,
-          "last": 1027.043,
-          "in_pos": false
+          "last": 1027.712,
+          "in_pos": true
         },
         "donchian": {
-          "pnl": -1.205,
+          "pnl": -1.141,
           "dd": 4.862,
-          "trades": 4,
-          "fees": 4.009,
+          "trades": 5,
+          "fees": 4.995,
           "win_rate": 50.0,
-          "last": 987.947,
-          "in_pos": false
+          "last": 988.591,
+          "in_pos": true
         },
         "trend_200": {
           "pnl": -3.105,
@@ -59712,13 +60815,13 @@
           "in_pos": false
         },
         "sma_short": {
-          "pnl": 4.306,
+          "pnl": 3.239,
           "dd": 3.347,
-          "trades": 7,
-          "fees": 5.565,
+          "trades": 8,
+          "fees": 6.081,
           "win_rate": 0.0,
-          "last": 1043.057,
-          "in_pos": true
+          "last": 1032.394,
+          "in_pos": false
         },
         "rsi_short": {
           "pnl": 7.442,
@@ -59730,23 +60833,23 @@
           "in_pos": false
         },
         "donchian_short": {
-          "pnl": 0.189,
+          "pnl": -0.835,
           "dd": 4.716,
-          "trades": 3,
-          "fees": 2.482,
+          "trades": 4,
+          "fees": 2.977,
           "win_rate": 0.0,
-          "last": 1001.888,
-          "in_pos": true
+          "last": 991.647,
+          "in_pos": false
         }
       }
     },
     "ASTER/USDT": {
       "symbol": "ASTER/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 3.868,
-      "last_close": 0.72,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 5.014,
+      "last_close": 0.73,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -60897,6 +62000,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.733,
+          "eq_supertrend": 974.2474,
+          "eq_bb_squeeze": 1045.304,
+          "eq_sma_trend": 1029.3967,
+          "eq_sma_cross": 1067.8051,
+          "eq_donchian": 1007.74,
+          "eq_trend_200": 1045.3183,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1020.8114,
+          "eq_rsi_short": 952.2392,
+          "eq_donchian_short": 963.7204,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -61396,48 +62524,48 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": 3.39,
+          "pnl": 4.53,
           "dd": 1.602,
           "trades": 3,
           "fees": 2.971,
           "win_rate": 0.0,
-          "last": 1033.896,
+          "last": 1045.304,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": 1.816,
+          "pnl": 2.94,
           "dd": 0.009,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1018.162,
+          "last": 1029.397,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 5.615,
+          "pnl": 6.781,
           "dd": 2.562,
           "trades": 7,
           "fees": 7.067,
           "win_rate": 66.7,
-          "last": 1056.151,
+          "last": 1067.805,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -0.326,
+          "pnl": 0.774,
           "dd": 6.196,
           "trades": 9,
           "fees": 8.833,
           "win_rate": 25.0,
-          "last": 996.741,
+          "last": 1007.74,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 3.391,
+          "pnl": 4.532,
           "dd": 2.739,
           "trades": 5,
           "fees": 4.946,
           "win_rate": 50.0,
-          "last": 1033.91,
+          "last": 1045.318,
           "in_pos": true
         },
         "rsi_revert": {
@@ -61459,12 +62587,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -3.669,
-          "dd": 3.621,
+          "pnl": -4.776,
+          "dd": 4.728,
           "trades": 3,
           "fees": 2.475,
           "win_rate": 0.0,
-          "last": 963.307,
+          "last": 952.239,
           "in_pos": true
         },
         "donchian_short": {
@@ -61481,10 +62609,10 @@
     "CRCLB/USDT": {
       "symbol": "CRCLB/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -8.589,
-      "last_close": 81.84,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -6.813,
+      "last_close": 83.43,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -62635,6 +63763,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 0,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 83.43,
+          "eq_supertrend": 939.0687,
+          "eq_bb_squeeze": 970.899,
+          "eq_sma_trend": 966.2847,
+          "eq_sma_cross": 978.2257,
+          "eq_donchian": 964.4918,
+          "eq_trend_200": 976.3426,
+          "eq_rsi_revert": 982.9489,
+          "eq_sma_short": 1043.5157,
+          "eq_rsi_short": 1086.9348,
+          "eq_donchian_short": 1023.6171,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 0,
+          "in_donchian": 0,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 1,
+          "in_rsi_short": 0,
+          "in_donchian_short": 1
         }
       ],
       "trades": [
@@ -63190,21 +64343,21 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -3.578,
+          "pnl": -1.705,
           "dd": 6.353,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 964.216,
+          "last": 982.949,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": 5.989,
+          "pnl": 4.352,
           "dd": 4.853,
           "trades": 7,
           "fees": 5.313,
           "win_rate": 0.0,
-          "last": 1059.885,
+          "last": 1043.516,
           "in_pos": true
         },
         "rsi_short": {
@@ -63217,12 +64370,12 @@
           "in_pos": false
         },
         "donchian_short": {
-          "pnl": 3.967,
+          "pnl": 2.362,
           "dd": 6.62,
           "trades": 5,
           "fees": 3.361,
           "win_rate": 0.0,
-          "last": 1039.675,
+          "last": 1023.617,
           "in_pos": true
         }
       }
@@ -63230,9 +64383,9 @@
     "NIL/USDT": {
       "symbol": "NIL/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -19.394,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -18.318,
       "last_close": 0.04,
       "summary": [
         {
@@ -64384,6 +65537,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.04098,
+          "eq_supertrend": 819.6336,
+          "eq_bb_squeeze": 953.8541,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 986.5963,
+          "eq_donchian": 957.3555,
+          "eq_trend_200": 988.8371,
+          "eq_rsi_revert": 974.2514,
+          "eq_sma_short": 1184.5456,
+          "eq_rsi_short": 1207.3975,
+          "eq_donchian_short": 1151.4345,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -64813,21 +65991,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -2.64,
+          "pnl": -1.34,
           "dd": 3.195,
           "trades": 5,
           "fees": 4.928,
           "win_rate": 0.0,
-          "last": 973.596,
+          "last": 986.596,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -5.526,
+          "pnl": -4.264,
           "dd": 5.526,
           "trades": 5,
           "fees": 4.845,
           "win_rate": 0.0,
-          "last": 944.74,
+          "last": 957.356,
           "in_pos": true
         },
         "trend_200": {
@@ -64840,12 +66018,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -3.859,
+          "pnl": -2.575,
           "dd": 9.095,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 961.414,
+          "last": 974.251,
           "in_pos": true
         },
         "sma_short": {
@@ -64858,12 +66036,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 22.207,
-          "dd": 2.514,
+          "pnl": 20.74,
+          "dd": 3.685,
           "trades": 3,
           "fees": 2.741,
           "win_rate": 0.0,
-          "last": 1222.07,
+          "last": 1207.398,
           "in_pos": true
         },
         "donchian_short": {
@@ -64880,8 +66058,8 @@
     "ZRO/USDT": {
       "symbol": "ZRO/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
       "buy_hold": 1.889,
       "last_close": 1.02,
       "summary": [
@@ -66034,6 +67212,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.025,
+          "eq_supertrend": 987.8989,
+          "eq_bb_squeeze": 949.782,
+          "eq_sma_trend": 995.5868,
+          "eq_sma_cross": 1017.3529,
+          "eq_donchian": 910.6461,
+          "eq_trend_200": 964.1078,
+          "eq_rsi_revert": 1102.8699,
+          "eq_sma_short": 995.2749,
+          "eq_rsi_short": 1072.0173,
+          "eq_donchian_short": 890.7995,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -66574,9 +67777,9 @@
     "BANK/USDT": {
       "symbol": "BANK/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -23.662,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -23.099,
       "last_close": 0.03,
       "summary": [
         {
@@ -67728,6 +68931,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.0273,
+          "eq_supertrend": 762.8741,
+          "eq_bb_squeeze": 1000.539,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 947.7506,
+          "eq_donchian": 974.4059,
+          "eq_trend_200": 972.5157,
+          "eq_rsi_revert": 1032.1093,
+          "eq_sma_short": 1188.3463,
+          "eq_rsi_short": 1282.5879,
+          "eq_donchian_short": 1215.0265,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -68064,12 +69292,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -24.271,
+          "pnl": -23.713,
           "dd": 25.557,
           "trades": 3,
           "fees": 2.593,
           "win_rate": 0.0,
-          "last": 757.285,
+          "last": 762.874,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -68091,21 +69319,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -5.919,
+          "pnl": -5.225,
           "dd": 5.919,
           "trades": 5,
           "fees": 4.86,
           "win_rate": 0.0,
-          "last": 940.807,
+          "last": 947.751,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -3.273,
+          "pnl": -2.559,
           "dd": 5.8,
           "trades": 3,
           "fees": 2.934,
           "win_rate": 0.0,
-          "last": 967.267,
+          "last": 974.406,
           "in_pos": true
         },
         "trend_200": {
@@ -68136,12 +69364,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 29.074,
-          "dd": 1.865,
+          "pnl": 28.259,
+          "dd": 2.176,
           "trades": 3,
           "fees": 2.797,
           "win_rate": 0.0,
-          "last": 1290.739,
+          "last": 1282.588,
           "in_pos": true
         },
         "donchian_short": {
@@ -68158,10 +69386,10 @@
     "AVAX/USDT": {
       "symbol": "AVAX/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 2.948,
-      "last_close": 7.51,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 3.442,
+      "last_close": 7.54,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -69312,6 +70540,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 7.543,
+          "eq_supertrend": 965.0457,
+          "eq_bb_squeeze": 966.2555,
+          "eq_sma_trend": 998.5007,
+          "eq_sma_cross": 1014.242,
+          "eq_donchian": 978.5219,
+          "eq_trend_200": 986.8398,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 986.1801,
+          "eq_rsi_short": 1007.0221,
+          "eq_donchian_short": 950.1589,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -69853,6 +71106,17 @@
           "qty": 0.0,
           "notional": 986.1801,
           "fee": 0.49309
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "AVAX/USDT",
+          "strategy": "sma_trend",
+          "side": "BUY",
+          "price": 7.543,
+          "qty": 132.37448623,
+          "notional": 998.5007,
+          "fee": 0.998501
         }
       ],
       "metrics": {
@@ -69866,48 +71130,48 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -3.836,
+          "pnl": -3.374,
           "dd": 5.924,
           "trades": 5,
           "fees": 4.811,
           "win_rate": 0.0,
-          "last": 961.644,
+          "last": 966.255,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": 0.0,
-          "dd": 0.0,
-          "trades": 0,
-          "fees": 0.0,
+          "pnl": -0.15,
+          "dd": 0.15,
+          "trades": 1,
+          "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1000.0,
-          "in_pos": false
+          "last": 998.501,
+          "in_pos": true
         },
         "sma_cross": {
-          "pnl": 0.94,
+          "pnl": 1.424,
           "dd": 2.808,
           "trades": 9,
           "fees": 9.15,
           "win_rate": 50.0,
-          "last": 1009.401,
+          "last": 1014.242,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -2.615,
+          "pnl": -2.148,
           "dd": 7.243,
           "trades": 9,
           "fees": 8.837,
           "win_rate": 25.0,
-          "last": 973.852,
+          "last": 978.522,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -1.787,
+          "pnl": -1.316,
           "dd": 4.534,
           "trades": 7,
           "fees": 7.015,
           "win_rate": 33.3,
-          "last": 982.13,
+          "last": 986.84,
           "in_pos": true
         },
         "rsi_revert": {
@@ -69929,12 +71193,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 1.176,
-          "dd": 3.813,
+          "pnl": 0.702,
+          "dd": 4.263,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 1011.756,
+          "last": 1007.022,
           "in_pos": true
         },
         "donchian_short": {
@@ -69951,9 +71215,9 @@
     "PENGU/USDT": {
       "symbol": "PENGU/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -18.683,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -18.342,
       "last_close": 0.01,
       "summary": [
         {
@@ -71105,6 +72369,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.007181,
+          "eq_supertrend": 933.1762,
+          "eq_bb_squeeze": 981.2491,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 813.9423,
+          "eq_donchian": 937.8251,
+          "eq_trend_200": 990.6375,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1001.5398,
+          "eq_rsi_short": 1006.8751,
+          "eq_donchian_short": 1127.0315,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -71571,12 +72860,12 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -2.285,
+          "pnl": -1.875,
           "dd": 6.002,
           "trades": 5,
           "fees": 4.797,
           "win_rate": 0.0,
-          "last": 977.15,
+          "last": 981.249,
           "in_pos": true
         },
         "sma_trend": {
@@ -71589,30 +72878,30 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -18.946,
+          "pnl": -18.606,
           "dd": 20.811,
           "trades": 9,
           "fees": 7.519,
           "win_rate": 0.0,
-          "last": 810.542,
+          "last": 813.942,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -6.609,
+          "pnl": -6.217,
           "dd": 10.738,
           "trades": 7,
           "fees": 6.587,
           "win_rate": 0.0,
-          "last": 933.907,
+          "last": 937.825,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -1.35,
+          "pnl": -0.936,
           "dd": 1.35,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 986.499,
+          "last": 990.638,
           "in_pos": true
         },
         "rsi_revert": {
@@ -71634,12 +72923,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 1.102,
-          "dd": 0.0,
+          "pnl": 0.688,
+          "dd": 0.41,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 1011.02,
+          "last": 1006.875,
           "in_pos": true
         },
         "donchian_short": {
@@ -71656,10 +72945,10 @@
     "SNDKB/USDT": {
       "symbol": "SNDKB/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -0.586,
-      "last_close": 1530.05,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 0.7,
+      "last_close": 1549.85,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -72810,6 +74099,31 @@
           "in_sma_short": 1,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1549.85,
+          "eq_supertrend": 1000.0,
+          "eq_bb_squeeze": 943.5584,
+          "eq_sma_trend": 1089.9169,
+          "eq_sma_cross": 1050.6343,
+          "eq_donchian": 1036.0214,
+          "eq_trend_200": 1089.9169,
+          "eq_rsi_revert": 1065.9305,
+          "eq_sma_short": 1042.3239,
+          "eq_rsi_short": 904.7147,
+          "eq_donchian_short": 1028.8632,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -73153,6 +74467,39 @@
           "qty": 0.68582535,
           "notional": 1054.5731,
           "fee": 0.527287
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "SNDKB/USDT",
+          "strategy": "bb_squeeze",
+          "side": "BUY",
+          "price": 1552.44,
+          "qty": 0.60880626,
+          "notional": 945.1352,
+          "fee": 0.945135
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "SNDKB/USDT",
+          "strategy": "sma_cross",
+          "side": "BUY",
+          "price": 1552.44,
+          "qty": 0.67789418,
+          "notional": 1052.39,
+          "fee": 1.05239
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "SNDKB/USDT",
+          "strategy": "sma_short",
+          "side": "COVER",
+          "price": 1552.44,
+          "qty": 0.0,
+          "notional": 1042.3239,
+          "fee": 0.521162
         }
       ],
       "metrics": {
@@ -73166,13 +74513,13 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -5.345,
-          "dd": 5.345,
-          "trades": 2,
-          "fees": 1.945,
+          "pnl": -5.644,
+          "dd": 5.644,
+          "trades": 3,
+          "fees": 2.89,
           "win_rate": 0.0,
-          "last": 946.554,
-          "in_pos": false
+          "last": 943.558,
+          "in_pos": true
         },
         "sma_trend": {
           "pnl": 8.992,
@@ -73184,21 +74531,21 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": 5.397,
+          "pnl": 5.063,
           "dd": 4.374,
-          "trades": 6,
-          "fees": 6.348,
+          "trades": 7,
+          "fees": 7.4,
           "win_rate": 33.3,
-          "last": 1053.97,
-          "in_pos": false
+          "last": 1050.634,
+          "in_pos": true
         },
         "donchian": {
-          "pnl": 2.279,
+          "pnl": 3.602,
           "dd": 6.619,
           "trades": 5,
           "fees": 5.238,
           "win_rate": 50.0,
-          "last": 1022.786,
+          "last": 1036.021,
           "in_pos": true
         },
         "trend_200": {
@@ -73211,22 +74558,22 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": 5.231,
+          "pnl": 6.593,
           "dd": 4.237,
           "trades": 3,
           "fees": 3.177,
           "win_rate": 100.0,
-          "last": 1052.313,
+          "last": 1065.93,
           "in_pos": true
         },
         "sma_short": {
-          "pnl": 5.874,
-          "dd": 3.35,
-          "trades": 5,
-          "fees": 3.128,
+          "pnl": 4.232,
+          "dd": 4.201,
+          "trades": 6,
+          "fees": 3.649,
           "win_rate": 0.0,
-          "last": 1058.745,
-          "in_pos": true
+          "last": 1042.324,
+          "in_pos": false
         },
         "rsi_short": {
           "pnl": -9.529,
@@ -73251,8 +74598,8 @@
     "ONDO/USDT": {
       "symbol": "ONDO/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
       "buy_hold": 0.894,
       "last_close": 0.35,
       "summary": [
@@ -74405,6 +75752,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.3497,
+          "eq_supertrend": 977.9398,
+          "eq_bb_squeeze": 991.6195,
+          "eq_sma_trend": 999.8488,
+          "eq_sma_cross": 1003.9564,
+          "eq_donchian": 1032.8749,
+          "eq_trend_200": 953.049,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 998.9378,
+          "eq_rsi_short": 1080.3348,
+          "eq_donchian_short": 1028.0104,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -75000,10 +76372,10 @@
     "DASH/USDT": {
       "symbol": "DASH/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 27.927,
-      "last_close": 58.45,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 25.016,
+      "last_close": 57.12,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -76154,6 +77526,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 57.12,
+          "eq_supertrend": 947.1099,
+          "eq_bb_squeeze": 958.6574,
+          "eq_sma_trend": 1199.1606,
+          "eq_sma_cross": 1250.8941,
+          "eq_donchian": 1195.5169,
+          "eq_trend_200": 1275.303,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 1003.1517,
+          "eq_rsi_short": 716.1209,
+          "eq_donchian_short": 960.3796,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -76651,39 +78048,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": 22.708,
-          "dd": 0.15,
+          "pnl": 19.916,
+          "dd": 2.275,
           "trades": 3,
           "fees": 3.441,
           "win_rate": 100.0,
-          "last": 1227.082,
+          "last": 1199.161,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 28.002,
+          "pnl": 25.089,
           "dd": 4.561,
           "trades": 7,
           "fees": 8.163,
           "win_rate": 33.3,
-          "last": 1280.02,
+          "last": 1250.894,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 22.335,
+          "pnl": 19.552,
           "dd": 8.608,
           "trades": 7,
           "fees": 8.005,
           "win_rate": 33.3,
-          "last": 1223.354,
+          "last": 1195.517,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 30.5,
+          "pnl": 27.53,
           "dd": 2.851,
           "trades": 5,
           "fees": 5.823,
           "win_rate": 50.0,
-          "last": 1304.997,
+          "last": 1275.303,
           "in_pos": true
         },
         "rsi_revert": {
@@ -76705,12 +78102,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -30.313,
+          "pnl": -28.388,
           "dd": 30.278,
           "trades": 3,
           "fees": 2.157,
           "win_rate": 0.0,
-          "last": 696.867,
+          "last": 716.121,
           "in_pos": true
         },
         "donchian_short": {
@@ -76727,9 +78124,9 @@
     "XLM/USDT": {
       "symbol": "XLM/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 2.531,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 1.856,
       "last_close": 0.18,
       "summary": [
         {
@@ -77881,6 +79278,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.1811,
+          "eq_supertrend": 899.3072,
+          "eq_bb_squeeze": 1034.2288,
+          "eq_sma_trend": 965.6688,
+          "eq_sma_cross": 958.3399,
+          "eq_donchian": 1018.4516,
+          "eq_trend_200": 911.7947,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 943.0497,
+          "eq_rsi_short": 1036.8969,
+          "eq_donchian_short": 1000.8617,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -78422,52 +79844,63 @@
           "qty": 0.0,
           "notional": 911.7947,
           "fee": 0.911795
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "XLM/USDT",
+          "strategy": "sma_trend",
+          "side": "SELL",
+          "price": 0.1814,
+          "qty": 0.0,
+          "notional": 965.6688,
+          "fee": 0.965669
         }
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -9.473,
+          "pnl": -10.069,
           "dd": 12.198,
           "trades": 5,
           "fees": 4.778,
           "win_rate": 0.0,
-          "last": 905.266,
+          "last": 899.307,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": 4.108,
+          "pnl": 3.423,
           "dd": 3.037,
           "trades": 5,
           "fees": 5.046,
           "win_rate": 50.0,
-          "last": 1041.082,
+          "last": 1034.229,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": -2.808,
-          "dd": 8.084,
-          "trades": 3,
-          "fees": 2.965,
+          "pnl": -3.433,
+          "dd": 8.675,
+          "trades": 4,
+          "fees": 3.931,
           "win_rate": 0.0,
-          "last": 971.917,
-          "in_pos": true
+          "last": 965.669,
+          "in_pos": false
         },
         "sma_cross": {
-          "pnl": -3.531,
+          "pnl": -4.166,
           "dd": 7.538,
           "trades": 7,
           "fees": 6.829,
           "win_rate": 0.0,
-          "last": 964.69,
+          "last": 958.34,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 2.52,
+          "pnl": 1.845,
           "dd": 3.516,
           "trades": 7,
           "fees": 6.998,
           "win_rate": 66.7,
-          "last": 1025.2,
+          "last": 1018.452,
           "in_pos": true
         },
         "trend_200": {
@@ -78520,9 +79953,9 @@
     "XPL/USDT": {
       "symbol": "XPL/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 1.094,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 3.342,
       "last_close": 0.09,
       "summary": [
         {
@@ -79674,6 +81107,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.0869,
+          "eq_supertrend": 914.1606,
+          "eq_bb_squeeze": 987.4952,
+          "eq_sma_trend": 1019.9802,
+          "eq_sma_cross": 989.1467,
+          "eq_donchian": 959.4076,
+          "eq_trend_200": 937.4377,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 953.6123,
+          "eq_rsi_short": 969.3791,
+          "eq_donchian_short": 927.2682,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -80085,48 +81543,48 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -3.398,
+          "pnl": -1.25,
           "dd": 3.398,
           "trades": 3,
           "fees": 2.933,
           "win_rate": 0.0,
-          "last": 966.018,
+          "last": 987.495,
           "in_pos": true
         },
         "sma_trend": {
-          "pnl": -0.22,
+          "pnl": 1.998,
           "dd": 0.22,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 997.797,
+          "last": 1019.98,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -3.237,
+          "pnl": -1.085,
           "dd": 4.695,
           "trades": 5,
           "fees": 4.875,
           "win_rate": 50.0,
-          "last": 967.634,
+          "last": 989.147,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -6.146,
+          "pnl": -4.059,
           "dd": 6.146,
           "trades": 5,
           "fees": 4.759,
           "win_rate": 50.0,
-          "last": 938.541,
+          "last": 959.408,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -8.295,
+          "pnl": -6.256,
           "dd": 9.297,
           "trades": 7,
           "fees": 6.654,
           "win_rate": 0.0,
-          "last": 917.049,
+          "last": 937.438,
           "in_pos": true
         },
         "rsi_revert": {
@@ -80148,12 +81606,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -0.823,
-          "dd": 6.292,
+          "pnl": -3.062,
+          "dd": 8.407,
           "trades": 1,
           "fees": 0.5,
           "win_rate": 0.0,
-          "last": 991.773,
+          "last": 969.379,
           "in_pos": true
         },
         "donchian_short": {
@@ -80170,10 +81628,10 @@
     "BCH/USDT": {
       "symbol": "BCH/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -10.896,
-      "last_close": 220.8,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -9.362,
+      "last_close": 224.6,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -81324,6 +82782,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 224.6,
+          "eq_supertrend": 968.344,
+          "eq_bb_squeeze": 979.0158,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 885.3878,
+          "eq_donchian": 890.7865,
+          "eq_trend_200": 992.4823,
+          "eq_rsi_revert": 905.0172,
+          "eq_sma_short": 981.4366,
+          "eq_rsi_short": 1078.8219,
+          "eq_donchian_short": 987.5619,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -81744,6 +83227,28 @@
           "qty": 0.0,
           "notional": 987.5619,
           "fee": 0.493781
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "BCH/USDT",
+          "strategy": "bb_squeeze",
+          "side": "BUY",
+          "price": 223.3,
+          "qty": 4.3589306,
+          "notional": 973.3492,
+          "fee": 0.973349
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "BCH/USDT",
+          "strategy": "trend_200",
+          "side": "BUY",
+          "price": 223.3,
+          "qty": 4.41888821,
+          "notional": 986.7377,
+          "fee": 0.986738
         }
       ],
       "metrics": {
@@ -81757,13 +83262,13 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -2.519,
+          "pnl": -2.098,
           "dd": 4.656,
-          "trades": 4,
-          "fees": 3.961,
+          "trades": 5,
+          "fees": 4.935,
           "win_rate": 0.0,
-          "last": 974.811,
-          "in_pos": false
+          "last": 979.016,
+          "in_pos": true
         },
         "sma_trend": {
           "pnl": 0.0,
@@ -81775,39 +83280,39 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -12.959,
+          "pnl": -11.461,
           "dd": 12.829,
           "trades": 7,
           "fees": 6.357,
           "win_rate": 0.0,
-          "last": 870.408,
+          "last": 885.388,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -12.428,
+          "pnl": -10.921,
           "dd": 12.297,
           "trades": 7,
           "fees": 6.379,
           "win_rate": 0.0,
-          "last": 875.715,
+          "last": 890.787,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -1.178,
+          "pnl": -0.752,
           "dd": 1.178,
-          "trades": 2,
-          "fees": 1.987,
+          "trades": 3,
+          "fees": 2.973,
           "win_rate": 0.0,
-          "last": 988.219,
-          "in_pos": false
+          "last": 992.482,
+          "in_pos": true
         },
         "rsi_revert": {
-          "pnl": -11.029,
+          "pnl": -9.498,
           "dd": 12.793,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 889.705,
+          "last": 905.017,
           "in_pos": true
         },
         "sma_short": {
@@ -81820,12 +83325,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 9.703,
-          "dd": 2.011,
+          "pnl": 7.882,
+          "dd": 3.638,
           "trades": 3,
           "fees": 2.616,
           "win_rate": 0.0,
-          "last": 1097.028,
+          "last": 1078.822,
           "in_pos": true
         },
         "donchian_short": {
@@ -81842,10 +83347,10 @@
     "GRAM/USDT": {
       "symbol": "GRAM/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -3.247,
-      "last_close": 1.31,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -1.919,
+      "last_close": 1.33,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -82996,6 +84501,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 1
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 1.329,
+          "eq_supertrend": 976.5751,
+          "eq_bb_squeeze": 981.4843,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 975.4597,
+          "eq_donchian": 967.7402,
+          "eq_trend_200": 964.4322,
+          "eq_rsi_revert": 979.3413,
+          "eq_sma_short": 995.3399,
+          "eq_rsi_short": 999.478,
+          "eq_donchian_short": 990.9769,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 0,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 0,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -83427,6 +84957,39 @@
           "qty": 0.0,
           "notional": 995.3399,
           "fee": 0.49767
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "GRAM/USDT",
+          "strategy": "bb_squeeze",
+          "side": "BUY",
+          "price": 1.338,
+          "qty": 738.51341275,
+          "notional": 988.1309,
+          "fee": 0.988131
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "GRAM/USDT",
+          "strategy": "donchian",
+          "side": "BUY",
+          "price": 1.338,
+          "qty": 728.17173987,
+          "notional": 974.2938,
+          "fee": 0.974294
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "GRAM/USDT",
+          "strategy": "donchian_short",
+          "side": "COVER",
+          "price": 1.338,
+          "qty": 0.0,
+          "notional": 990.9769,
+          "fee": 0.495488
         }
       ],
       "metrics": {
@@ -83440,13 +85003,13 @@
           "in_pos": false
         },
         "bb_squeeze": {
-          "pnl": -1.039,
-          "dd": 1.395,
-          "trades": 4,
-          "fees": 3.985,
+          "pnl": -1.852,
+          "dd": 2.205,
+          "trades": 5,
+          "fees": 4.973,
           "win_rate": 50.0,
-          "last": 989.615,
-          "in_pos": false
+          "last": 981.484,
+          "in_pos": true
         },
         "sma_trend": {
           "pnl": 0.0,
@@ -83458,22 +85021,22 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -3.775,
+          "pnl": -2.454,
           "dd": 4.396,
           "trades": 5,
           "fees": 4.891,
           "win_rate": 0.0,
-          "last": 962.248,
+          "last": 975.46,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -2.424,
-          "dd": 3.115,
-          "trades": 6,
-          "fees": 5.949,
+          "pnl": -3.226,
+          "dd": 3.911,
+          "trades": 7,
+          "fees": 6.923,
           "win_rate": 33.3,
-          "last": 975.757,
-          "in_pos": false
+          "last": 967.74,
+          "in_pos": true
         },
         "trend_200": {
           "pnl": -3.557,
@@ -83485,12 +85048,12 @@
           "in_pos": false
         },
         "rsi_revert": {
-          "pnl": -3.392,
+          "pnl": -2.066,
           "dd": 5.921,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 966.077,
+          "last": 979.341,
           "in_pos": true
         },
         "sma_short": {
@@ -83512,23 +85075,23 @@
           "in_pos": false
         },
         "donchian_short": {
-          "pnl": 1.188,
-          "dd": 1.794,
-          "trades": 5,
-          "fees": 3.471,
+          "pnl": -0.902,
+          "dd": 2.634,
+          "trades": 6,
+          "fees": 3.966,
           "win_rate": 0.0,
-          "last": 1011.882,
-          "in_pos": true
+          "last": 990.977,
+          "in_pos": false
         }
       }
     },
     "GIGGLE/USDT": {
       "symbol": "GIGGLE/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": -9.096,
-      "last_close": 34.38,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": -8.858,
+      "last_close": 34.47,
       "summary": [
         {
           "ts_iso": "2026-09-01T13:00:00+00:00",
@@ -84679,6 +86242,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 34.47,
+          "eq_supertrend": 893.3055,
+          "eq_bb_squeeze": 974.4684,
+          "eq_sma_trend": 1000.0,
+          "eq_sma_cross": 969.7957,
+          "eq_donchian": 1005.0224,
+          "eq_trend_200": 956.9774,
+          "eq_rsi_revert": 995.6124,
+          "eq_sma_short": 1057.5222,
+          "eq_rsi_short": 1125.766,
+          "eq_donchian_short": 1097.6165,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 1,
+          "in_sma_trend": 0,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -85202,21 +86790,21 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": -10.903,
+          "pnl": -10.669,
           "dd": 13.416,
           "trades": 5,
           "fees": 4.608,
           "win_rate": 0.0,
-          "last": 890.973,
+          "last": 893.306,
           "in_pos": true
         },
         "bb_squeeze": {
-          "pnl": -2.808,
+          "pnl": -2.553,
           "dd": 2.808,
           "trades": 5,
           "fees": 4.955,
           "win_rate": 50.0,
-          "last": 971.924,
+          "last": 974.468,
           "in_pos": true
         },
         "sma_trend": {
@@ -85229,39 +86817,39 @@
           "in_pos": false
         },
         "sma_cross": {
-          "pnl": -3.274,
+          "pnl": -3.02,
           "dd": 4.307,
           "trades": 7,
           "fees": 6.826,
           "win_rate": 66.7,
-          "last": 967.264,
+          "last": 969.796,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 0.24,
+          "pnl": 0.502,
           "dd": 3.855,
           "trades": 5,
           "fees": 4.989,
           "win_rate": 100.0,
-          "last": 1002.398,
+          "last": 1005.022,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -4.552,
+          "pnl": -4.302,
           "dd": 4.673,
           "trades": 7,
           "fees": 6.822,
           "win_rate": 0.0,
-          "last": 954.479,
+          "last": 956.977,
           "in_pos": true
         },
         "rsi_revert": {
-          "pnl": -0.699,
+          "pnl": -0.439,
           "dd": 7.82,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 993.013,
+          "last": 995.612,
           "in_pos": true
         },
         "sma_short": {
@@ -85274,12 +86862,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 12.848,
+          "pnl": 12.577,
           "dd": 3.57,
           "trades": 3,
           "fees": 3.167,
           "win_rate": 0.0,
-          "last": 1128.485,
+          "last": 1125.766,
           "in_pos": true
         },
         "donchian_short": {
@@ -85296,9 +86884,9 @@
     "OPG/USDT": {
       "symbol": "OPG/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 5.876,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 5.979,
       "last_close": 0.1,
       "summary": [
         {
@@ -86450,6 +88038,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 0,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.1028,
+          "eq_supertrend": 1021.6716,
+          "eq_bb_squeeze": 1009.483,
+          "eq_sma_trend": 975.5377,
+          "eq_sma_cross": 1017.8323,
+          "eq_donchian": 1036.706,
+          "eq_trend_200": 975.2382,
+          "eq_rsi_revert": 1022.8504,
+          "eq_sma_short": 963.1285,
+          "eq_rsi_short": 1032.2022,
+          "eq_donchian_short": 981.4945,
+          "in_supertrend": 0,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 1,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -87145,6 +88758,39 @@
           "qty": 0.0,
           "notional": 981.4945,
           "fee": 0.490747
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "OPG/USDT",
+          "strategy": "trend_200",
+          "side": "BUY",
+          "price": 0.1035,
+          "qty": 9486.75265122,
+          "notional": 981.8789,
+          "fee": 0.981879
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "OPG/USDT",
+          "strategy": "rsi_revert",
+          "side": "BUY",
+          "price": 0.1035,
+          "qty": 9949.90670759,
+          "notional": 1029.8153,
+          "fee": 1.029815
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "symbol": "OPG/USDT",
+          "strategy": "rsi_short",
+          "side": "SHORT",
+          "price": 0.1035,
+          "qty": 9915.82029911,
+          "notional": 1026.2874,
+          "fee": 0.513144
         }
       ],
       "metrics": {
@@ -87167,49 +88813,49 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -2.541,
+          "pnl": -2.446,
           "dd": 6.253,
           "trades": 9,
           "fees": 9.044,
           "win_rate": 25.0,
-          "last": 974.589,
+          "last": 975.538,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": 1.684,
+          "pnl": 1.783,
           "dd": 7.077,
           "trades": 5,
           "fees": 5.156,
           "win_rate": 50.0,
-          "last": 1016.842,
+          "last": 1017.832,
           "in_pos": true
         },
         "donchian": {
-          "pnl": 3.57,
+          "pnl": 3.671,
           "dd": 5.171,
           "trades": 5,
           "fees": 5.202,
           "win_rate": 50.0,
-          "last": 1035.698,
+          "last": 1036.706,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": -1.665,
-          "dd": 6.866,
-          "trades": 10,
-          "fees": 10.077,
+          "pnl": -2.476,
+          "dd": 7.634,
+          "trades": 11,
+          "fees": 11.058,
           "win_rate": 40.0,
-          "last": 983.353,
-          "in_pos": false
+          "last": 975.238,
+          "in_pos": true
         },
         "rsi_revert": {
-          "pnl": 3.136,
+          "pnl": 2.285,
           "dd": 5.32,
-          "trades": 16,
-          "fees": 16.368,
+          "trades": 17,
+          "fees": 17.398,
           "win_rate": 50.0,
-          "last": 1031.362,
-          "in_pos": false
+          "last": 1022.85,
+          "in_pos": true
         },
         "sma_short": {
           "pnl": -3.687,
@@ -87221,13 +88867,13 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": 2.629,
+          "pnl": 3.22,
           "dd": 5.025,
-          "trades": 4,
-          "fees": 3.459,
+          "trades": 5,
+          "fees": 3.972,
           "win_rate": 0.0,
-          "last": 1026.287,
-          "in_pos": false
+          "last": 1032.202,
+          "in_pos": true
         },
         "donchian_short": {
           "pnl": -1.851,
@@ -87243,9 +88889,9 @@
     "COTI/USDT": {
       "symbol": "COTI/USDT",
       "first_ts": "2026-09-01T13:00:00+00:00",
-      "last_ts": "2026-09-17T05:00:00+00:00",
-      "n_candles": 46,
-      "buy_hold": 34.396,
+      "last_ts": "2026-09-17T10:00:00+00:00",
+      "n_candles": 47,
+      "buy_hold": 43.128,
       "last_close": 0.02,
       "summary": [
         {
@@ -88397,6 +90043,31 @@
           "in_sma_short": 0,
           "in_rsi_short": 1,
           "in_donchian_short": 0
+        },
+        {
+          "ts_iso": "2026-09-17T10:00:00+00:00",
+          "ts_ms": 1789639200000,
+          "close": 0.01885,
+          "eq_supertrend": 1429.1374,
+          "eq_bb_squeeze": 964.1613,
+          "eq_sma_trend": 1048.1671,
+          "eq_sma_cross": 935.8917,
+          "eq_donchian": 1008.4931,
+          "eq_trend_200": 1508.9155,
+          "eq_rsi_revert": 1000.0,
+          "eq_sma_short": 535.959,
+          "eq_rsi_short": 568.4328,
+          "eq_donchian_short": 578.6973,
+          "in_supertrend": 1,
+          "in_bb_squeeze": 0,
+          "in_sma_trend": 1,
+          "in_sma_cross": 1,
+          "in_donchian": 1,
+          "in_trend_200": 1,
+          "in_rsi_revert": 0,
+          "in_sma_short": 0,
+          "in_rsi_short": 1,
+          "in_donchian_short": 0
         }
       ],
       "trades": [
@@ -88887,12 +90558,12 @@
       ],
       "metrics": {
         "supertrend": {
-          "pnl": 34.195,
+          "pnl": 42.914,
           "dd": 14.507,
           "trades": 1,
           "fees": 0.999,
           "win_rate": 0.0,
-          "last": 1341.949,
+          "last": 1429.137,
           "in_pos": true
         },
         "bb_squeeze": {
@@ -88905,39 +90576,39 @@
           "in_pos": false
         },
         "sma_trend": {
-          "pnl": -1.578,
+          "pnl": 4.817,
           "dd": 2.274,
           "trades": 3,
           "fees": 2.968,
           "win_rate": 0.0,
-          "last": 984.221,
+          "last": 1048.167,
           "in_pos": true
         },
         "sma_cross": {
-          "pnl": -12.121,
+          "pnl": -6.411,
           "dd": 15.897,
           "trades": 7,
           "fees": 6.628,
           "win_rate": 0.0,
-          "last": 878.795,
+          "last": 935.892,
           "in_pos": true
         },
         "donchian": {
-          "pnl": -5.303,
+          "pnl": 0.849,
           "dd": 10.929,
           "trades": 7,
           "fees": 6.809,
           "win_rate": 0.0,
-          "last": 946.967,
+          "last": 1008.493,
           "in_pos": true
         },
         "trend_200": {
-          "pnl": 41.686,
+          "pnl": 50.892,
           "dd": 5.071,
           "trades": 5,
           "fees": 6.404,
           "win_rate": 50.0,
-          "last": 1416.86,
+          "last": 1508.916,
           "in_pos": true
         },
         "rsi_revert": {
@@ -88959,12 +90630,12 @@
           "in_pos": false
         },
         "rsi_short": {
-          "pnl": -34.429,
-          "dd": 41.837,
+          "pnl": -43.157,
+          "dd": 43.128,
           "trades": 1,
           "fees": 1.0,
           "win_rate": 0.0,
-          "last": 655.709,
+          "last": 568.433,
           "in_pos": true
         },
         "donchian_short": {
@@ -88980,15 +90651,15 @@
     }
   },
   "live": {
-    "ts": "2026-09-17T06:23:04+00:00",
+    "ts": "2026-09-17T11:57:23+00:00",
     "BTC/USDT": {
-      "price": 76346.01,
+      "price": 76258.01,
       "equity": {
-        "supertrend": 954.59,
+        "supertrend": 953.48,
         "bb_squeeze": 977.56,
         "sma_trend": 975.59,
-        "sma_cross": 974.16,
-        "donchian": 967.54,
+        "sma_cross": 973.04,
+        "donchian": 966.42,
         "trend_200": 969.79,
         "rsi_revert": 1000.0,
         "sma_short": 998.01,
@@ -88997,13 +90668,13 @@
       }
     },
     "ETH/USDT": {
-      "price": 2436.64,
+      "price": 2433.36,
       "equity": {
         "supertrend": 985.97,
-        "bb_squeeze": 980.81,
+        "bb_squeeze": 979.49,
         "sma_trend": 991.12,
-        "sma_cross": 1010.35,
-        "donchian": 987.28,
+        "sma_cross": 1008.99,
+        "donchian": 985.95,
         "trend_200": 958.97,
         "rsi_revert": 1000.0,
         "sma_short": 1015.57,
@@ -89012,43 +90683,43 @@
       }
     },
     "SOL/USDT": {
-      "price": 99.51,
+      "price": 99.86,
       "equity": {
         "supertrend": 954.3,
-        "bb_squeeze": 976.92,
+        "bb_squeeze": 980.36,
         "sma_trend": 957.02,
-        "sma_cross": 993.74,
-        "donchian": 967.87,
+        "sma_cross": 997.24,
+        "donchian": 971.27,
         "trend_200": 919.58,
         "rsi_revert": 1000.0,
         "sma_short": 1019.08,
-        "rsi_short": 1072.5,
+        "rsi_short": 1071.21,
         "donchian_short": 993.77
       }
     },
     "ZEC/USDT": {
-      "price": 1353.66,
+      "price": 1353.03,
       "equity": {
-        "supertrend": 1523.17,
-        "bb_squeeze": 1143.94,
-        "sma_trend": 1358.45,
-        "sma_cross": 1426.12,
-        "donchian": 1387.24,
-        "trend_200": 1291.66,
+        "supertrend": 1522.46,
+        "bb_squeeze": 1143.4,
+        "sma_trend": 1357.81,
+        "sma_cross": 1425.45,
+        "donchian": 1386.59,
+        "trend_200": 1291.06,
         "rsi_revert": 1000.0,
         "sma_short": 895.62,
-        "rsi_short": 678.05,
+        "rsi_short": 678.46,
         "donchian_short": 872.45
       }
     },
     "XRP/USDT": {
-      "price": 1.29,
+      "price": 1.3,
       "equity": {
         "supertrend": 956.83,
         "bb_squeeze": 1003.24,
         "sma_trend": 1008.14,
-        "sma_cross": 982.1,
-        "donchian": 969.69,
+        "sma_cross": 982.86,
+        "donchian": 970.44,
         "trend_200": 901.09,
         "rsi_revert": 1000.0,
         "sma_short": 1038.72,
@@ -89059,75 +90730,75 @@
     "BMT/USDT": {
       "price": 0.02,
       "equity": {
-        "supertrend": 831.74,
-        "bb_squeeze": 945.04,
-        "sma_trend": 954.24,
-        "sma_cross": 832.63,
-        "donchian": 856.08,
-        "trend_200": 944.77,
+        "supertrend": 830.5,
+        "bb_squeeze": 943.62,
+        "sma_trend": 983.48,
+        "sma_cross": 858.14,
+        "donchian": 882.31,
+        "trend_200": 973.72,
         "rsi_revert": 1000.0,
         "sma_short": 958.03,
-        "rsi_short": 973.8,
+        "rsi_short": 942.39,
         "donchian_short": 986.02
       }
     },
     "TRUMP/USDT": {
-      "price": 1.95,
+      "price": 1.94,
       "equity": {
         "supertrend": 977.71,
-        "bb_squeeze": 1002.33,
+        "bb_squeeze": 996.15,
         "sma_trend": 1000.0,
-        "sma_cross": 946.47,
-        "donchian": 983.29,
-        "trend_200": 976.58,
+        "sma_cross": 940.64,
+        "donchian": 977.23,
+        "trend_200": 969.11,
         "rsi_revert": 1000.0,
         "sma_short": 1129.84,
-        "rsi_short": 1078.57,
+        "rsi_short": 1077.49,
         "donchian_short": 1169.88
       }
     },
     "BNB/USDT": {
-      "price": 724.56,
+      "price": 723.01,
       "equity": {
         "supertrend": 986.65,
-        "bb_squeeze": 1012.02,
-        "sma_trend": 998.45,
-        "sma_cross": 998.13,
-        "donchian": 1036.17,
-        "trend_200": 968.42,
-        "rsi_revert": 1009.52,
+        "bb_squeeze": 1009.85,
+        "sma_trend": 996.31,
+        "sma_cross": 996.0,
+        "donchian": 1033.95,
+        "trend_200": 966.35,
+        "rsi_revert": 1007.36,
         "sma_short": 945.67,
-        "rsi_short": 976.75,
+        "rsi_short": 978.84,
         "donchian_short": 987.52
       }
     },
     "ENA/USDT": {
       "price": 0.15,
       "equity": {
-        "supertrend": 941.16,
+        "supertrend": 938.04,
         "bb_squeeze": 836.91,
-        "sma_trend": 890.84,
-        "sma_cross": 859.94,
-        "donchian": 863.65,
-        "trend_200": 887.22,
+        "sma_trend": 887.89,
+        "sma_cross": 857.09,
+        "donchian": 860.79,
+        "trend_200": 884.28,
         "rsi_revert": 1000.0,
         "sma_short": 914.4,
-        "rsi_short": 1096.65,
+        "rsi_short": 1100.19,
         "donchian_short": 918.38
       }
     },
     "DEXE/USDT": {
-      "price": 1.79,
+      "price": 1.8,
       "equity": {
-        "supertrend": 955.74,
-        "bb_squeeze": 970.11,
+        "supertrend": 960.55,
+        "bb_squeeze": 974.99,
         "sma_trend": 1000.0,
-        "sma_cross": 944.1,
-        "donchian": 960.41,
+        "sma_cross": 948.85,
+        "donchian": 965.24,
         "trend_200": 956.84,
-        "rsi_revert": 955.74,
+        "rsi_revert": 960.55,
         "sma_short": 1058.29,
-        "rsi_short": 1140.44,
+        "rsi_short": 1135.4,
         "donchian_short": 1078.54
       }
     },
@@ -89137,8 +90808,8 @@
         "supertrend": 978.63,
         "bb_squeeze": 987.76,
         "sma_trend": 1000.0,
-        "sma_cross": 952.51,
-        "donchian": 977.19,
+        "sma_cross": 951.92,
+        "donchian": 976.58,
         "trend_200": 983.14,
         "rsi_revert": 1000.0,
         "sma_short": 978.49,
@@ -89147,30 +90818,30 @@
       }
     },
     "XAUT/USDT": {
-      "price": 4306.99,
+      "price": 4341.01,
       "equity": {
         "supertrend": 967.46,
         "bb_squeeze": 969.19,
         "sma_trend": 1000.0,
         "sma_cross": 971.94,
         "donchian": 969.2,
-        "trend_200": 974.52,
-        "rsi_revert": 985.89,
-        "sma_short": 986.23,
-        "rsi_short": 1008.25,
-        "donchian_short": 982.42
+        "trend_200": 973.36,
+        "rsi_revert": 993.68,
+        "sma_short": 978.28,
+        "rsi_short": 1000.43,
+        "donchian_short": 974.5
       }
     },
     "TRX/USDT": {
-      "price": 0.34,
+      "price": 0.33,
       "equity": {
         "supertrend": 974.81,
         "bb_squeeze": 980.02,
         "sma_trend": 968.18,
-        "sma_cross": 967.59,
-        "donchian": 972.2,
+        "sma_cross": 964.71,
+        "donchian": 969.3,
         "trend_200": 976.77,
-        "rsi_revert": 1043.9,
+        "rsi_revert": 1040.79,
         "sma_short": 942.04,
         "rsi_short": 1024.93,
         "donchian_short": 945.59
@@ -89179,15 +90850,15 @@
     "PUMP/USDT": {
       "price": 0.0,
       "equity": {
-        "supertrend": 861.41,
+        "supertrend": 864.52,
         "bb_squeeze": 1013.87,
-        "sma_trend": 998.76,
-        "sma_cross": 811.75,
-        "donchian": 850.23,
-        "trend_200": 1003.32,
+        "sma_trend": 1002.36,
+        "sma_cross": 814.68,
+        "donchian": 853.31,
+        "trend_200": 1006.95,
         "rsi_revert": 1000.0,
         "sma_short": 938.15,
-        "rsi_short": 1115.37,
+        "rsi_short": 1111.34,
         "donchian_short": 983.65
       }
     },
@@ -89195,134 +90866,134 @@
       "price": 0.72,
       "equity": {
         "supertrend": 945.42,
-        "bb_squeeze": 950.17,
+        "bb_squeeze": 950.56,
         "sma_trend": 1000.0,
-        "sma_cross": 1014.93,
-        "donchian": 951.7,
-        "trend_200": 975.16,
+        "sma_cross": 1015.35,
+        "donchian": 952.1,
+        "trend_200": 975.56,
         "rsi_revert": 1000.0,
         "sma_short": 1033.74,
-        "rsi_short": 1041.21,
+        "rsi_short": 1040.75,
         "donchian_short": 970.67
       }
     },
     "TUT/USDT": {
       "price": 0.02,
       "equity": {
-        "supertrend": 1070.53,
+        "supertrend": 1049.65,
         "bb_squeeze": 1000.0,
-        "sma_trend": 990.29,
-        "sma_cross": 969.23,
-        "donchian": 636.87,
-        "trend_200": 1009.58,
+        "sma_trend": 970.98,
+        "sma_cross": 950.33,
+        "donchian": 624.45,
+        "trend_200": 989.89,
         "rsi_revert": 1010.34,
         "sma_short": 1290.41,
-        "rsi_short": 993.11,
+        "rsi_short": 1012.73,
         "donchian_short": 952.28
       }
     },
     "PEPE/USDT": {
       "price": 0.0,
       "equity": {
-        "supertrend": 1034.59,
-        "bb_squeeze": 947.13,
-        "sma_trend": 970.13,
-        "sma_cross": 963.44,
-        "donchian": 1004.26,
-        "trend_200": 941.27,
+        "supertrend": 1043.61,
+        "bb_squeeze": 955.39,
+        "sma_trend": 978.59,
+        "sma_cross": 971.84,
+        "donchian": 1013.02,
+        "trend_200": 949.48,
         "rsi_revert": 1000.0,
         "sma_short": 987.22,
-        "rsi_short": 1005.28,
+        "rsi_short": 996.61,
         "donchian_short": 1026.8
       }
     },
     "ONG/USDT": {
-      "price": 0.08,
+      "price": 0.07,
       "equity": {
-        "supertrend": 708.64,
+        "supertrend": 703.2,
         "bb_squeeze": 949.62,
         "sma_trend": 718.91,
-        "sma_cross": 684.98,
+        "sma_cross": 679.73,
         "donchian": 685.24,
         "trend_200": 718.91,
-        "rsi_revert": 905.2,
+        "rsi_revert": 898.26,
         "sma_short": 1049.63,
         "rsi_short": 1277.21,
-        "donchian_short": 1049.83
+        "donchian_short": 1057.79
       }
     },
     "HEMI/USDT": {
       "price": 0.01,
       "equity": {
-        "supertrend": 399.4,
+        "supertrend": 394.45,
         "bb_squeeze": 955.62,
         "sma_trend": 1000.0,
         "sma_cross": 835.79,
         "donchian": 407.1,
         "trend_200": 421.05,
-        "rsi_revert": 890.93,
-        "sma_short": 1456.53,
-        "rsi_short": 1787.6,
-        "donchian_short": 1020.15
+        "rsi_revert": 879.89,
+        "sma_short": 1475.4,
+        "rsi_short": 1807.82,
+        "donchian_short": 1033.2
       }
     },
     "LINK/USDT": {
       "price": 11.15,
       "equity": {
         "supertrend": 969.11,
-        "bb_squeeze": 963.31,
+        "bb_squeeze": 962.88,
         "sma_trend": 1000.0,
-        "sma_cross": 999.45,
-        "donchian": 960.76,
+        "sma_cross": 999.0,
+        "donchian": 960.33,
         "trend_200": 974.48,
         "rsi_revert": 1000.0,
         "sma_short": 1025.53,
-        "rsi_short": 1068.99,
+        "rsi_short": 1068.02,
         "donchian_short": 986.14
       }
     },
     "PAXG/USDT": {
-      "price": 4309.48,
+      "price": 4344.81,
       "equity": {
         "supertrend": 964.99,
         "bb_squeeze": 969.77,
         "sma_trend": 995.63,
         "sma_cross": 971.39,
         "donchian": 969.38,
-        "trend_200": 974.57,
-        "rsi_revert": 984.05,
-        "sma_short": 987.52,
-        "rsi_short": 1009.1,
-        "donchian_short": 984.45
+        "trend_200": 973.54,
+        "rsi_revert": 992.12,
+        "sma_short": 979.27,
+        "rsi_short": 1000.99,
+        "donchian_short": 976.21
       }
     },
     "NEAR/USDT": {
-      "price": 2.68,
+      "price": 2.86,
       "equity": {
-        "supertrend": 1089.13,
-        "bb_squeeze": 1317.87,
-        "sma_trend": 1101.37,
-        "sma_cross": 1175.76,
-        "donchian": 1175.76,
-        "trend_200": 1171.52,
+        "supertrend": 1162.68,
+        "bb_squeeze": 1406.87,
+        "sma_trend": 1175.76,
+        "sma_cross": 1255.17,
+        "donchian": 1255.17,
+        "trend_200": 1250.64,
         "rsi_revert": 1000.0,
         "sma_short": 883.83,
-        "rsi_short": 669.64,
+        "rsi_short": 579.86,
         "donchian_short": 883.83
       }
     },
     "ENSO/USDT": {
-      "price": 0.92,
+      "price": 0.91,
       "equity": {
-        "supertrend": 1068.08,
-        "bb_squeeze": 928.64,
+        "supertrend": 1055.33,
+        "bb_squeeze": 927.24,
         "sma_trend": 992.97,
-        "sma_cross": 995.08,
-        "donchian": 953.66,
-        "trend_200": 924.84,
+        "sma_cross": 983.19,
+        "donchian": 942.27,
+        "trend_200": 912.43,
         "rsi_revert": 1045.64,
         "sma_short": 929.45,
-        "rsi_short": 929.85,
+        "rsi_short": 942.62,
         "donchian_short": 884.96
       }
     },
@@ -89347,8 +91018,8 @@
         "supertrend": 940.64,
         "bb_squeeze": 976.25,
         "sma_trend": 981.11,
-        "sma_cross": 998.11,
-        "donchian": 984.71,
+        "sma_cross": 1005.22,
+        "donchian": 991.72,
         "trend_200": 952.04,
         "rsi_revert": 1000.0,
         "sma_short": 1013.01,
@@ -89357,17 +91028,17 @@
       }
     },
     "TAO/USDT": {
-      "price": 224.8,
+      "price": 226.3,
       "equity": {
         "supertrend": 973.7,
-        "bb_squeeze": 974.44,
+        "bb_squeeze": 980.95,
         "sma_trend": 1000.0,
-        "sma_cross": 996.63,
-        "donchian": 959.45,
+        "sma_cross": 1003.28,
+        "donchian": 965.85,
         "trend_200": 978.59,
         "rsi_revert": 1000.0,
         "sma_short": 1004.42,
-        "rsi_short": 1000.0,
+        "rsi_short": 999.44,
         "donchian_short": 960.59
       }
     },
@@ -89375,10 +91046,10 @@
       "price": 0.37,
       "equity": {
         "supertrend": 941.64,
-        "bb_squeeze": 940.97,
+        "bb_squeeze": 945.53,
         "sma_trend": 965.07,
-        "sma_cross": 999.12,
-        "donchian": 980.09,
+        "sma_cross": 1003.97,
+        "donchian": 984.85,
         "trend_200": 1000.0,
         "rsi_revert": 1000.0,
         "sma_short": 995.64,
@@ -89387,77 +91058,77 @@
       }
     },
     "AAVE/USDT": {
-      "price": 122.01,
+      "price": 122.83,
       "equity": {
         "supertrend": 980.64,
         "bb_squeeze": 923.62,
         "sma_trend": 933.36,
-        "sma_cross": 952.32,
-        "donchian": 950.86,
+        "sma_cross": 958.72,
+        "donchian": 957.25,
         "trend_200": 861.89,
         "rsi_revert": 1000.0,
         "sma_short": 993.67,
-        "rsi_short": 1074.75,
+        "rsi_short": 1073.59,
         "donchian_short": 991.2
       }
     },
     "UNI/USDT": {
-      "price": 6.72,
+      "price": 6.85,
       "equity": {
         "supertrend": 1101.17,
-        "bb_squeeze": 998.02,
-        "sma_trend": 1021.48,
-        "sma_cross": 1027.52,
-        "donchian": 1129.7,
-        "trend_200": 1052.51,
-        "rsi_revert": 1088.43,
+        "bb_squeeze": 1017.48,
+        "sma_trend": 1041.4,
+        "sma_cross": 1047.56,
+        "donchian": 1151.73,
+        "trend_200": 1073.04,
+        "rsi_revert": 1109.66,
         "sma_short": 869.24,
-        "rsi_short": 858.26,
+        "rsi_short": 839.29,
         "donchian_short": 960.41
       }
     },
     "LTC/USDT": {
-      "price": 52.09,
+      "price": 52.88,
       "equity": {
         "supertrend": 1015.5,
-        "bb_squeeze": 1015.59,
+        "bb_squeeze": 1030.99,
         "sma_trend": 958.62,
-        "sma_cross": 1060.38,
-        "donchian": 1092.25,
-        "trend_200": 1042.74,
+        "sma_cross": 1076.46,
+        "donchian": 1108.82,
+        "trend_200": 1041.18,
         "rsi_revert": 1000.0,
         "sma_short": 1008.79,
-        "rsi_short": 1035.74,
+        "rsi_short": 1034.7,
         "donchian_short": 1038.62
       }
     },
     "CHIP/USDT": {
       "price": 0.04,
       "equity": {
-        "supertrend": 970.07,
+        "supertrend": 1017.71,
         "bb_squeeze": 1000.0,
         "sma_trend": 1118.68,
-        "sma_cross": 1137.77,
-        "donchian": 1060.99,
+        "sma_cross": 1135.17,
+        "donchian": 1058.57,
         "trend_200": 1118.68,
-        "rsi_revert": 831.13,
-        "sma_short": 1236.32,
-        "rsi_short": 973.89,
-        "donchian_short": 1147.28
+        "rsi_revert": 871.95,
+        "sma_short": 1197.25,
+        "rsi_short": 973.68,
+        "donchian_short": 1111.02
       }
     },
     "FET/USDT": {
       "price": 0.16,
       "equity": {
         "supertrend": 1070.66,
-        "bb_squeeze": 926.92,
+        "bb_squeeze": 938.25,
         "sma_trend": 932.49,
-        "sma_cross": 1094.63,
-        "donchian": 1033.02,
+        "sma_cross": 1108.0,
+        "donchian": 1045.64,
         "trend_200": 991.8,
-        "rsi_revert": 1026.9,
+        "rsi_revert": 1039.44,
         "sma_short": 1080.22,
-        "rsi_short": 998.35,
+        "rsi_short": 986.43,
         "donchian_short": 1025.63
       }
     },
@@ -89467,32 +91138,32 @@
         "supertrend": 925.08,
         "bb_squeeze": 944.22,
         "sma_trend": 960.29,
-        "sma_cross": 1027.04,
-        "donchian": 987.95,
+        "sma_cross": 1025.64,
+        "donchian": 986.6,
         "trend_200": 968.95,
         "rsi_revert": 1000.0,
-        "sma_short": 1042.23,
+        "sma_short": 1032.39,
         "rsi_short": 1074.42,
-        "donchian_short": 1001.09
+        "donchian_short": 991.65
       }
     },
     "ASTER/USDT": {
-      "price": 0.73,
+      "price": 0.74,
       "equity": {
         "supertrend": 974.25,
-        "bb_squeeze": 1036.75,
-        "sma_trend": 1020.97,
-        "sma_cross": 1059.06,
-        "donchian": 999.49,
-        "trend_200": 1036.76,
+        "bb_squeeze": 1051.01,
+        "sma_trend": 1035.01,
+        "sma_cross": 1073.63,
+        "donchian": 1013.24,
+        "trend_200": 1051.02,
         "rsi_revert": 1000.0,
         "sma_short": 1020.81,
-        "rsi_short": 960.54,
+        "rsi_short": 946.71,
         "donchian_short": 963.72
       }
     },
     "CRCLB/USDT": {
-      "price": 81.87,
+      "price": 83.05,
       "equity": {
         "supertrend": 939.07,
         "bb_squeeze": 970.9,
@@ -89500,10 +91171,10 @@
         "sma_cross": 978.23,
         "donchian": 964.49,
         "trend_200": 976.34,
-        "rsi_revert": 964.57,
-        "sma_short": 1059.58,
+        "rsi_revert": 978.47,
+        "sma_short": 1047.43,
         "rsi_short": 1086.93,
-        "donchian_short": 1039.37
+        "donchian_short": 1027.45
       }
     },
     "NIL/USDT": {
@@ -89512,57 +91183,57 @@
         "supertrend": 819.63,
         "bb_squeeze": 953.85,
         "sma_trend": 1000.0,
-        "sma_cross": 974.8,
-        "donchian": 945.91,
+        "sma_cross": 984.67,
+        "donchian": 955.49,
         "trend_200": 988.84,
-        "rsi_revert": 962.6,
+        "rsi_revert": 972.35,
         "sma_short": 1184.55,
-        "rsi_short": 1220.71,
+        "rsi_short": 1209.57,
         "donchian_short": 1151.43
       }
     },
     "ZRO/USDT": {
-      "price": 1.03,
+      "price": 1.01,
       "equity": {
-        "supertrend": 990.79,
-        "bb_squeeze": 952.56,
-        "sma_trend": 998.5,
-        "sma_cross": 1020.33,
-        "donchian": 913.31,
-        "trend_200": 966.93,
-        "rsi_revert": 1106.1,
+        "supertrend": 978.26,
+        "bb_squeeze": 940.52,
+        "sma_trend": 985.87,
+        "sma_cross": 1007.43,
+        "donchian": 901.76,
+        "trend_200": 954.7,
+        "rsi_revert": 1092.11,
         "sma_short": 995.27,
-        "rsi_short": 1068.89,
+        "rsi_short": 1082.43,
         "donchian_short": 890.8
       }
     },
     "BANK/USDT": {
       "price": 0.03,
       "equity": {
-        "supertrend": 757.29,
+        "supertrend": 771.26,
         "bb_squeeze": 1000.54,
         "sma_trend": 1000.0,
-        "sma_cross": 940.81,
-        "donchian": 967.27,
+        "sma_cross": 958.17,
+        "donchian": 985.11,
         "trend_200": 972.52,
         "rsi_revert": 1032.11,
         "sma_short": 1188.35,
-        "rsi_short": 1290.74,
+        "rsi_short": 1270.36,
         "donchian_short": 1215.03
       }
     },
     "AVAX/USDT": {
-      "price": 7.52,
+      "price": 7.54,
       "equity": {
         "supertrend": 965.05,
-        "bb_squeeze": 963.31,
-        "sma_trend": 1000.0,
-        "sma_cross": 1011.15,
-        "donchian": 975.54,
-        "trend_200": 983.83,
+        "bb_squeeze": 966.13,
+        "sma_trend": 998.37,
+        "sma_cross": 1014.11,
+        "donchian": 978.39,
+        "trend_200": 986.71,
         "rsi_revert": 1000.0,
         "sma_short": 986.18,
-        "rsi_short": 1010.05,
+        "rsi_short": 1007.15,
         "donchian_short": 950.16
       }
     },
@@ -89570,28 +91241,28 @@
       "price": 0.01,
       "equity": {
         "supertrend": 933.18,
-        "bb_squeeze": 988.76,
+        "bb_squeeze": 980.98,
         "sma_trend": 1000.0,
-        "sma_cross": 820.18,
-        "donchian": 945.01,
-        "trend_200": 998.22,
+        "sma_cross": 813.72,
+        "donchian": 937.56,
+        "trend_200": 990.36,
         "rsi_revert": 1000.0,
         "sma_short": 1001.54,
-        "rsi_short": 999.28,
+        "rsi_short": 1007.15,
         "donchian_short": 1127.03
       }
     },
     "SNDKB/USDT": {
-      "price": 1531.52,
+      "price": 1552.44,
       "equity": {
         "supertrend": 1000.0,
-        "bb_squeeze": 946.55,
+        "bb_squeeze": 945.14,
         "sma_trend": 1089.92,
-        "sma_cross": 1053.97,
-        "donchian": 1023.77,
+        "sma_cross": 1052.39,
+        "donchian": 1037.75,
         "trend_200": 1089.92,
-        "rsi_revert": 1053.32,
-        "sma_short": 1057.74,
+        "rsi_revert": 1067.71,
+        "sma_short": 1042.32,
         "rsi_short": 904.71,
         "donchian_short": 1028.86
       }
@@ -89600,40 +91271,40 @@
       "price": 0.35,
       "equity": {
         "supertrend": 977.94,
-        "bb_squeeze": 996.44,
+        "bb_squeeze": 990.2,
         "sma_trend": 999.85,
-        "sma_cross": 1008.84,
-        "donchian": 1037.9,
-        "trend_200": 957.68,
+        "sma_cross": 1002.52,
+        "donchian": 1031.4,
+        "trend_200": 951.69,
         "rsi_revert": 1000.0,
         "sma_short": 998.94,
-        "rsi_short": 1075.1,
+        "rsi_short": 1081.87,
         "donchian_short": 1028.01
       }
     },
     "DASH/USDT": {
-      "price": 58.17,
+      "price": 57.45,
       "equity": {
         "supertrend": 947.11,
         "bb_squeeze": 958.66,
-        "sma_trend": 1221.2,
-        "sma_cross": 1273.89,
-        "donchian": 1217.49,
-        "trend_200": 1298.75,
+        "sma_trend": 1206.09,
+        "sma_cross": 1258.12,
+        "donchian": 1202.42,
+        "trend_200": 1282.67,
         "rsi_revert": 1000.0,
         "sma_short": 1003.15,
-        "rsi_short": 700.92,
+        "rsi_short": 711.34,
         "donchian_short": 960.38
       }
     },
     "XLM/USDT": {
       "price": 0.18,
       "equity": {
-        "supertrend": 904.27,
-        "bb_squeeze": 1039.94,
-        "sma_trend": 970.85,
-        "sma_cross": 963.63,
-        "donchian": 1024.08,
+        "supertrend": 900.8,
+        "bb_squeeze": 1035.94,
+        "sma_trend": 965.67,
+        "sma_cross": 959.93,
+        "donchian": 1020.14,
         "trend_200": 911.79,
         "rsi_revert": 1000.0,
         "sma_short": 943.05,
@@ -89645,59 +91316,59 @@
       "price": 0.09,
       "equity": {
         "supertrend": 914.16,
-        "bb_squeeze": 966.47,
-        "sma_trend": 998.27,
-        "sma_cross": 968.09,
-        "donchian": 938.98,
-        "trend_200": 917.48,
+        "bb_squeeze": 974.77,
+        "sma_trend": 1006.83,
+        "sma_cross": 976.4,
+        "donchian": 947.04,
+        "trend_200": 925.36,
         "rsi_revert": 1000.0,
         "sma_short": 953.61,
-        "rsi_short": 991.3,
+        "rsi_short": 982.65,
         "donchian_short": 927.27
       }
     },
     "BCH/USDT": {
-      "price": 220.8,
+      "price": 223.3,
       "equity": {
         "supertrend": 968.34,
-        "bb_squeeze": 974.81,
+        "bb_squeeze": 973.35,
         "sma_trend": 1000.0,
-        "sma_cross": 870.41,
-        "donchian": 875.72,
-        "trend_200": 988.22,
-        "rsi_revert": 889.71,
+        "sma_cross": 880.26,
+        "donchian": 885.63,
+        "trend_200": 986.74,
+        "rsi_revert": 899.78,
         "sma_short": 981.44,
-        "rsi_short": 1097.03,
+        "rsi_short": 1085.05,
         "donchian_short": 987.56
       }
     },
     "GRAM/USDT": {
-      "price": 1.31,
+      "price": 1.34,
       "equity": {
         "supertrend": 976.58,
-        "bb_squeeze": 989.61,
+        "bb_squeeze": 988.13,
         "sma_trend": 1000.0,
-        "sma_cross": 963.72,
-        "donchian": 975.76,
+        "sma_cross": 982.07,
+        "donchian": 974.29,
         "trend_200": 964.43,
-        "rsi_revert": 967.55,
+        "rsi_revert": 985.97,
         "sma_short": 995.34,
         "rsi_short": 999.48,
-        "donchian_short": 1010.41
+        "donchian_short": 990.98
       }
     },
     "GIGGLE/USDT": {
-      "price": 34.49,
+      "price": 34.31,
       "equity": {
-        "supertrend": 893.82,
-        "bb_squeeze": 975.03,
+        "supertrend": 889.16,
+        "bb_squeeze": 969.95,
         "sma_trend": 1000.0,
-        "sma_cross": 970.36,
-        "donchian": 1005.61,
-        "trend_200": 957.53,
-        "rsi_revert": 996.19,
+        "sma_cross": 965.29,
+        "donchian": 1000.36,
+        "trend_200": 952.54,
+        "rsi_revert": 990.99,
         "sma_short": 1057.52,
-        "rsi_short": 1125.16,
+        "rsi_short": 1130.6,
         "donchian_short": 1097.62
       }
     },
@@ -89706,28 +91377,28 @@
       "equity": {
         "supertrend": 1021.67,
         "bb_squeeze": 1009.48,
-        "sma_trend": 973.64,
-        "sma_cross": 1015.85,
-        "donchian": 1034.69,
-        "trend_200": 983.35,
-        "rsi_revert": 1031.36,
+        "sma_trend": 982.18,
+        "sma_cross": 1024.76,
+        "donchian": 1043.77,
+        "trend_200": 981.88,
+        "rsi_revert": 1029.82,
         "sma_short": 963.13,
-        "rsi_short": 1026.29,
+        "rsi_short": 1025.26,
         "donchian_short": 981.49
       }
     },
     "COTI/USDT": {
       "price": 0.02,
       "equity": {
-        "supertrend": 1341.95,
+        "supertrend": 1438.24,
         "bb_squeeze": 964.16,
-        "sma_trend": 984.22,
-        "sma_cross": 878.79,
-        "donchian": 946.97,
-        "trend_200": 1416.86,
+        "sma_trend": 1054.84,
+        "sma_cross": 941.85,
+        "donchian": 1014.91,
+        "trend_200": 1518.52,
         "rsi_revert": 1000.0,
         "sma_short": 535.96,
-        "rsi_short": 655.71,
+        "rsi_short": 559.33,
         "donchian_short": 578.7
       }
     }
